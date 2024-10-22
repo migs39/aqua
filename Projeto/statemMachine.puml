@@ -1,0 +1,51 @@
+@startuml StateMachine
+left to right direction
+state inicial
+state zera_valvulas : zera_vlv
+state inicio_ciclo
+state preparacao : zera
+state medir_nivel : mensurar_nvl
+state analisa_medida : analisa
+state medida_critica_baixa : liga_buzzer_baixa
+state medida_critica_alta : liga_buzzer_alta
+state medida_critica_muito_alta : liga_buzzer_alta
+state medida_nao_critica : desliga_buzzers
+state abre_valvula : abre
+state fecha_valvula : fecha
+state espera_1s : conta_1s
+state envia_caracter : envia
+state muda_caracter : muda
+state fim_ciclo : pronto
+
+inicial --> inicial
+inicial --> zera_valvulas : iniciar = 1
+zera_valvulas -right-> inicio_ciclo
+inicio_ciclo --> inicio_ciclo
+inicio_ciclo --> preparacao : iniciar = 1
+preparacao --> medir_nivel
+medir_nivel --> medir_nivel
+medir_nivel --> analisa_medida : fim_medida_nivel = 1
+analisa_medida --> inicio_ciclo : descartar_medida = 1
+analisa_medida --> medida_nao_critica : descartar_medida = 0 \n medida_classificacao = 00
+analisa_medida --> medida_critica_baixa : descartar_medida = 0 \n medida_classificacao = 01
+analisa_medida --> medida_critica_alta : descartar_medida = 0 \n medida_classificacao = 10
+analisa_medida -right-> medida_critica_muito_alta : descartar_medida = 0 \n medida_classificacao = 11
+medida_nao_critica --> fecha_valvula : valvula_aberta = 1
+medida_critica_alta --> fecha_valvula : valvula_aberta = 1
+medida_critica_baixa --> fecha_valvula : valvula_aberta = 1
+medida_critica_muito_alta --> abre_valvula : valvula_aberta = 0
+abre_valvula --> espera_1s
+fecha_valvula --> espera_1s
+espera_1s --> espera_1s
+espera_1s --> envia_caracter : fim_1s 
+medida_nao_critica --> envia_caracter
+medida_critica_alta --> envia_caracter
+medida_critica_baixa --> envia_caracter
+medida_critica_muito_alta --> envia_caracter
+envia_caracter --> envia_caracter : fim_caracter = 0
+envia_caracter --> muda_caracter : fim_caracter = 1 \n fim_mensagem = 0
+muda_caracter --> envia_caracter
+envia_caracter --> fim_ciclo : fim_caracter = 1 \n fim_mensagem = 1
+fim_ciclo --> inicio_ciclo
+
+@enduml
