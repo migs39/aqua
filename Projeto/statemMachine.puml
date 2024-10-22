@@ -18,7 +18,7 @@ state muda_caracter : muda
 state fim_ciclo : pronto
 
 inicial --> inicial
-inicial --> zera_valvulas : iniciar = 1
+inicial -right-> zera_valvulas : iniciar = 1
 zera_valvulas -right-> inicio_ciclo
 inicio_ciclo --> inicio_ciclo
 inicio_ciclo --> preparacao : iniciar = 1
