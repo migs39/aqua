@@ -9,11 +9,13 @@ int high = 80;
 int critical = 95;
 int manual = 0;
 int open = 0;
+int level = 50;
 
 Textlabel lowLabel;
 Textlabel highLabel;
 Textlabel criticalLabel;
 Button modeButton;
+Textlabel waterLevel;
 
 void setup() {
   size(960,540);
@@ -77,7 +79,7 @@ void setup() {
     .setPosition(788, 324)
     .setSize(48, 36)
     .setColor(0xffff0000)
-    .setFont(createFont("Georgia",32));
+    .setFont(createFont("Georgia", 32));
 
   cp5.addButton("change")
     .setValue(0)
@@ -101,6 +103,12 @@ void setup() {
     .setPosition(740, 132)
     .setSize(48, 32);
 
+  waterLevel = cp5.addTextlabel("level")
+    .setText("" + level)
+    .setPosition(200, 222)
+    .setSize(48, 36)
+    .setColor(0xff0055ff)
+    .setFont(createFont("Georgia", 64))
 }
 
 void draw() {
