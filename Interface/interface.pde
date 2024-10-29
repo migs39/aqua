@@ -7,10 +7,13 @@ int myColor = color(255);
 int low = 15;
 int high = 80;
 int critical = 95;
+int manual = 0;
+int open = 0;
 
 Textlabel lowLabel;
 Textlabel highLabel;
 Textlabel criticalLabel;
+Button modeButton;
 
 void setup() {
   size(960,540);
@@ -30,7 +33,7 @@ void setup() {
     .setLabel("-");
 
   lowLabel = cp5.addTextlabel("lowValue")
-    .setText("" + low)
+    .setText(String.format("%02d", low))
     .setPosition(652, 324)
     .setSize(48, 36)
     .setColor(0xffff5500)
@@ -75,6 +78,29 @@ void setup() {
     .setSize(48, 36)
     .setColor(0xffff0000)
     .setFont(createFont("Georgia",32));
+
+  cp5.addButton("change")
+    .setValue(0)
+    .setPosition(692, 420)
+    .setSize(96, 32)
+    .setColorValue(0xaa000000);
+
+  modeButton = cp5.addButton("modeButton")
+    .setValue(0)
+    .setPosition(692, 100)
+    .setSize(96, 32)
+    .setLabel(manual == 1 ? "manual" : "auto");
+
+  cp5.addButton("open")
+    .setValue(0)
+    .setPosition(692, 132)
+    .setSize(48, 32);
+
+  cp5.addButton("close")
+    .setValue(0)
+    .setPosition(740, 132)
+    .setSize(48, 32);
+
 }
 
 void draw() {
@@ -87,7 +113,7 @@ public void lowUp(){
         low = low + 1;
     }
     lowLabel
-    .setText("" + low)
+    .setText(String.format("%02d", low))
     .draw(this);
 }
 
@@ -96,7 +122,7 @@ public void lowDown(){
         low = low - 1;
     }
     lowLabel
-    .setText("" + low)
+    .setText(String.format("%02d", low))
     .draw(this);
 }
 
@@ -105,7 +131,8 @@ public void highUp(){
         high = high + 1;
     }
     highLabel
-    .setText("" + high);
+    .setText(String.format("%02d", high))
+    .draw(this);
 }
 
 public void highDown(){
@@ -113,7 +140,7 @@ public void highDown(){
         high = high - 1;
     }
     highLabel
-    .setText("" + high)
+    .setText(String.format("%02d", high))
     .draw(this);
 }
 
@@ -122,7 +149,7 @@ public void criticalUp(){
         critical++;
     }
     criticalLabel
-    .setText("" + critical)
+    .setText(String.format("%02d", critical))
     .draw(this);
 }
 
@@ -131,6 +158,37 @@ public void criticalDown(){
         critical--;
     }
     criticalLabel
-    .setText("" + critical)
+    .setText(String.format("%02d", critical))
     .draw(this);
+}
+
+public void send(){
+  String lowBinary = String.format("%7s", Integer.toBinaryString(low)).replaceAll(" ", "0");
+  String highBinary = String.format("%7s", Integer.toBinaryString(high)).replaceAll(" ", "0");
+  String criticalBinary = String.format("%7s", Integer.toBinaryString(critical)).replaceAll(" ", "0");
+  println(""+ manual + open + lowBinary + highBinary + criticalBinary);
+}
+
+public void change(){
+  send();
+}
+
+public void modeButton(){
+  manual = manual == 1 ? 0 : 1;
+  modeButton
+    .setLabel(manual == 1 ? "manual" : "auto");
+}
+
+public void open(){
+  if (manual == 1){
+    open = 1;
+    send();
+  }
+}
+
+public void close(){
+  if (manual == 1){
+    open = 0;
+    send();
+  }
 }
