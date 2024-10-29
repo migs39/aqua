@@ -18,13 +18,13 @@ state muda_caracter : muda
 state fim_ciclo : pronto
 
 inicial --> inicial
-inicial -right-> zera_valvulas : iniciar = 1
-zera_valvulas -right-> inicio_ciclo
+inicial -up-> zera_valvulas : iniciar = 1
+zera_valvulas -left-> inicio_ciclo
 inicio_ciclo --> inicio_ciclo
 inicio_ciclo --> preparacao : iniciar = 1
 preparacao --> medir_nivel
 medir_nivel --> medir_nivel
-medir_nivel --> analisa_medida : fim_medida_nivel = 1
+medir_nivel -left-> analisa_medida : fim_medida_nivel = 1
 analisa_medida --> inicio_ciclo : descartar_medida = 1
 analisa_medida --> medida_nao_critica : descartar_medida = 0 \n medida_classificacao = 00
 analisa_medida --> medida_critica_baixa : descartar_medida = 0 \n medida_classificacao = 01
