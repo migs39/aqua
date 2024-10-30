@@ -141,26 +141,6 @@ void setup() {
     .setFont(createFont("Georgia", 64));
 }
 
-void serialEvent (Serial myPort) { 
-
-    try {
-        // leitura da porta serial até o caractere '#' na variavel sensorReading
-        sensorReading = myPort.readStringUntil('#');
-        if(sensorReading != null) sensorReading = trim(sensorReading);
-        distance = sensorReading.substring(0,sensorReading.length()-1);  
-   
-        // converte string para inteiro
-        iDistance = int(distance);
-        percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
-        level = round(100 * (1. - percentage));
-        waterLevel.setText("" + level).draw();
-    }
-    catch(RuntimeException e) {
-        e.printStackTrace();
-    }
-
-}
-
 void draw() {
   background(myColor);
   lowLabel.draw(this);
@@ -249,4 +229,24 @@ public void close(){
     open = 0;
     send();
   }
+}
+
+void serialEvent (Serial myPort) { 
+
+    try {
+        // leitura da porta serial até o caractere '#' na variavel sensorReading
+        sensorReading = myPort.readStringUntil('#');
+        if(sensorReading != null) sensorReading = trim(sensorReading);
+        distance = sensorReading.substring(0,sensorReading.length()-1);  
+   
+        // converte string para inteiro
+        iDistance = int(distance);
+        percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
+        level = round(100 * (1. - percentage));
+        waterLevel.setText("" + level).draw();
+    }
+    catch(RuntimeException e) {
+        e.printStackTrace();
+    }
+
 }
