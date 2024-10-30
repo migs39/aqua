@@ -1,4 +1,5 @@
 import controlP5.*;
+import java.awt.event.KeyEvent;
 
 ControlP5 cp5;
 
@@ -108,7 +109,7 @@ void setup() {
     .setPosition(200, 222)
     .setSize(48, 36)
     .setColor(0xff0055ff)
-    .setFont(createFont("Georgia", 64))
+    .setFont(createFont("Georgia", 64));
 }
 
 void draw() {
@@ -174,7 +175,7 @@ public void send(){
   String lowBinary = String.format("%7s", Integer.toBinaryString(low)).replaceAll(" ", "0");
   String highBinary = String.format("%7s", Integer.toBinaryString(high)).replaceAll(" ", "0");
   String criticalBinary = String.format("%7s", Integer.toBinaryString(critical)).replaceAll(" ", "0");
-  println(""+ manual + open + lowBinary + highBinary + criticalBinary);
+  println("1"+ manual + open + lowBinary + highBinary + criticalBinary);
 }
 
 public void change(){

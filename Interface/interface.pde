@@ -1,4 +1,20 @@
 import controlP5.*;
+import processing.serial.*;      // comunicacao serial
+import java.awt.event.KeyEvent;  // 
+import java.io.IOException;
+
+Serial myPort; // define objeto da porta serial
+
+//  ============ CONFIGURACAO SERIAL =================
+//    ajustar porta serial de sua montagem fisica
+
+    String   porta = "COM6";  // <== acertar valor ***
+    int   baudrate = 115200;  // 115200;
+    char    parity = 'O';     // impar
+    int   databits = 7;       // 7 bits de dados
+    float stopbits = 1.0;     // 1 stop bit
+
+//  ==================================================
 
 ControlP5 cp5;
 
@@ -10,6 +26,11 @@ int critical = 95;
 int manual = 0;
 int open = 0;
 int level = 50;
+String sensorReading = "";
+String distance = "000"
+int iDistance = 0;
+int emptyDistance = 100;
+int fullDistance = 0;
 
 Textlabel lowLabel;
 Textlabel highLabel;
@@ -20,6 +41,14 @@ Textlabel waterLevel;
 void setup() {
   size(960,540);
   noStroke();
+
+  // habilita comunicacao serial
+  myPort = new Serial(this, porta, baudrate, parity, databits, stopbits); 
+  // leitura da serial até caractere # (limpeza de dados seriais)
+  myPort.bufferUntil('#'); 
+  // criar fontes para o sketch no menu Tools>Create Font
+  // arquivos na pasta "data"
+
   cp5 = new ControlP5(this);
 
   cp5.addButton("lowUp")
@@ -109,6 +138,25 @@ void setup() {
     .setSize(48, 36)
     .setColor(0xff0055ff)
     .setFont(createFont("Georgia", 64))
+}
+
+void serialEvent (Serial myPort) { 
+
+    try {
+        // leitura da porta serial até o caractere '#' na variavel sensorReading
+        sensorReading = myPort.readStringUntil('#');
+        if(sensorReading != null) sensorReading = trim(sensorReading);
+        distance = sensorReading.substring(0,sensorReading.length()-1);  
+   
+        // converte string para inteiro
+        iDistance = int(distance);
+        level = 100 * (1 - (iDistance - fullDistance)/(emptyDistance));
+        waterLevel.setLabel("" + level);
+    }
+    catch(RuntimeException e) {
+        e.printStackTrace();
+    }
+
 }
 
 void draw() {
