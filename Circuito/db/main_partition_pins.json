@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "trigger1",
+					"strict" : false
+				},
+				{
+					"name" : "trigger2",
+					"strict" : false
+				},
+				{
+					"name" : "trigger3",
+					"strict" : false
+				},
+				{
+					"name" : "buzzer_baixa",
+					"strict" : false
+				},
+				{
+					"name" : "saida_serial",
+					"strict" : false
+				},
+				{
+					"name" : "hex0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pronto",
+					"strict" : false
+				},
+				{
+					"name" : "db_iniciar",
+					"strict" : false
+				},
+				{
+					"name" : "db_fim_medida",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_estado[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_sensor[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_sensor[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_sensor[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_sensor[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_sensor[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_sensor[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_sensor[6]",
+					"strict" : false
+				},
+				{
+					"name" : "iniciar",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "echo1",
+					"strict" : false
+				},
+				{
+					"name" : "echo2",
+					"strict" : false
+				},
+				{
+					"name" : "echo3",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

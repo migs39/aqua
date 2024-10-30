@@ -1,0 +1,99 @@
+
+State Machine - |main|circuito_projeto:main|circuito_projeto_uc:UC|Eatual
+Name Eatual.fim_ciclo Eatual.muda_caracter Eatual.envia_caracter Eatual.espera_1s Eatual.fecha_valvula Eatual.abre_valvula Eatual.medida_critica_muito_alta Eatual.medida_critica_alta Eatual.medida_critica_baixa Eatual.medida_nao_critica Eatual.analisa_medida Eatual.medir_nivel Eatual.preparacao Eatual.inicio_ciclo Eatual.zera_valvulas Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Eatual.zera_valvulas 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+Eatual.inicio_ciclo 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+Eatual.preparacao 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+Eatual.medir_nivel 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+Eatual.analisa_medida 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+Eatual.medida_nao_critica 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+Eatual.medida_critica_baixa 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+Eatual.medida_critica_alta 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+Eatual.medida_critica_muito_alta 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+Eatual.abre_valvula 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+Eatual.fecha_valvula 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.espera_1s 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.envia_caracter 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.muda_caracter 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.fim_ciclo 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_uc:U2_UC|Eatual
+Name Eatual.transmissao Eatual.espera Eatual.preparacao Eatual.final_tx Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 
+Eatual.preparacao 0 0 1 0 1 
+Eatual.espera 0 1 0 0 1 
+Eatual.transmissao 1 0 0 0 1 
+Eatual.final_tx 0 0 0 1 1 
+
+State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC|Eatual
+Name Eatual.conta Eatual.espera_tick Eatual.espera_pulso Eatual.inicial Eatual.fim 
+Eatual.inicial 0 0 0 0 0 
+Eatual.espera_pulso 0 0 1 1 0 
+Eatual.espera_tick 0 1 0 1 0 
+Eatual.conta 1 0 0 1 0 
+Eatual.fim 0 0 0 1 1 
+
+State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_estado
+Name reg_estado.parado reg_estado.final_pulso reg_estado.contagem 
+reg_estado.parado 0 0 0 
+reg_estado.contagem 1 0 1 
+reg_estado.final_pulso 1 1 0 
+
+State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_uc:U1|Eatual
+Name Eatual.final_medida Eatual.armazenamento Eatual.medida Eatual.espera_echo Eatual.envia_trigger Eatual.preparacao Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 0 
+Eatual.preparacao 0 0 0 0 0 1 1 
+Eatual.envia_trigger 0 0 0 0 1 0 1 
+Eatual.espera_echo 0 0 0 1 0 0 1 
+Eatual.medida 0 0 1 0 0 0 1 
+Eatual.armazenamento 0 1 0 0 0 0 1 
+Eatual.final_medida 1 0 0 0 0 0 1 
+
+State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC|Eatual
+Name Eatual.conta Eatual.espera_tick Eatual.espera_pulso Eatual.inicial Eatual.fim 
+Eatual.inicial 0 0 0 0 0 
+Eatual.espera_pulso 0 0 1 1 0 
+Eatual.espera_tick 0 1 0 1 0 
+Eatual.conta 1 0 0 1 0 
+Eatual.fim 0 0 0 1 1 
+
+State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_estado
+Name reg_estado.parado reg_estado.final_pulso reg_estado.contagem 
+reg_estado.parado 0 0 0 
+reg_estado.contagem 1 0 1 
+reg_estado.final_pulso 1 1 0 
+
+State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_uc:U1|Eatual
+Name Eatual.final_medida Eatual.armazenamento Eatual.medida Eatual.espera_echo Eatual.envia_trigger Eatual.preparacao Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 0 
+Eatual.preparacao 0 0 0 0 0 1 1 
+Eatual.envia_trigger 0 0 0 0 1 0 1 
+Eatual.espera_echo 0 0 0 1 0 0 1 
+Eatual.medida 0 0 1 0 0 0 1 
+Eatual.armazenamento 0 1 0 0 0 0 1 
+Eatual.final_medida 1 0 0 0 0 0 1 
+
+State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC|Eatual
+Name Eatual.conta Eatual.espera_tick Eatual.espera_pulso Eatual.inicial Eatual.fim 
+Eatual.inicial 0 0 0 0 0 
+Eatual.espera_pulso 0 0 1 1 0 
+Eatual.espera_tick 0 1 0 1 0 
+Eatual.conta 1 0 0 1 0 
+Eatual.fim 0 0 0 1 1 
+
+State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_estado
+Name reg_estado.parado reg_estado.final_pulso reg_estado.contagem 
+reg_estado.parado 0 0 0 
+reg_estado.contagem 1 0 1 
+reg_estado.final_pulso 1 1 0 
+
+State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1|Eatual
+Name Eatual.final_medida Eatual.armazenamento Eatual.medida Eatual.espera_echo Eatual.envia_trigger Eatual.preparacao Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 0 
+Eatual.preparacao 0 0 0 0 0 1 1 
+Eatual.envia_trigger 0 0 0 0 1 0 1 
+Eatual.espera_echo 0 0 0 1 0 0 1 
+Eatual.medida 0 0 1 0 0 0 1 
+Eatual.armazenamento 0 1 0 0 0 0 1 
+Eatual.final_medida 1 0 0 0 0 0 1 
