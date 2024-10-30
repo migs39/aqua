@@ -227,42 +227,60 @@ void keyPressed(){
           e.printStackTrace();
       }
       break;
-  }
+    }
 
-  case 'w': {
-    mockDistance++;
-    try {
-        sensorReading = (String.format("%03d", mockDistance) + "#");
-        if(sensorReading != null) sensorReading = trim(sensorReading);
-        distance = sensorReading.substring(0,sensorReading.length()-1);  
-        // converte string para inteiro
-        iDistance = int(distance);
-        percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
-        level = round(100 * (1. - percentage));
-        waterLevel.setText("" + level).draw();
+    case 'w': {
+      if (mockDistance > fullDistance) mockDistance--;
+      try {
+          sensorReading = (String.format("%03d", mockDistance) + "#");
+          if(sensorReading != null) sensorReading = trim(sensorReading);
+          distance = sensorReading.substring(0,sensorReading.length()-1);  
+          // converte string para inteiro
+          iDistance = int(distance);
+          percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
+          level = round(100 * (1. - percentage));
+          waterLevel.setText("" + level).draw();
+      }
+      catch(RuntimeException e) {
+          e.printStackTrace();
+      }
+      break;
     }
-    catch(RuntimeException e) {
-        e.printStackTrace();
-    }
-    break;    
-  }
 
-  case 'e': {
-    mockDistance--;
-    try {
-        sensorReading = (String.format("%03d", mockDistance) + "#");
-        if(sensorReading != null) sensorReading = trim(sensorReading);
-        distance = sensorReading.substring(0,sensorReading.length()-1);  
-        // converte string para inteiro
-        iDistance = int(distance);
-        percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
-        level = round(100 * (1. - percentage));
-        waterLevel.setText("" + level).draw();
+    case 'e': {
+      if (mockDistance < emptyDistance) mockDistance++;
+      try {
+          sensorReading = (String.format("%03d", mockDistance) + "#");
+          if(sensorReading != null) sensorReading = trim(sensorReading);
+          distance = sensorReading.substring(0,sensorReading.length()-1);  
+          // converte string para inteiro
+          iDistance = int(distance);
+          percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
+          level = round(100 * (1. - percentage));
+          waterLevel.setText("" + level).draw();
+      }
+      catch(RuntimeException e) {
+          e.printStackTrace();
+      }
+      break;    
     }
-    catch(RuntimeException e) {
-        e.printStackTrace();
+
+    case 'r': {
+      mockDistance = int(random(fullDistance, emptyDistance));
+      try {
+          sensorReading = (String.format("%03d", mockDistance) + "#");
+          if(sensorReading != null) sensorReading = trim(sensorReading);
+          distance = sensorReading.substring(0,sensorReading.length()-1);  
+          // converte string para inteiro
+          iDistance = int(distance);
+          percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
+          level = round(100 * (1. - percentage));
+          waterLevel.setText("" + level).draw();
+      }
+      catch(RuntimeException e) {
+          e.printStackTrace();
+      }
+      break;
     }
-    break;
-  }
   }
 }
