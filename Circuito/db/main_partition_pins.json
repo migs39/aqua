@@ -16,11 +16,31 @@
 					"strict" : false
 				},
 				{
+					"name" : "buzzer_alta",
+					"strict" : false
+				},
+				{
 					"name" : "buzzer_baixa",
 					"strict" : false
 				},
 				{
+					"name" : "abre_valvula",
+					"strict" : false
+				},
+				{
 					"name" : "saida_serial",
+					"strict" : false
+				},
+				{
+					"name" : "hex0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex0[2]",
 					"strict" : false
 				},
 				{
@@ -36,7 +56,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "hex0[6]",
+					"strict" : false
+				},
+				{
 					"name" : "hex1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1[2]",
 					"strict" : false
 				},
 				{
@@ -49,6 +81,38 @@
 				},
 				{
 					"name" : "hex1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[6]",
 					"strict" : false
 				},
 				{

@@ -8,7 +8,7 @@ Serial myPort; // define objeto da porta serial
 //  ============ CONFIGURACAO SERIAL =================
 //    ajustar porta serial de sua montagem fisica
 
-    String   porta = "COM6";  // <== acertar valor ***
+    String   porta = "COM19";  // <== acertar valor ***
     int   baudrate = 115200;  // 115200;
     char    parity = 'O';     // impar
     int   databits = 7;       // 7 bits de dados
@@ -27,10 +27,11 @@ int manual = 0;
 int open = 0;
 int level = 50;
 String sensorReading = "";
-String distance = "000"
+String distance = "000";
 int iDistance = 0;
-int emptyDistance = 100;
+int emptyDistance = 30;
 int fullDistance = 0;
+float percentage = .5;
 
 Textlabel lowLabel;
 Textlabel highLabel;
@@ -137,7 +138,7 @@ void setup() {
     .setPosition(200, 222)
     .setSize(48, 36)
     .setColor(0xff0055ff)
-    .setFont(createFont("Georgia", 64))
+    .setFont(createFont("Georgia", 64));
 }
 
 void serialEvent (Serial myPort) { 
@@ -150,8 +151,9 @@ void serialEvent (Serial myPort) {
    
         // converte string para inteiro
         iDistance = int(distance);
-        level = 100 * (1 - (iDistance - fullDistance)/(emptyDistance));
-        waterLevel.setLabel("" + level);
+        percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
+        level = round(100 * (1. - percentage));
+        waterLevel.setText("" + level).draw();
     }
     catch(RuntimeException e) {
         e.printStackTrace();

@@ -3,7 +3,7 @@ module flip_flop(
     input set,
     input reset,
     output signal
-);
+)
     reg out;
     always@(posedge clock or posedge reset)begin
         if (reset) begin
@@ -13,5 +13,5 @@ module flip_flop(
         end
     end
 
-    assign signal = out;
+    assign signal <= out;
 endmodule

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Wed Oct 23 11:49:40 2024
+Wed Oct 30 10:18:00 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -25,45 +25,45 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  17. State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_estado
  18. State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1|Eatual
  19. Registers Removed During Synthesis
- 20. Removed Registers Triggering Further Register Optimizations
- 21. General Register Statistics
- 22. Inverted Register Statistics
- 23. Multiplexer Restructuring Statistics (Restructuring Performed)
- 24. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD
- 25. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador
- 26. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1
- 27. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|gerador_pulso:U1
- 28. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout
- 29. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2
- 30. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD
- 31. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1
- 32. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC
- 33. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|registrador_n:U3
- 34. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_uc:U1
- 35. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|gerador_pulso:U1
- 36. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout
- 37. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2
- 38. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD
- 39. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1
- 40. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC
- 41. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|registrador_n:U3
- 42. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_uc:U1
- 43. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|gerador_pulso:U1
- 44. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout
- 45. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2
- 46. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD
- 47. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1
- 48. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC
- 49. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|registrador_n:U3
- 50. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s
- 51. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_2s
- 52. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_caracter
- 53. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|mux_4x1_n:saida_asc
- 54. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|deslocador_n:U1
- 55. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|contador_m:U2
- 56. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_uc:U2_UC
- 57. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|contador_m:U3_TICK
- 58. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_uc:UC
+ 20. General Register Statistics
+ 21. Inverted Register Statistics
+ 22. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 23. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD
+ 24. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador
+ 25. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1
+ 26. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|gerador_pulso:U1
+ 27. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout
+ 28. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2
+ 29. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD
+ 30. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1
+ 31. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC
+ 32. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|registrador_n:U3
+ 33. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_uc:U1
+ 34. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|gerador_pulso:U1
+ 35. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout
+ 36. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2
+ 37. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD
+ 38. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1
+ 39. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC
+ 40. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|registrador_n:U3
+ 41. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_uc:U1
+ 42. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|gerador_pulso:U1
+ 43. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout
+ 44. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2
+ 45. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD
+ 46. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1
+ 47. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC
+ 48. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|registrador_n:U3
+ 49. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s
+ 50. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_2s
+ 51. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_caracter
+ 52. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|mux_4x1_n:saida_asc
+ 53. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|deslocador_n:U1
+ 54. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|contador_m:U2
+ 55. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_uc:U2_UC
+ 56. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|contador_m:U3_TICK
+ 57. Parameter Settings for User Entity Instance: circuito_projeto:main|circuito_projeto_uc:UC
+ 58. Parameter Settings for Inferred Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|lpm_divide:Div0
  59. Port Connectivity Checks: "circuito_projeto:main|circuito_projeto_uc:UC"
  60. Port Connectivity Checks: "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|contador_m:U3_TICK"
  61. Port Connectivity Checks: "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|contador_m:U2"
@@ -108,13 +108,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 23 11:49:40 2024       ;
+; Analysis & Synthesis Status     ; Successful - Wed Oct 30 10:18:00 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; main                                        ;
 ; Top-level Entity Name           ; main                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 430                                         ;
+; Total registers                 ; 476                                         ;
 ; Total pins                      ; 52                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -234,36 +234,43 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                     ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
-; x3_interface.v                   ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/x3_interface.v          ;         ;
-; tx_serial_uc.v                   ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/tx_serial_uc.v          ;         ;
-; tx_serial_7O1_fd.v               ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/tx_serial_7O1_fd.v      ;         ;
-; tx_serial_7O1.v                  ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/tx_serial_7O1.v         ;         ;
-; registrador_n.v                  ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/registrador_n.v         ;         ;
-; mux_4x1_n.v                      ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/mux_4x1_n.v             ;         ;
-; main.v                           ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v                  ;         ;
-; interface_hcsr04_uc.v            ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/interface_hcsr04_uc.v   ;         ;
-; interface_hcsr04_fd.v            ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/interface_hcsr04_fd.v   ;         ;
-; interface_hcsr04.v               ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/interface_hcsr04.v      ;         ;
-; hexa7seg.v                       ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/hexa7seg.v              ;         ;
-; gerador_pulso.v                  ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/gerador_pulso.v         ;         ;
-; edge_detector.v                  ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/edge_detector.v         ;         ;
-; deslocador_n.v                   ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/deslocador_n.v          ;         ;
-; contador_m.v                     ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_m.v            ;         ;
-; contador_cm_uc.v                 ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_cm_uc.v        ;         ;
-; contador_cm_fd.v                 ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_cm_fd.v        ;         ;
-; contador_cm.v                    ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_cm.v           ;         ;
-; contador_bcd_3digitos.v          ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_bcd_3digitos.v ;         ;
-; classificador_medida.v           ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/classificador_medida.v  ;         ;
-; circuito_projeto_uc.v            ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto_uc.v   ;         ;
-; circuito_projeto_fd.v            ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto_fd.v   ;         ;
-; circuito_projeto.v               ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto.v      ;         ;
-; buzzer.v                         ; yes             ; User Verilog HDL File  ; C:/Projetos/T4A6-LabDig2/ProjetoSemana01/buzzer.v                ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; x3_interface.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/x3_interface.v                     ;         ;
+; tx_serial_uc.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_uc.v                     ;         ;
+; tx_serial_7O1_fd.v               ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_7O1_fd.v                 ;         ;
+; tx_serial_7O1.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_7O1.v                    ;         ;
+; registrador_n.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/registrador_n.v                    ;         ;
+; mux_4x1_n.v                      ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/mux_4x1_n.v                        ;         ;
+; main.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/main.v                             ;         ;
+; interface_hcsr04_uc.v            ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_uc.v              ;         ;
+; interface_hcsr04_fd.v            ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_fd.v              ;         ;
+; interface_hcsr04.v               ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04.v                 ;         ;
+; hexa7seg.v                       ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/hexa7seg.v                         ;         ;
+; gerador_pulso.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/gerador_pulso.v                    ;         ;
+; edge_detector.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/edge_detector.v                    ;         ;
+; deslocador_n.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/deslocador_n.v                     ;         ;
+; contador_m.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/contador_m.v                       ;         ;
+; contador_cm_uc.v                 ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/contador_cm_uc.v                   ;         ;
+; contador_cm_fd.v                 ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/contador_cm_fd.v                   ;         ;
+; contador_cm.v                    ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/contador_cm.v                      ;         ;
+; contador_bcd_3digitos.v          ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/contador_bcd_3digitos.v            ;         ;
+; classificador_medida.v           ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/classificador_medida.v             ;         ;
+; circuito_projeto_uc.v            ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_uc.v              ;         ;
+; circuito_projeto_fd.v            ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v              ;         ;
+; circuito_projeto.v               ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto.v                 ;         ;
+; buzzer.v                         ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/buzzer.v                           ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc      ;         ;
+; db/lpm_divide_gbm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Desktop/aqua/Circuito/db/lpm_divide_gbm.tdf              ;         ;
+; db/sign_div_unsign_mlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Desktop/aqua/Circuito/db/sign_div_unsign_mlh.tdf         ;         ;
+; db/alt_u_div_ive.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Desktop/aqua/Circuito/db/alt_u_div_ive.tdf               ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -271,86 +278,96 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 359         ;
+; Estimate of Logic utilization (ALMs needed) ; 441         ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 649         ;
-;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 63          ;
-;     -- 5 input functions                    ; 107         ;
-;     -- 4 input functions                    ; 151         ;
-;     -- <=3 input functions                  ; 328         ;
+; Combinational ALUT usage for logic          ; 821         ;
+;     -- 7 input functions                    ; 1           ;
+;     -- 6 input functions                    ; 53          ;
+;     -- 5 input functions                    ; 119         ;
+;     -- 4 input functions                    ; 188         ;
+;     -- <=3 input functions                  ; 460         ;
 ;                                             ;             ;
-; Dedicated logic registers                   ; 430         ;
+; Dedicated logic registers                   ; 476         ;
 ;                                             ;             ;
 ; I/O pins                                    ; 52          ;
 ;                                             ;             ;
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 430         ;
-; Total fan-out                               ; 3754        ;
-; Average fan-out                             ; 3.17        ;
+; Maximum fan-out                             ; 476         ;
+; Total fan-out                               ; 4402        ;
+; Average fan-out                             ; 3.14        ;
 +---------------------------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                     ;
-+----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
-; Compilation Hierarchy Node                         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                ; Entity Name           ; Library Name ;
-+----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |main                                              ; 649 (0)             ; 430 (0)                   ; 0                 ; 0          ; 52   ; 0            ; |main                                                                                                                                                                              ; circuito_projeto      ; work         ;
-;    |circuito_projeto:main|                         ; 635 (0)             ; 430 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main                                                                                                                                                        ; circuito_projeto      ; work         ;
-;       |circuito_projeto_fd:FD|                     ; 619 (0)             ; 419 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD                                                                                                                                 ; circuito_projeto_fd   ; work         ;
-;          |buzzer:b2|                               ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|buzzer:b2                                                                                                                       ; buzzer                ; work         ;
-;          |classificador_medida:classificador|      ; 86 (86)             ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador                                                                                              ; classificador_medida  ; work         ;
-;          |contador_m:contador_2s|                  ; 35 (35)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_2s                                                                                                          ; contador_m            ; work         ;
-;          |contador_m:contador_caracter|            ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_caracter                                                                                                    ; contador_m            ; work         ;
-;          |edge_detector:pulsoMensurar|             ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|edge_detector:pulsoMensurar                                                                                                     ; edge_detector         ; work         ;
-;          |tx_serial_7O1:envia_asc|                 ; 33 (0)              ; 30 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc                                                                                                         ; tx_serial_7O1         ; work         ;
-;             |contador_m:U3_TICK|                   ; 12 (12)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|contador_m:U3_TICK                                                                                      ; contador_m            ; work         ;
-;             |edge_detector:U4_ED|                  ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|edge_detector:U4_ED                                                                                     ; edge_detector         ; work         ;
-;             |tx_serial_7O1_fd:U1_FD|               ; 16 (0)              ; 14 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD                                                                                  ; tx_serial_7O1_fd      ; work         ;
-;                |contador_m:U2|                     ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|contador_m:U2                                                                    ; contador_m            ; work         ;
-;                |deslocador_n:U1|                   ; 11 (11)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|deslocador_n:U1                                                                  ; deslocador_n          ; work         ;
-;             |tx_serial_uc:U2_UC|                   ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_uc:U2_UC                                                                                      ; tx_serial_uc          ; work         ;
-;          |x3_interface:sensores|                   ; 461 (1)             ; 328 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores                                                                                                           ; x3_interface          ; work         ;
-;             |interface_hcsr04:sensor1|             ; 154 (0)             ; 110 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1                                                                                  ; interface_hcsr04      ; work         ;
-;                |interface_hcsr04_fd:U2|            ; 148 (0)             ; 103 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2                                                           ; interface_hcsr04_fd   ; work         ;
-;                   |contador_cm:U2|                 ; 39 (0)              ; 29 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2                                            ; contador_cm           ; work         ;
-;                      |contador_cm_fd:FD|           ; 34 (0)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD                          ; contador_cm_fd        ; work         ;
-;                         |contador_bcd_3digitos:U2| ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2 ; contador_bcd_3digitos ; work         ;
-;                         |contador_m:U1|            ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1            ; contador_m            ; work         ;
-;                      |contador_cm_uc:UC|           ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC                          ; contador_cm_uc        ; work         ;
-;                   |contador_m:contador_2s_timeout| ; 34 (34)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout                            ; contador_m            ; work         ;
-;                   |gerador_pulso:U1|               ; 75 (75)             ; 35 (35)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|gerador_pulso:U1                                          ; gerador_pulso         ; work         ;
-;                   |registrador_n:U3|               ; 0 (0)               ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|registrador_n:U3                                          ; registrador_n         ; work         ;
-;                |interface_hcsr04_uc:U1|            ; 6 (6)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1                                                           ; interface_hcsr04_uc   ; work         ;
-;             |interface_hcsr04:sensor2|             ; 153 (0)             ; 109 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2                                                                                  ; interface_hcsr04      ; work         ;
-;                |interface_hcsr04_fd:U2|            ; 149 (0)             ; 103 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2                                                           ; interface_hcsr04_fd   ; work         ;
-;                   |contador_cm:U2|                 ; 39 (0)              ; 29 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2                                            ; contador_cm           ; work         ;
-;                      |contador_cm_fd:FD|           ; 34 (0)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD                          ; contador_cm_fd        ; work         ;
-;                         |contador_bcd_3digitos:U2| ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2 ; contador_bcd_3digitos ; work         ;
-;                         |contador_m:U1|            ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1            ; contador_m            ; work         ;
-;                      |contador_cm_uc:UC|           ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC                          ; contador_cm_uc        ; work         ;
-;                   |contador_m:contador_2s_timeout| ; 35 (35)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout                            ; contador_m            ; work         ;
-;                   |gerador_pulso:U1|               ; 75 (75)             ; 35 (35)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|gerador_pulso:U1                                          ; gerador_pulso         ; work         ;
-;                   |registrador_n:U3|               ; 0 (0)               ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|registrador_n:U3                                          ; registrador_n         ; work         ;
-;                |interface_hcsr04_uc:U1|            ; 4 (4)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_uc:U1                                                           ; interface_hcsr04_uc   ; work         ;
-;             |interface_hcsr04:sensor3|             ; 153 (0)             ; 109 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3                                                                                  ; interface_hcsr04      ; work         ;
-;                |interface_hcsr04_fd:U2|            ; 149 (0)             ; 103 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2                                                           ; interface_hcsr04_fd   ; work         ;
-;                   |contador_cm:U2|                 ; 39 (0)              ; 29 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2                                            ; contador_cm           ; work         ;
-;                      |contador_cm_fd:FD|           ; 34 (0)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD                          ; contador_cm_fd        ; work         ;
-;                         |contador_bcd_3digitos:U2| ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2 ; contador_bcd_3digitos ; work         ;
-;                         |contador_m:U1|            ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1            ; contador_m            ; work         ;
-;                      |contador_cm_uc:UC|           ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC                          ; contador_cm_uc        ; work         ;
-;                   |contador_m:contador_2s_timeout| ; 35 (35)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout                            ; contador_m            ; work         ;
-;                   |gerador_pulso:U1|               ; 75 (75)             ; 35 (35)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|gerador_pulso:U1                                          ; gerador_pulso         ; work         ;
-;                   |registrador_n:U3|               ; 0 (0)               ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|registrador_n:U3                                          ; registrador_n         ; work         ;
-;                |interface_hcsr04_uc:U1|            ; 4 (4)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_uc:U1                                                           ; interface_hcsr04_uc   ; work         ;
-;       |circuito_projeto_uc:UC|                     ; 16 (16)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_uc:UC                                                                                                                                 ; circuito_projeto_uc   ; work         ;
-;    |hexa7seg:H4|                                   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|hexa7seg:H4                                                                                                                                                                  ; hexa7seg              ; work         ;
-;    |hexa7seg:H5|                                   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|hexa7seg:H5                                                                                                                                                                  ; hexa7seg              ; work         ;
-+----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                        ;
++----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node                         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                   ; Entity Name           ; Library Name ;
++----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; |main                                              ; 821 (0)             ; 476 (0)                   ; 0                 ; 0          ; 52   ; 0            ; |main                                                                                                                                                                                 ; circuito_projeto      ; work         ;
+;    |circuito_projeto:main|                         ; 786 (0)             ; 476 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main                                                                                                                                                           ; circuito_projeto      ; work         ;
+;       |circuito_projeto_fd:FD|                     ; 762 (0)             ; 461 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD                                                                                                                                    ; circuito_projeto_fd   ; work         ;
+;          |buzzer:b1|                               ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|buzzer:b1                                                                                                                          ; buzzer                ; work         ;
+;          |buzzer:b2|                               ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|buzzer:b2                                                                                                                          ; buzzer                ; work         ;
+;          |classificador_medida:classificador|      ; 185 (112)           ; 43 (43)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador                                                                                                 ; classificador_medida  ; work         ;
+;             |lpm_divide:Div0|                      ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|lpm_divide:Div0                                                                                 ; lpm_divide            ; work         ;
+;                |lpm_divide_gbm:auto_generated|     ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|lpm_divide:Div0|lpm_divide_gbm:auto_generated                                                   ; lpm_divide_gbm        ; work         ;
+;                   |sign_div_unsign_mlh:divider|    ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|lpm_divide:Div0|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider                       ; sign_div_unsign_mlh   ; work         ;
+;                      |alt_u_div_ive:divider|       ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|lpm_divide:Div0|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_ive:divider ; alt_u_div_ive         ; work         ;
+;          |contador_m:contador_1s|                  ; 35 (35)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s                                                                                                             ; contador_m            ; work         ;
+;          |contador_m:contador_2s|                  ; 35 (35)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_2s                                                                                                             ; contador_m            ; work         ;
+;          |contador_m:contador_caracter|            ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_caracter                                                                                                       ; contador_m            ; work         ;
+;          |edge_detector:pulsoMensurar|             ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|edge_detector:pulsoMensurar                                                                                                        ; edge_detector         ; work         ;
+;          |mux_4x1_n:saida_asc|                     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|mux_4x1_n:saida_asc                                                                                                                ; mux_4x1_n             ; work         ;
+;          |tx_serial_7O1:envia_asc|                 ; 34 (0)              ; 30 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc                                                                                                            ; tx_serial_7O1         ; work         ;
+;             |contador_m:U3_TICK|                   ; 12 (12)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|contador_m:U3_TICK                                                                                         ; contador_m            ; work         ;
+;             |edge_detector:U4_ED|                  ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|edge_detector:U4_ED                                                                                        ; edge_detector         ; work         ;
+;             |tx_serial_7O1_fd:U1_FD|               ; 17 (1)              ; 14 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD                                                                                     ; tx_serial_7O1_fd      ; work         ;
+;                |contador_m:U2|                     ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|contador_m:U2                                                                       ; contador_m            ; work         ;
+;                |deslocador_n:U1|                   ; 11 (11)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|deslocador_n:U1                                                                     ; deslocador_n          ; work         ;
+;             |tx_serial_uc:U2_UC|                   ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_uc:U2_UC                                                                                         ; tx_serial_uc          ; work         ;
+;          |x3_interface:sensores|                   ; 464 (1)             ; 328 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores                                                                                                              ; x3_interface          ; work         ;
+;             |interface_hcsr04:sensor1|             ; 155 (0)             ; 110 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1                                                                                     ; interface_hcsr04      ; work         ;
+;                |interface_hcsr04_fd:U2|            ; 149 (0)             ; 103 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2                                                              ; interface_hcsr04_fd   ; work         ;
+;                   |contador_cm:U2|                 ; 39 (0)              ; 29 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2                                               ; contador_cm           ; work         ;
+;                      |contador_cm_fd:FD|           ; 34 (0)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD                             ; contador_cm_fd        ; work         ;
+;                         |contador_bcd_3digitos:U2| ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2    ; contador_bcd_3digitos ; work         ;
+;                         |contador_m:U1|            ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1               ; contador_m            ; work         ;
+;                      |contador_cm_uc:UC|           ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC                             ; contador_cm_uc        ; work         ;
+;                   |contador_m:contador_2s_timeout| ; 34 (34)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout                               ; contador_m            ; work         ;
+;                   |gerador_pulso:U1|               ; 76 (76)             ; 35 (35)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|gerador_pulso:U1                                             ; gerador_pulso         ; work         ;
+;                   |registrador_n:U3|               ; 0 (0)               ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|registrador_n:U3                                             ; registrador_n         ; work         ;
+;                |interface_hcsr04_uc:U1|            ; 6 (6)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1                                                              ; interface_hcsr04_uc   ; work         ;
+;             |interface_hcsr04:sensor2|             ; 154 (0)             ; 109 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2                                                                                     ; interface_hcsr04      ; work         ;
+;                |interface_hcsr04_fd:U2|            ; 150 (0)             ; 103 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2                                                              ; interface_hcsr04_fd   ; work         ;
+;                   |contador_cm:U2|                 ; 39 (0)              ; 29 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2                                               ; contador_cm           ; work         ;
+;                      |contador_cm_fd:FD|           ; 34 (0)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD                             ; contador_cm_fd        ; work         ;
+;                         |contador_bcd_3digitos:U2| ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2    ; contador_bcd_3digitos ; work         ;
+;                         |contador_m:U1|            ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1               ; contador_m            ; work         ;
+;                      |contador_cm_uc:UC|           ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC                             ; contador_cm_uc        ; work         ;
+;                   |contador_m:contador_2s_timeout| ; 35 (35)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout                               ; contador_m            ; work         ;
+;                   |gerador_pulso:U1|               ; 76 (76)             ; 35 (35)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|gerador_pulso:U1                                             ; gerador_pulso         ; work         ;
+;                   |registrador_n:U3|               ; 0 (0)               ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|registrador_n:U3                                             ; registrador_n         ; work         ;
+;                |interface_hcsr04_uc:U1|            ; 4 (4)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_uc:U1                                                              ; interface_hcsr04_uc   ; work         ;
+;             |interface_hcsr04:sensor3|             ; 154 (0)             ; 109 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3                                                                                     ; interface_hcsr04      ; work         ;
+;                |interface_hcsr04_fd:U2|            ; 150 (0)             ; 103 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2                                                              ; interface_hcsr04_fd   ; work         ;
+;                   |contador_cm:U2|                 ; 39 (0)              ; 29 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2                                               ; contador_cm           ; work         ;
+;                      |contador_cm_fd:FD|           ; 34 (0)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD                             ; contador_cm_fd        ; work         ;
+;                         |contador_bcd_3digitos:U2| ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2    ; contador_bcd_3digitos ; work         ;
+;                         |contador_m:U1|            ; 17 (17)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1               ; contador_m            ; work         ;
+;                      |contador_cm_uc:UC|           ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC                             ; contador_cm_uc        ; work         ;
+;                   |contador_m:contador_2s_timeout| ; 35 (35)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout                               ; contador_m            ; work         ;
+;                   |gerador_pulso:U1|               ; 76 (76)             ; 35 (35)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|gerador_pulso:U1                                             ; gerador_pulso         ; work         ;
+;                   |registrador_n:U3|               ; 0 (0)               ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|registrador_n:U3                                             ; registrador_n         ; work         ;
+;                |interface_hcsr04_uc:U1|            ; 4 (4)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_uc:U1                                                              ; interface_hcsr04_uc   ; work         ;
+;       |circuito_projeto_uc:UC|                     ; 24 (24)             ; 15 (15)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_uc:UC                                                                                                                                    ; circuito_projeto_uc   ; work         ;
+;    |hexa7seg:H0medida|                             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|hexa7seg:H0medida                                                                                                                                                               ; hexa7seg              ; work         ;
+;    |hexa7seg:H1medida|                             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|hexa7seg:H1medida                                                                                                                                                               ; hexa7seg              ; work         ;
+;    |hexa7seg:H2medida|                             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|hexa7seg:H2medida                                                                                                                                                               ; hexa7seg              ; work         ;
+;    |hexa7seg:H4|                                   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|hexa7seg:H4                                                                                                                                                                     ; hexa7seg              ; work         ;
+;    |hexa7seg:H5|                                   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|hexa7seg:H5                                                                                                                                                                     ; hexa7seg              ; work         ;
++----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -524,11 +541,7 @@ Encoding Type:  One-Hot
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Register name                                                                                                                                                ; Reason for Removal                                                                                                                            ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|media[3,5..11]                                                               ; Stuck at GND due to stuck port data_in                                                                                                        ;
-; circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|media[1,2,4]                                                                 ; Merged with circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|media[0]                                          ;
-; circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|medida_classificacao[1]                                                      ; Stuck at GND due to stuck port data_in                                                                                                        ;
 ; circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|deslocador_n:U1|IQ[10]                                           ; Stuck at VCC due to stuck port data_in                                                                                                        ;
-; circuito_projeto:main|circuito_projeto_uc:UC|Eatual.medida_critica_alta                                                                                      ; Lost fanout                                                                                                                                   ;
 ; circuito_projeto:main|circuito_projeto_uc:UC|Eatual~4                                                                                                        ; Lost fanout                                                                                                                                   ;
 ; circuito_projeto:main|circuito_projeto_uc:UC|Eatual~5                                                                                                        ; Lost fanout                                                                                                                                   ;
 ; circuito_projeto:main|circuito_projeto_uc:UC|Eatual~6                                                                                                        ; Lost fanout                                                                                                                                   ;
@@ -550,56 +563,11 @@ Encoding Type:  One-Hot
 ; circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1|Eatual~4                                  ; Lost fanout                                                                                                                                   ;
 ; circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1|Eatual~5                                  ; Lost fanout                                                                                                                                   ;
 ; circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1|Eatual~6                                  ; Lost fanout                                                                                                                                   ;
-; circuito_projeto:main|circuito_projeto_uc:UC|Eatual.medida_critica_muito_alta                                                                                ; Stuck at GND due to stuck port data_in                                                                                                        ;
 ; circuito_projeto:main|circuito_projeto_uc:UC|Eatual.fecha_valvula                                                                                            ; Stuck at GND due to stuck port data_in                                                                                                        ;
-; circuito_projeto:main|circuito_projeto_uc:UC|Eatual.abre_valvula                                                                                             ; Stuck at GND due to stuck port data_in                                                                                                        ;
 ; circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_uc:U1|Eatual.inicial                            ; Merged with circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1|Eatual.inicial ;
 ; circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_uc:U1|Eatual.inicial                            ; Merged with circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1|Eatual.inicial ;
-; circuito_projeto:main|circuito_projeto_fd:FD|buzzer:b1|estado_buzzer                                                                                         ; Stuck at GND due to stuck port data_in                                                                                                        ;
-; circuito_projeto:main|circuito_projeto_uc:UC|Eatual.espera_1s                                                                                                ; Stuck at GND due to stuck port data_in                                                                                                        ;
-; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[0..26]                                                                                 ; Lost fanout                                                                                                                                   ;
-; Total Number of Removed Registers = 69                                                                                                                       ;                                                                                                                                               ;
+; Total Number of Removed Registers = 25                                                                                                                       ;                                                                                                                                               ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                     ;
-+-------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------+
-; Register name                                                                             ; Reason for Removal        ; Registers Removed due to This Register                                                                  ;
-+-------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------+
-; circuito_projeto:main|circuito_projeto_uc:UC|Eatual.abre_valvula                          ; Stuck at GND              ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[15],                              ;
-;                                                                                           ; due to stuck port data_in ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[14],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[13],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[26],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[8],                               ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[7],                               ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[6],                               ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[5],                               ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[12],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[25],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[23],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[22],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[0],                               ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[19],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[1]                                ;
-; circuito_projeto:main|circuito_projeto_uc:UC|Eatual.fecha_valvula                         ; Stuck at GND              ; circuito_projeto:main|circuito_projeto_uc:UC|Eatual.espera_1s,                                          ;
-;                                                                                           ; due to stuck port data_in ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[18],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[17],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[16],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[11],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[10],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[9],                               ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[4],                               ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[3],                               ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[2],                               ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[24],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[21],                              ;
-;                                                                                           ;                           ; circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[20]                               ;
-; circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|media[11] ; Stuck at GND              ; circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|medida_classificacao[1] ;
-;                                                                                           ; due to stuck port data_in ;                                                                                                         ;
-; circuito_projeto:main|circuito_projeto_uc:UC|Eatual.medida_critica_muito_alta             ; Stuck at GND              ; circuito_projeto:main|circuito_projeto_fd:FD|buzzer:b1|estado_buzzer                                    ;
-;                                                                                           ; due to stuck port data_in ;                                                                                                         ;
-+-------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -607,12 +575,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 430   ;
-; Number of registers using Synchronous Clear  ; 153   ;
+; Total registers                              ; 476   ;
+; Number of registers using Synchronous Clear  ; 180   ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 209   ;
+; Number of registers using Asynchronous Clear ; 228   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 263   ;
+; Number of registers using Clock Enable       ; 303   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -642,31 +610,31 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 9 bits    ; 18 LEs        ; 0 LEs                ; 18 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|contador_m:U3_TICK|Q[1]                                                                                           ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|maior_medida[5]                                                                                        ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|menor_medida[6]                                                                                        ;
-; 4:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_2s|Q[0]                                                                                                               ;
-; 4:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[18]                                                                                                              ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|maior_medida[11]                                                                                       ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|menor_medida[0]                                                                                        ;
+; 4:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_2s|Q[24]                                                                                                              ;
+; 4:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s|Q[20]                                                                                                              ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_caracter|Q[1]                                                                                                         ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|contador_m:U2|Q[3]                                                                         ;
-; 4:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout|Q[14]                                ;
-; 4:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout|Q[23]                                ;
-; 4:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout|Q[22]                                ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1|Q[0]                 ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1|Q[1]                 ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1|Q[2]                 ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig2[3] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig0[0] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig1[3] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|contador_m:U2|Q[2]                                                                         ;
+; 4:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout|Q[15]                                ;
+; 4:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout|Q[2]                                 ;
+; 4:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout|Q[25]                                ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1|Q[4]                 ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1|Q[10]                ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1|Q[11]                ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig2[2] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig0[2] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig1[2] ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig2[2] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig0[3] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig1[1] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig2[3] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig0[0] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig1[3] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig2[0] ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig0[0] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig1[0] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig1[1] ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|deslocador_n:U1|IQ[0]                                                                      ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|deslocador_n:U1|IQ[4]                                                                      ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|circuito_projeto:main|circuito_projeto_uc:UC|Eprox.medida_nao_critica                                                                                                                  ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|circuito_projeto:main|circuito_projeto_fd:FD|mux_4x1_n:saida_asc|MUX_OUT[1]                                                                                                            ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|deslocador_n:U1|IQ[2]                                                                      ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |main|circuito_projeto:main|circuito_projeto_uc:UC|Eprox.medida_critica_muito_alta                                                                                                           ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |main|circuito_projeto:main|circuito_projeto_fd:FD|mux_4x1_n:saida_asc|MUX_OUT[0]                                                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1090,6 +1058,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|lpm_divide:Div0 ;
++------------------------+----------------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                                                                   ;
++------------------------+----------------+--------------------------------------------------------------------------------------------------------+
+; LPM_WIDTHN             ; 14             ; Untyped                                                                                                ;
+; LPM_WIDTHD             ; 2              ; Untyped                                                                                                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                                                                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                                                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                                                                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                                                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                                                                ;
+; CBXI_PARAMETER         ; lpm_divide_gbm ; Untyped                                                                                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                                                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                                                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                                                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                                                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                                                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                                                         ;
++------------------------+----------------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------+
 ; Port Connectivity Checks: "circuito_projeto:main|circuito_projeto_uc:UC" ;
 +----------------+-------+----------+--------------------------------------+
@@ -1148,23 +1139,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------+--------+----------+------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "circuito_projeto:main|circuito_projeto_fd:FD|mux_4x1_n:saida_asc"                                                                              ;
-+----------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                                                                                                                     ;
-+----------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
-; D3[1..0] ; Input ; Info     ; Stuck at VCC                                                                                                                                ;
-; D3[4..2] ; Input ; Info     ; Stuck at GND                                                                                                                                ;
-; D3[6]    ; Input ; Info     ; Stuck at GND                                                                                                                                ;
-; D3[5]    ; Input ; Info     ; Stuck at VCC                                                                                                                                ;
-; D2[5..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                ;
-; D2[6]    ; Input ; Info     ; Stuck at GND                                                                                                                                ;
-; D1[5..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                ;
-; D1[6]    ; Input ; Info     ; Stuck at GND                                                                                                                                ;
-; D0[5..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                ;
-; D0[6]    ; Input ; Info     ; Stuck at GND                                                                                                                                ;
-; SEL      ; Input ; Warning  ; Input port expression (2 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "SEL[2..2]" will be connected to GND. ;
-+----------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "circuito_projeto:main|circuito_projeto_fd:FD|mux_4x1_n:saida_asc" ;
++----------+-------+----------+----------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                        ;
++----------+-------+----------+----------------------------------------------------------------+
+; D3[1..0] ; Input ; Info     ; Stuck at VCC                                                   ;
+; D3[4..2] ; Input ; Info     ; Stuck at GND                                                   ;
+; D3[6]    ; Input ; Info     ; Stuck at GND                                                   ;
+; D3[5]    ; Input ; Info     ; Stuck at VCC                                                   ;
+; D2[5..4] ; Input ; Info     ; Stuck at VCC                                                   ;
+; D2[6]    ; Input ; Info     ; Stuck at GND                                                   ;
+; D1[5..4] ; Input ; Info     ; Stuck at VCC                                                   ;
+; D1[6]    ; Input ; Info     ; Stuck at GND                                                   ;
+; D0[5..4] ; Input ; Info     ; Stuck at VCC                                                   ;
+; D0[6]    ; Input ; Info     ; Stuck at GND                                                   ;
++----------+-------+----------+----------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------+
@@ -1263,30 +1253,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 430                         ;
-;     CLR               ; 156                         ;
+; arriav_ff             ; 476                         ;
+;     CLR               ; 162                         ;
 ;     ENA               ; 66                          ;
-;     ENA CLR           ; 53                          ;
-;     ENA SCLR          ; 144                         ;
+;     ENA CLR           ; 66                          ;
+;     ENA SCLR          ; 171                         ;
 ;     SCLR              ; 9                           ;
 ;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 655                         ;
-;     arith             ; 249                         ;
-;         1 data inputs ; 249                         ;
-;     normal            ; 394                         ;
+; arriav_lcell_comb     ; 829                         ;
+;     arith             ; 326                         ;
+;         0 data inputs ; 13                          ;
+;         1 data inputs ; 289                         ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 11                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 476                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 22                          ;
+;         2 data inputs ; 65                          ;
+;         3 data inputs ; 39                          ;
+;         4 data inputs ; 177                         ;
+;         5 data inputs ; 119                         ;
+;         6 data inputs ; 53                          ;
+;     shared            ; 26                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 8                           ;
-;         2 data inputs ; 40                          ;
-;         3 data inputs ; 23                          ;
-;         4 data inputs ; 151                         ;
-;         5 data inputs ; 107                         ;
-;         6 data inputs ; 63                          ;
-;     shared            ; 12                          ;
 ;         2 data inputs ; 12                          ;
+;         3 data inputs ; 12                          ;
 ; boundary_port         ; 52                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.12                        ;
+; Max LUT depth         ; 19.80                       ;
+; Average LUT depth     ; 4.84                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1295,7 +1293,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1305,119 +1303,119 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Oct 23 11:49:27 2024
+    Info: Processing started: Wed Oct 30 10:17:48 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aqua -c main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file x3_interface.v
-    Info (12023): Found entity 1: x3_interface File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/x3_interface.v Line: 1
+    Info (12023): Found entity 1: x3_interface File: C:/Users/Operador/Desktop/aqua/Circuito/x3_interface.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tx_serial_uc.v
-    Info (12023): Found entity 1: tx_serial_uc File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/tx_serial_uc.v Line: 16
+    Info (12023): Found entity 1: tx_serial_uc File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_uc.v Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file tx_serial_7o1_fd.v
-    Info (12023): Found entity 1: tx_serial_7O1_fd File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/tx_serial_7O1_fd.v Line: 5
+    Info (12023): Found entity 1: tx_serial_7O1_fd File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_7O1_fd.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file tx_serial_7o1.v
-    Info (12023): Found entity 1: tx_serial_7O1 File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/tx_serial_7O1.v Line: 5
+    Info (12023): Found entity 1: tx_serial_7O1 File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_7O1.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file registrador_n.v
-    Info (12023): Found entity 1: registrador_n File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/registrador_n.v Line: 17
+    Info (12023): Found entity 1: registrador_n File: C:/Users/Operador/Desktop/aqua/Circuito/registrador_n.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file mux_4x1_n.v
-    Info (12023): Found entity 1: mux_4x1_n File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/mux_4x1_n.v Line: 1
+    Info (12023): Found entity 1: mux_4x1_n File: C:/Users/Operador/Desktop/aqua/Circuito/mux_4x1_n.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main.v
-    Info (12023): Found entity 1: main File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 1
+    Info (12023): Found entity 1: main File: C:/Users/Operador/Desktop/aqua/Circuito/main.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file interface_hcsr04_uc.v
-    Info (12023): Found entity 1: interface_hcsr04_uc File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/interface_hcsr04_uc.v Line: 14
+    Info (12023): Found entity 1: interface_hcsr04_uc File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_uc.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file interface_hcsr04_fd.v
-    Info (12023): Found entity 1: interface_hcsr04_fd File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/interface_hcsr04_fd.v Line: 14
+    Info (12023): Found entity 1: interface_hcsr04_fd File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_fd.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file interface_hcsr04.v
-    Info (12023): Found entity 1: interface_hcsr04 File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/interface_hcsr04.v Line: 13
+    Info (12023): Found entity 1: interface_hcsr04 File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04.v Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file hexa7seg.v
-    Info (12023): Found entity 1: hexa7seg File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/hexa7seg.v Line: 22
+    Info (12023): Found entity 1: hexa7seg File: C:/Users/Operador/Desktop/aqua/Circuito/hexa7seg.v Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file gerador_pulso.v
-    Info (12023): Found entity 1: gerador_pulso File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/gerador_pulso.v Line: 14
+    Info (12023): Found entity 1: gerador_pulso File: C:/Users/Operador/Desktop/aqua/Circuito/gerador_pulso.v Line: 14
+Info (12021): Found 1 design units, including 1 entities, in source file flip_flop.v
+    Info (12023): Found entity 1: flip_flop File: C:/Users/Operador/Desktop/aqua/Circuito/flip_flop.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file edge_detector.v
-    Info (12023): Found entity 1: edge_detector File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/edge_detector.v Line: 19
+    Info (12023): Found entity 1: edge_detector File: C:/Users/Operador/Desktop/aqua/Circuito/edge_detector.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file deslocador_n.v
-    Info (12023): Found entity 1: deslocador_n File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/deslocador_n.v Line: 15
+    Info (12023): Found entity 1: deslocador_n File: C:/Users/Operador/Desktop/aqua/Circuito/deslocador_n.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file contador_m.v
-    Info (12023): Found entity 1: contador_m File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_m.v Line: 16
+    Info (12023): Found entity 1: contador_m File: C:/Users/Operador/Desktop/aqua/Circuito/contador_m.v Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file contador_cm_uc.v
-    Info (12023): Found entity 1: contador_cm_uc File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_cm_uc.v Line: 16
+    Info (12023): Found entity 1: contador_cm_uc File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm_uc.v Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file contador_cm_fd.v
-    Info (12023): Found entity 1: contador_cm_fd File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_cm_fd.v Line: 15
+    Info (12023): Found entity 1: contador_cm_fd File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm_fd.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file contador_cm.v
-    Info (12023): Found entity 1: contador_cm File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_cm.v Line: 15
+    Info (12023): Found entity 1: contador_cm File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file contador_bcd_3digitos.v
-    Info (12023): Found entity 1: contador_bcd_3digitos File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_bcd_3digitos.v Line: 14
+    Info (12023): Found entity 1: contador_bcd_3digitos File: C:/Users/Operador/Desktop/aqua/Circuito/contador_bcd_3digitos.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file classificador_medida.v
-    Info (12023): Found entity 1: classificador_medida File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/classificador_medida.v Line: 1
+    Info (12023): Found entity 1: classificador_medida File: C:/Users/Operador/Desktop/aqua/Circuito/classificador_medida.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file circuito_projeto_uc.v
-    Info (12023): Found entity 1: circuito_projeto_uc File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto_uc.v Line: 1
+    Info (12023): Found entity 1: circuito_projeto_uc File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_uc.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file circuito_projeto_fd.v
-    Info (12023): Found entity 1: circuito_projeto_fd File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto_fd.v Line: 1
+    Info (12023): Found entity 1: circuito_projeto_fd File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file circuito_projeto.v
-    Info (12023): Found entity 1: circuito_projeto File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto.v Line: 1
+    Info (12023): Found entity 1: circuito_projeto File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file buzzer.v
-    Info (12023): Found entity 1: buzzer File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/buzzer.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at circuito_projeto_fd.v(49): created implicit net for "reset" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto_fd.v Line: 49
+    Info (12023): Found entity 1: buzzer File: C:/Users/Operador/Desktop/aqua/Circuito/buzzer.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at circuito_projeto_fd.v(50): created implicit net for "reset" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 50
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Info (12128): Elaborating entity "circuito_projeto" for hierarchy "circuito_projeto:main" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 57
-Info (12128): Elaborating entity "circuito_projeto_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto.v Line: 72
-Info (12128): Elaborating entity "edge_detector" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|edge_detector:pulsoMensurar" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto_fd.v Line: 52
-Info (12128): Elaborating entity "classificador_medida" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto_fd.v Line: 64
-Info (12128): Elaborating entity "x3_interface" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto_fd.v Line: 81
-Info (12128): Elaborating entity "interface_hcsr04" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/x3_interface.v Line: 30
-Info (12128): Elaborating entity "interface_hcsr04_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/interface_hcsr04.v Line: 47
-Info (12128): Elaborating entity "interface_hcsr04_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/interface_hcsr04.v Line: 62
-Info (12128): Elaborating entity "gerador_pulso" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|gerador_pulso:U1" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/interface_hcsr04_fd.v Line: 41
-Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/interface_hcsr04_fd.v Line: 54
-Info (12128): Elaborating entity "contador_cm" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/interface_hcsr04_fd.v Line: 69
-Info (12128): Elaborating entity "contador_cm_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_cm.v Line: 52
-Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_cm_fd.v Line: 44
-Info (12128): Elaborating entity "contador_bcd_3digitos" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_cm_fd.v Line: 55
-Info (12128): Elaborating entity "contador_cm_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/contador_cm.v Line: 65
-Info (12128): Elaborating entity "registrador_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|registrador_n:U3" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/interface_hcsr04_fd.v Line: 80
-Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto_fd.v Line: 96
-Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_caracter" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto_fd.v Line: 128
-Info (12128): Elaborating entity "mux_4x1_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|mux_4x1_n:saida_asc" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto_fd.v Line: 140
-Info (12128): Elaborating entity "tx_serial_7O1" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto_fd.v Line: 154
-Info (12128): Elaborating entity "tx_serial_7O1_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/tx_serial_7O1.v Line: 46
-Info (12128): Elaborating entity "deslocador_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|deslocador_n:U1" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/tx_serial_7O1_fd.v Line: 38
-Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|contador_m:U2" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/tx_serial_7O1_fd.v Line: 52
-Info (12128): Elaborating entity "tx_serial_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_uc:U2_UC" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/tx_serial_7O1.v Line: 62
-Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|contador_m:U3_TICK" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/tx_serial_7O1.v Line: 78
-Info (12128): Elaborating entity "hexa7seg" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|hexa7seg:HEX0" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/tx_serial_7O1.v Line: 103
-Info (12128): Elaborating entity "buzzer" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|buzzer:b1" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto_fd.v Line: 166
-Info (12128): Elaborating entity "circuito_projeto_uc" for hierarchy "circuito_projeto:main|circuito_projeto_uc:UC" File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/circuito_projeto.v Line: 101
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "circuito_projeto" for hierarchy "circuito_projeto:main" File: C:/Users/Operador/Desktop/aqua/Circuito/main.v Line: 57
+Info (12128): Elaborating entity "circuito_projeto_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto.v Line: 74
+Info (12128): Elaborating entity "edge_detector" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|edge_detector:pulsoMensurar" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 53
+Info (12128): Elaborating entity "classificador_medida" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 66
+Warning (10230): Verilog HDL assignment warning at classificador_medida.v(36): truncated value with size 32 to match size of target (12) File: C:/Users/Operador/Desktop/aqua/Circuito/classificador_medida.v Line: 36
+Info (12128): Elaborating entity "x3_interface" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 83
+Info (12128): Elaborating entity "interface_hcsr04" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1" File: C:/Users/Operador/Desktop/aqua/Circuito/x3_interface.v Line: 30
+Info (12128): Elaborating entity "interface_hcsr04_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1" File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04.v Line: 47
+Info (12128): Elaborating entity "interface_hcsr04_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2" File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04.v Line: 62
+Info (12128): Elaborating entity "gerador_pulso" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|gerador_pulso:U1" File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_fd.v Line: 41
+Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout" File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_fd.v Line: 54
+Info (12128): Elaborating entity "contador_cm" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2" File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_fd.v Line: 69
+Info (12128): Elaborating entity "contador_cm_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD" File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm.v Line: 52
+Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1" File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm_fd.v Line: 44
+Info (12128): Elaborating entity "contador_bcd_3digitos" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2" File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm_fd.v Line: 55
+Info (12128): Elaborating entity "contador_cm_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC" File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm.v Line: 65
+Info (12128): Elaborating entity "registrador_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|registrador_n:U3" File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_fd.v Line: 80
+Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 98
+Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_caracter" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 130
+Info (12128): Elaborating entity "mux_4x1_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|mux_4x1_n:saida_asc" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 142
+Info (12128): Elaborating entity "tx_serial_7O1" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 156
+Info (12128): Elaborating entity "tx_serial_7O1_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD" File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_7O1.v Line: 46
+Info (12128): Elaborating entity "deslocador_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|deslocador_n:U1" File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_7O1_fd.v Line: 38
+Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_7O1_fd:U1_FD|contador_m:U2" File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_7O1_fd.v Line: 52
+Info (12128): Elaborating entity "tx_serial_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_uc:U2_UC" File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_7O1.v Line: 62
+Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|contador_m:U3_TICK" File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_7O1.v Line: 78
+Info (12128): Elaborating entity "hexa7seg" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|hexa7seg:HEX0" File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_7O1.v Line: 103
+Info (12128): Elaborating entity "buzzer" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|buzzer:b1" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 168
+Info (12128): Elaborating entity "circuito_projeto_uc" for hierarchy "circuito_projeto:main|circuito_projeto_uc:UC" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto.v Line: 104
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|Div0" File: C:/Users/Operador/Desktop/aqua/Circuito/classificador_medida.v Line: 36
+Info (12130): Elaborated megafunction instantiation "circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|lpm_divide:Div0" File: C:/Users/Operador/Desktop/aqua/Circuito/classificador_medida.v Line: 36
+Info (12133): Instantiated megafunction "circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|lpm_divide:Div0" with the following parameter: File: C:/Users/Operador/Desktop/aqua/Circuito/classificador_medida.v Line: 36
+    Info (12134): Parameter "LPM_WIDTHN" = "14"
+    Info (12134): Parameter "LPM_WIDTHD" = "2"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_gbm.tdf
+    Info (12023): Found entity 1: lpm_divide_gbm File: C:/Users/Operador/Desktop/aqua/Circuito/db/lpm_divide_gbm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_mlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_mlh File: C:/Users/Operador/Desktop/aqua/Circuito/db/sign_div_unsign_mlh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ive.tdf
+    Info (12023): Found entity 1: alt_u_div_ive File: C:/Users/Operador/Desktop/aqua/Circuito/db/alt_u_div_ive.tdf Line: 23
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "buzzer_alta" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 11
-    Warning (13410): Pin "abre_valvula" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 13
-    Warning (13410): Pin "fecha_valvula" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 14
-    Warning (13410): Pin "hex0[0]" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 16
-    Warning (13410): Pin "hex0[1]" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 16
-    Warning (13410): Pin "hex0[2]" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 16
-    Warning (13410): Pin "hex0[6]" is stuck at VCC File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 16
-    Warning (13410): Pin "hex1[1]" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 17
-    Warning (13410): Pin "hex1[2]" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 17
-    Warning (13410): Pin "hex1[6]" is stuck at VCC File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 17
-    Warning (13410): Pin "hex2[0]" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 18
-    Warning (13410): Pin "hex2[1]" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 18
-    Warning (13410): Pin "hex2[2]" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 18
-    Warning (13410): Pin "hex2[3]" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 18
-    Warning (13410): Pin "hex2[4]" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 18
-    Warning (13410): Pin "hex2[5]" is stuck at GND File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 18
-    Warning (13410): Pin "hex2[6]" is stuck at VCC File: C:/Projetos/T4A6-LabDig2/ProjetoSemana01/main.v Line: 18
+    Warning (13410): Pin "fecha_valvula" is stuck at GND File: C:/Users/Operador/Desktop/aqua/Circuito/main.v Line: 14
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 49 registers lost all their fanouts during netlist optimizations.
+Info (17049): 21 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 749 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 922 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 46 output pins
-    Info (21061): Implemented 697 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 4823 megabytes
-    Info: Processing ended: Wed Oct 23 11:49:40 2024
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:28
+    Info (21061): Implemented 870 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4831 megabytes
+    Info: Processing ended: Wed Oct 30 10:18:00 2024
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:27
 
 
