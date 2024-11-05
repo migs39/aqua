@@ -172,20 +172,18 @@ void setup() {
     .setValue(0)
     .setPosition(45, 408)
     .setSize(74, 44)
-    .setColorBackground(manual == 1 ?  color(0, 0, 150) : color(180, 180, 180))
-    .setColorForeground(manual == 1 ?  color(0, 0, 200) : color(180, 180, 180))
-    .setColorActive(manual == 1 ?  color(0, 0, 255) : color(180, 180, 180))
-    .setColorLabel(manual == 1 ?  color(255, 255, 255) : color(110, 110, 110));
+    .setColorBackground(manual == 1 ?  color(50, 50, 150) : color(100, 100, 100))
+    .setColorForeground(manual == 1 ?  color(50, 50, 200) : color(100, 100, 100))
+    .setColorActive(manual == 1 ?  color(50, 50, 255) : color(100, 100, 100));
 
   closeButton = cp5.addButton("close")
     .setFont(createFont("Georgia", 16))
     .setValue(0)
     .setPosition(121, 408)
     .setSize(74, 44)
-    .setColorBackground(manual == 1 ?  color(0, 0, 150) : color(180, 180, 180))
-    .setColorForeground(manual == 1 ?  color(0, 0, 200) : color(180, 180, 180))
-    .setColorActive(manual == 1 ?  color(0, 0, 255) : color(180, 180, 180))
-    .setColorLabel(manual == 1 ?  color(255, 255, 255) : color(110, 110, 110));
+    .setColorBackground(manual == 1 ?  color(50, 50, 150) : color(100, 100, 100))
+    .setColorForeground(manual == 1 ?  color(50, 50, 200) : color(100, 100, 100))
+    .setColorActive(manual == 1 ?  color(50, 50, 255) : color(100, 100, 100));
 
   waterLevel = cp5.addTextlabel("level")
     .setText("" + level + "%")
@@ -358,15 +356,13 @@ public void modeButton(){
     .setColorForeground(manual == 1 ?  color(200, 200, 0) : color(0, 0, 200))
     .setColorActive(manual == 1 ?  color(255, 255, 0) : color(0, 0, 255));
   openButton
-    .setColorBackground(manual == 1 ?  color(0, 0, 150) : color(180, 180, 180))
-    .setColorForeground(manual == 1 ?  color(0, 0, 200) : color(180, 180, 180))
-    .setColorActive(manual == 1 ?  color(0, 0, 255) : color(180, 180, 180))
-    .setColorLabel(manual == 1 ?  color(255, 255, 255) : color(110, 110, 110));
+    .setColorBackground(manual == 1 ?  color(50, 50, 150) : color(150, 150, 150))
+    .setColorForeground(manual == 1 ?  color(50, 50, 200) : color(150, 150, 150))
+    .setColorActive(manual == 1 ?  color(50, 50, 255) : color(150, 150, 150));
   closeButton
-    .setColorBackground(manual == 1 ?  color(0, 0, 150) : color(180, 180, 180))
-    .setColorForeground(manual == 1 ?  color(0, 0, 200) : color(180, 180, 180))
-    .setColorActive(manual == 1 ?  color(0, 0, 255) : color(180, 180, 180))
-    .setColorLabel(manual == 1 ?  color(255, 255, 255) : color(110, 110, 110));
+    .setColorBackground(manual == 1 ?  color(50, 50, 150) : color(150, 150, 150))
+    .setColorForeground(manual == 1 ?  color(50, 50, 200) : color(150, 150, 150))
+    .setColorActive(manual == 1 ?  color(50, 50, 255) : color(150, 150, 150));
 }
 
 public void close(){
