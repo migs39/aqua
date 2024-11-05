@@ -211,7 +211,7 @@ void setup() {
 
   waterLevel = cp5.addTextlabel("level")
     .setText("" + level + "%")
-    .setPosition(790, 222)
+    .setPosition(810, 222)
     .setSize(48, 36)
     .setFont(createFont("Georgia", 64));
   if (level >= critical) waterLevel.setColor(0xffff0000);
@@ -232,7 +232,7 @@ public void draw() {
   background(200, 220, 255);
     t++;
     if (t >= 2073600) t = 0;
-    drawBox(445, 110, level, t);
+    drawBox(465, 110, level, t);
     //plotGraph(50, 50, 300, 200);
 }
 
@@ -409,7 +409,7 @@ public void open(){
 //============================ Serial ====================
 
 void output(String s) {
-  
+  myPortOut.write(Integer.parseInt(binary, 2));
 }
 
 void serialEvent (Serial myPortIn) { 
