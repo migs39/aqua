@@ -10,6 +10,7 @@ import java.awt.event.KeyEvent;  //
 import java.io.IOException;
 
 Serial myPortIn; // define objeto da porta serial
+Serial myPortOut;
 
     String   porta = "COM19";  //acertar valor
     int   baudrate = 115200;
@@ -27,6 +28,7 @@ Queue<Integer> levels = new LinkedList<Integer>();
 Queue<Integer> times = new LinkedList<Integer>();
 ControlP5 cp5;
 
+PImage img;
 int maxTimeRange = 14400;
 int timeRange;
 int t = 0;
@@ -71,8 +73,9 @@ void setup() {
 
   //================================== Config ==============
 
-  
-  background(color(200, 220, 255));
+ background(color(200, 220, 255));
+
+  img = loadImage("aqua.png");
 
   size(960,540);
   noStroke();
@@ -180,9 +183,9 @@ void setup() {
     .setPosition(45, 362)
     .setSize(150, 44)
     .setLabel(manual == 1 ? "manual" : "auto")
-    .setColorBackground(manual == 1 ?  color(150, 150, 0) : color(0, 0, 150))
-    .setColorForeground(manual == 1 ?  color(175, 175, 0) : color(0, 0, 200))
-    .setColorActive(manual == 1 ?  color(200, 200, 0) : color(0, 0, 255));
+    .setColorBackground(manual == 1 ?  color(0, 0, 150) : color(0, 0, 150))
+    .setColorForeground(manual == 1 ?  color(0, 0, 200) : color(0, 0, 200))
+    .setColorActive(manual == 1 ?  color(0, 0, 255) : color(0, 0, 255));
 
   valveControl = cp5.addTextlabel("valveControl")
     .setText("  Valve \nControl")
@@ -196,18 +199,20 @@ void setup() {
     .setValue(0)
     .setPosition(45, 408)
     .setSize(74, 44)
-    .setColorBackground(manual == 1 ?  color(50, 50, 150) : color(100, 100, 100))
-    .setColorForeground(manual == 1 ?  color(50, 50, 200) : color(100, 100, 100))
-    .setColorActive(manual == 1 ?  color(50, 50, 255) : color(100, 100, 100));
+    .setColorBackground(manual == 1 ?  color(0, 0, 25) : color(180, 180, 180))
+    .setColorForeground(manual == 1 ?  color(0, 0, 75) : color(180, 180, 180))
+    .setColorActive(manual == 1 ?  color(0, 0, 125) : color(180, 180, 180))
+    .setColorLabel(manual == 1 ?  color(255, 255, 255) : color(110, 110, 110));
 
   closeButton = cp5.addButton("close")
     .setFont(createFont("Georgia", 16))
     .setValue(0)
     .setPosition(121, 408)
     .setSize(74, 44)
-    .setColorBackground(manual == 1 ?  color(50, 50, 150) : color(100, 100, 100))
-    .setColorForeground(manual == 1 ?  color(50, 50, 200) : color(100, 100, 100))
-    .setColorActive(manual == 1 ?  color(50, 50, 255) : color(100, 100, 100));
+    .setColorBackground(manual == 1 ?  color(0, 0, 25) : color(180, 180, 180))
+    .setColorForeground(manual == 1 ?  color(0, 0, 75) : color(180, 180, 180))
+    .setColorActive(manual == 1 ?  color(0, 0, 125) : color(180, 180, 180))
+    .setColorLabel(manual == 1 ?  color(255, 255, 255) : color(110, 110, 110));
 
   waterLevel = cp5.addTextlabel("level")
     .setText("" + level + "%")
@@ -232,6 +237,7 @@ public void draw() {
   background(200, 220, 255);
     t++;
     if (t >= 2073600) t = 0;
+    drawAqua(671, 440, 2);
     drawBox(465, 110, level, t);
     //plotGraph(50, 50, 300, 200);
 }
@@ -376,17 +382,19 @@ public void modeButton(){
   if (manual == 0) send("mode", 0);
   modeButton
     .setLabel(manual == 1 ? "manual" : "auto")
-    .setColorBackground(manual == 1 ?  color(150, 150, 0) : color(0, 0, 150))
-    .setColorForeground(manual == 1 ?  color(200, 200, 0) : color(0, 0, 200))
-    .setColorActive(manual == 1 ?  color(255, 255, 0) : color(0, 0, 255));
+    .setColorBackground(manual == 1 ?  color(0, 0, 150) : color(0, 0, 150))
+    .setColorForeground(manual == 1 ?  color(0, 0, 200) : color(0, 0, 200))
+    .setColorActive(manual == 1 ?  color(0, 0, 255) : color(0, 0, 255));
   openButton
-    .setColorBackground(manual == 1 ?  color(50, 50, 150) : color(150, 150, 150))
-    .setColorForeground(manual == 1 ?  color(50, 50, 200) : color(150, 150, 150))
-    .setColorActive(manual == 1 ?  color(50, 50, 255) : color(150, 150, 150));
+    .setColorBackground(manual == 1 ?  color(0, 0, 25) : color(180, 180, 180))
+    .setColorForeground(manual == 1 ?  color(0, 0, 75) : color(180, 180, 180))
+    .setColorActive(manual == 1 ?  color(0, 0, 125) : color(180, 180, 180))
+    .setColorLabel(manual == 1 ?  color(255, 255, 255) : color(110, 110, 110));
   closeButton
-    .setColorBackground(manual == 1 ?  color(50, 50, 150) : color(150, 150, 150))
-    .setColorForeground(manual == 1 ?  color(50, 50, 200) : color(150, 150, 150))
-    .setColorActive(manual == 1 ?  color(50, 50, 255) : color(150, 150, 150));
+    .setColorBackground(manual == 1 ?  color(0, 0, 25) : color(180, 180, 180))
+    .setColorForeground(manual == 1 ?  color(0, 0, 75) : color(180, 180, 180))
+    .setColorActive(manual == 1 ?  color(0, 0, 125) : color(180, 180, 180))
+    .setColorLabel(manual == 1 ?  color(255, 255, 255) : color(110, 110, 110));
 }
 
 public void close(){
@@ -403,13 +411,26 @@ public void open(){
   }
 }
 
-//========================== No Grapph Function ==========
+void drawAqua(int x0, int y0, int pixelSize) {
+  img.loadPixels(); // Carrega os pixels da imagem
+  for (int y = 0; y < img.height; y++) {
+    for (int x = 0; x < img.width; x++) {
+      int pixelColor = img.get(x, y); // Obtém a cor do pixel
+      fill(pixelColor); // Define a cor de preenchimento
+      noStroke(); // Remove o contorno
+      // Desenha um quadrado de pixelSize x pixelSize na posição correspondente
+      rect(x0 + x * pixelSize, y0 + y * pixelSize, pixelSize, pixelSize);
+    }
+  }
+}
+
+//========================== No Grapph Function Yet ======
 //========================================================
 
 //============================ Serial ====================
 
 void output(String s) {
-  myPortOut.write(Integer.parseInt(binary, 2));
+  myPortOut.write(Integer.parseInt(s, 2));
 }
 
 void serialEvent (Serial myPortIn) { 
