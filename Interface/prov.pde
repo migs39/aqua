@@ -71,7 +71,6 @@ void setup() {
 
   //================================== Config ==============
 
-  
   background(color(200, 220, 255));
 
   size(960,540);
@@ -307,59 +306,21 @@ public void criticalDown(){
     .draw(this);
 }
 
-public void send(String type, int value){
-  String message = "";
-  switch (type){
-    case "low":{
-      message += "00";
-      break;
-    }
-    case "high":{
-      message += "01";
-      break;
-    }
-    case "crit":{
-      message += "10";
-      break;
-    }
-    case "mode":{
-      message += "11";
-      switch (value){
-        case 0:{ //auto
-          message += "000000";
-          break;
-        }
-        case 1:{ //manual + close
-          message += "100000";
-          break;
-        }
-        case 2:{ //manual + open
-          message += "110000";
-          break;
-        }
-      }
-      output(message);
-      return;
-    }
-    default:
-      return;
-  }
-  value = emptyDistance - int(float(emptyDistance - fullDistance) * (float(value) / 100.0));
-  message += String.format("%6s", Integer.toBinaryString(value)).replaceAll(" ", "0");
-  output(message);
+public void send(){
+  String lowBinary = String.format("%7s", Integer.toBinaryString(low)).replaceAll(" ", "0");
+  String highBinary = String.format("%7s", Integer.toBinaryString(high)).replaceAll(" ", "0");
+  String criticalBinary = String.format("%7s", Integer.toBinaryString(critical)).replaceAll(" ", "0");
+  output("1"+ manual + open + lowBinary + highBinary + criticalBinary);
 }
 
 public void change(){
-  if (low != showLow) send("low", showLow);
-  if (high != showHigh) send("high", showHigh);
-  if (critical != showCritical) send("crit", showCritical);
-
   low = showLow;
   high = showHigh;
   critical = showCritical;
   if (level >= critical) waterLevel.setColor(0xffff0000);
   else if (level <= low || level >= high) waterLevel.setColor(0xffff5500);
   else waterLevel.setColor(color(0, 100, 255));
+  send();
 }
 
 public void cancel(){
@@ -373,7 +334,6 @@ public void cancel(){
 
 public void modeButton(){
   manual = manual == 1 ? 0 : 1;
-  if (manual == 0) send("mode", 0);
   modeButton
     .setLabel(manual == 1 ? "manual" : "auto")
     .setColorBackground(manual == 1 ?  color(150, 150, 0) : color(0, 0, 150))
@@ -389,17 +349,17 @@ public void modeButton(){
     .setColorActive(manual == 1 ?  color(50, 50, 255) : color(150, 150, 150));
 }
 
-public void close(){
-  if (manual == 1){
-    open = 0;
-    send("mode", 1);
-  }
-}
-
 public void open(){
   if (manual == 1){
     open = 1;
-    send("mode", 2);
+    send();
+  }
+}
+
+public void close(){
+  if (manual == 1){
+    open = 0;
+    send();
   }
 }
 

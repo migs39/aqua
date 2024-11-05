@@ -3,24 +3,7 @@ import java.awt.event.KeyEvent;
 import java.util.LinkedList;
 import java.util.Queue;
 
-//=============================== Serial config ==========
-
-import processing.serial.*;      // comunicacao serial
-import java.awt.event.KeyEvent;  // 
-import java.io.IOException;
-
-Serial myPortIn; // define objeto da porta serial
-
-    String   porta = "COM19";  //acertar valor
-    int   baudrate = 115200;
-    float stopbits = 1.0;
-
-    char    parityIn = 'O';
-    int   databitsIn = 7;
-
-    char    parityOut = 'N';
-    int   databitsOut = 8;
-
+//============================ No serial config ==========
 //========================================================
 
 Queue<Integer> levels = new LinkedList<Integer>();
@@ -62,15 +45,8 @@ Textlabel aqua;
 
 void setup() {
   
-  //============================ Ports Config ==============
-
-  myPortIn = new Serial(this, porta, baudrate, parityIn, databitsIn, stopbits); 
-  myPortIn.bufferUntil('#'); 
-
-  myPortOut = new Serial(this, porta, baudrate, parityOut, databitsOut, stopbits); 
-
-  //================================== Config ==============
-
+  //============================ No Ports Config ===========
+  //========================================================
   
   background(color(200, 220, 255));
 
@@ -403,30 +379,226 @@ public void open(){
   }
 }
 
-//========================== No Grapph Function ==========
-//========================================================
+//========================== graphFunctions.start ========
 
-//============================ Serial ====================
-
-void output(String s) {
+void plotGraph(int x0, int y0, int x, int y) {
+  if (levels.size() < 2) return;  // Espera pelo menos dois pontos para desenhar
   
+  // Determina os limites dos eixos
+  int minTime = findMin(times);
+  int maxTime = findMax(times);
+  int minLevel = findMin(levels);
+  int maxLevel = findMax(levels);
+  
+  // Define a margem e a área do gráfico
+  float margin = 10; // Margem interna
+  float graphWidth = x; // Largura da área do gráfico
+  float graphHeight = y; // Altura da área do gráfico
+  
+  // Desenha os eixos
+  stroke(0);
+  line(x0, y0 + graphHeight, x0 + graphWidth, y0 + graphHeight);  // Eixo X
+  line(x0, y0, x0, y0 + graphHeight);                               // Eixo Y
+  
+  // Desenha os pontos e as linhas do gráfico
+  stroke(0, 0, 255);
+  noFill();
+  beginShape();
+  int[] timeArray = toArray(times); // Converte a fila de tempos em um array
+  int[] levelArray = toArray(levels); // Converte a fila de níveis em um array
+  
+  for (int i = 0; i < levelArray.length; i++) {
+    float xPos = map(timeArray[i], minTime, maxTime, x0, x0 + graphWidth);
+    float yPos = map(levelArray[i], minLevel, maxLevel, y0 + graphHeight, y0);
+    vertex(xPos, yPos);  // Adiciona o ponto ao gráfico
+  }
+  endShape();
+/**  
+  // Adiciona rótulos para a escala dos eixos
+  fill(0);
+  textAlign(CENTER);
+  text("Tempo", x0 + graphWidth / 2, y0 + graphHeight + 20); // Rótulo do eixo X
+  textAlign(RIGHT);
+  text("Nível", x0 - 10, y0 + graphHeight / 2);               // Rótulo do eixo Y
+  
+  // Mostra a escala do eixo X (tempo) nos extremos
+  textAlign(CENTER);
+  text(minTime, x0, y0 + graphHeight + 20);                  // Tempo mínimo
+  text(maxTime, x0 + graphWidth, y0 + graphHeight + 20);    // Tempo máximo
+  
+  // Mostra a escala do eixo Y (nível) nos extremos
+  textAlign(RIGHT);
+  text(minLevel, x0 - 10, y0 + graphHeight);                 // Nível mínimo
+  text(maxLevel, x0 - 10, y0);                                // Nível máximo
+**/  
 }
 
-void serialEvent (Serial myPortIn) { 
-    try {
-        // leitura da porta serial até o caractere '#' na variavel sensorReading
-        sensorReading = myPortIn.readStringUntil('#');
-        if(sensorReading != null) sensorReading = trim(sensorReading);
-        distance = sensorReading.substring(0,sensorReading.length()-1);  
-   
-        // converte string para inteiro
-        iDistance = int(distance);
-        percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
-        level = round(100 * (1. - percentage));
-        waterLevel.setText("" + level).draw();
+
+// Função para encontrar o valor mínimo em uma fila
+int findMin(Queue<Integer> queue) {
+  if (queue.isEmpty()) return Integer.MAX_VALUE; // Retorna o maior valor se a fila estiver vazia
+  int minValue = Integer.MAX_VALUE;
+  for (int level : queue) {
+    if (level < minValue) {
+      minValue = level;
     }
-    catch(RuntimeException e) {
-        e.printStackTrace();
-    }
+  }
+  return minValue;
 }
+
+// Função para encontrar o valor máximo em uma fila
+int findMax(Queue<Integer> queue) {
+  if (queue.isEmpty()) return Integer.MIN_VALUE; // Retorna o menor valor se a fila estiver vazia
+  int maxValue = Integer.MIN_VALUE;
+  for (int level : queue) {
+    if (level > maxValue) {
+      maxValue = level;
+    }
+  }
+  return maxValue;
+}
+
+// Função para converter a fila em um array
+int[] toArray(Queue<Integer> queue) {
+  int[] array = new int[queue.size()];
+  int index = 0;
+  for (int value : queue) {
+    array[index++] = value;
+  }
+  return array;
+}
+
+//========================== graphFunctions.end ==========
+
+//============================ Fake Serial ===============
+
+void output(String s){
+  println(s);
+}
+
+void keyPressed(){
+
+  switch (key) {
+
+    case 'q': {
+      try {
+          sensorReading = (String.format("%03d", mockDistance) + "#");
+          if(sensorReading != null) sensorReading = trim(sensorReading);
+          distance = sensorReading.substring(0,sensorReading.length()-1);  
+          // converte string para inteiro
+          iDistance = int(distance);
+          percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
+          level = round(100 * (1. - percentage));
+          waterLevel.setText("" + level + "%");
+          if (level >= critical) waterLevel.setColor(0xffff0000);
+          else if (level <= low || level >= high) waterLevel.setColor(0xffff5500);
+          else waterLevel.setColor(color(0, 100, 255));
+
+          levels.add(level);
+          times.add(t);
+          timeRange = t - times.peek();
+          while (timeRange > maxTimeRange) {
+            times.poll();
+            levels.poll();
+            timeRange = t - times.peek();
+          }
+      }
+      catch(RuntimeException e) {
+          e.printStackTrace();
+      }
+      break;
+    }
+
+    case 'w': {
+      if (mockDistance > fullDistance) mockDistance--;
+      try {
+          sensorReading = (String.format("%03d", mockDistance) + "#");
+          if(sensorReading != null) sensorReading = trim(sensorReading);
+          distance = sensorReading.substring(0,sensorReading.length()-1);  
+          // converte string para inteiro
+          iDistance = int(distance);
+          percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
+          level = round(100 * (1. - percentage));
+          waterLevel.setText("" + level + "%");
+          if (level >= critical) waterLevel.setColor(0xffff0000);
+          else if (level <= low || level >= high) waterLevel.setColor(0xffff5500);
+          else waterLevel.setColor(color(0, 100, 255));
+
+          levels.add(level);
+          times.add(t);
+          timeRange = t - times.peek();
+          while (timeRange > maxTimeRange) {
+            times.poll();
+            levels.poll();
+            timeRange = t - times.peek();
+          }
+      }
+      catch(RuntimeException e) {
+          e.printStackTrace();
+      }
+      break;
+    }
+
+    case 'e': {
+      if (mockDistance < emptyDistance) mockDistance++;
+      try {
+          sensorReading = (String.format("%03d", mockDistance) + "#");
+          if(sensorReading != null) sensorReading = trim(sensorReading);
+          distance = sensorReading.substring(0,sensorReading.length()-1);  
+          // converte string para inteiro
+          iDistance = int(distance);
+          percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
+          level = round(100 * (1. - percentage));
+          waterLevel.setText("" + level + "%");
+          if (level >= critical) waterLevel.setColor(0xffff0000);
+          else if (level <= low || level >= high) waterLevel.setColor(0xffff5500);
+          else waterLevel.setColor(color(0, 100, 255));
+
+          levels.add(level);
+          times.add(t);
+          timeRange = t - times.peek();
+          while (timeRange > maxTimeRange) {
+            times.poll();
+            levels.poll();
+            timeRange = t - times.peek();
+          }
+      }
+      catch(RuntimeException e) {
+          e.printStackTrace();
+      }
+      break;    
+    }
+
+    case 'r': {
+      mockDistance = int(random(fullDistance, emptyDistance));
+      try {
+          sensorReading = (String.format("%03d", mockDistance) + "#");
+          if(sensorReading != null) sensorReading = trim(sensorReading);
+          distance = sensorReading.substring(0,sensorReading.length()-1);  
+          // converte string para inteiro
+          iDistance = int(distance);
+          percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
+          level = round(100 * (1. - percentage));
+          waterLevel.setText("" + level + "%");
+          if (level >= critical) waterLevel.setColor(0xffff0000);
+          else if (level <= low || level >= high) waterLevel.setColor(0xffff5500);
+          else waterLevel.setColor(color(0, 100, 255));
+
+          levels.add(level);
+          times.add(t);
+          timeRange = t - times.peek();
+          while (timeRange > maxTimeRange) {
+            times.poll();
+            levels.poll();
+            timeRange = t - times.peek();
+          }
+      }
+      catch(RuntimeException e) {
+          e.printStackTrace();
+      }
+      break;
+    }
+  }
+}
+
 //========================================================
