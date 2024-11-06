@@ -9,18 +9,13 @@ import processing.serial.*;      // comunicacao serial
 import java.awt.event.KeyEvent;  // 
 import java.io.IOException;
 
-Serial myPortIn; // define objeto da porta serial
-Serial myPortOut;
+Serial myPort; // define objeto da porta serial
 
     String   porta = "COM19";  //acertar valor
     int   baudrate = 115200;
-    float stopbits = 1.0;
-
-    char    parityIn = 'O';
-    int   databitsIn = 7;
-
-    char    parityOut = 'N';
-    int   databitsOut = 8;
+    float stopbits = 1.0;s
+    char    parity = 'O';
+    int   databits = 7;
 
 //========================================================
 
