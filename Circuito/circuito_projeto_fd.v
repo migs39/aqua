@@ -5,7 +5,7 @@ module circuito_projeto_fd (
     input wire         echo3,
     input wire         zera,
     input wire         conta_1s,
-	 input wire         conta_2s,
+	input wire         conta_2s,
     input wire         mensurar,
     input wire         envia,
     input wire         muda,
@@ -14,6 +14,9 @@ module circuito_projeto_fd (
     input wire         liga_buzzer_alta,
     input wire         desliga_buzzers,
     input wire         zera_vlv,
+    input wire         RX,
+    input wire         abre_valvula_auto,
+    input wire         fecha_valvula_auto,
     output wire        fim_medida,
     output wire        fim_carater,
     output wire        fim_mensagem,
@@ -23,12 +26,13 @@ module circuito_projeto_fd (
     output wire        trigger3,
     output wire [11:0] distancia,
     output wire        fim_1s,
-	 output wire        fim_2s,
+	output wire        fim_2s,
     output wire        saida_serial,
     output wire [2:0]  medida_classificacao,
     output wire        descartar_medida,
     output wire        buzzer_alta,
     output wire        buzzer_baixa,
+    output wire        abrir_valv,
     output wire [3:0]  db_sensor
 );
 
@@ -44,6 +48,11 @@ module circuito_projeto_fd (
     wire [11:0] s_medida1;
     wire [11:0] s_medida2;
     wire [11:0] s_medida3;
+    wire [11:0] nv_crit_wire;
+    wire [11:0] nv_alto_wire;
+    wire [11:0] nv_baixo_wire;
+    wire abre_valv_manual;
+    wire manual;
 
     edge_detector pulsoMensurar (
         .clock(clock  ),
@@ -53,6 +62,9 @@ module circuito_projeto_fd (
     );
 
     classificador_medida classificador (
+        .nv_baixo(nv_baixo_wire),
+        .nv_alto(nv_alto_wire),
+        .nv_crit(nv_crit_wire),
         .clock(clock),
         .zera(zera),
         .iniciar(analisa_medida),        
@@ -173,6 +185,33 @@ module circuito_projeto_fd (
         .liga(liga_buzzer_baixa),
         .desliga(desliga_buzzers),
         .sinal(buzzer_baixa)  
+    );
+
+    //--------------------------------------
+    // Parte Responsavel pela valvula
+    //--------------------------------------
+
+    valvula V(
+        .manual(manual),
+        .abre_auto(abre_valvula_auto),
+        .fecha_auto(fecha_valvula_auto),
+        .abre_manual(abre_valv_manual),
+        .abre_valvula(abrir_valv)
+    );
+
+    //-----------------------------------------------------------
+    // Parte Responsavel pelo controle da entrada serial
+    //-----------------------------------------------------------
+
+    controle_recepcao_serial controle_serial(
+        .clock(clock),
+        .reset(zera_vlv),
+        .RX(RX),
+        .nv_crit(nv_crit_wire),
+        .nv_alto(nv_alto_wire),
+        .nv_baixo(nv_baixo_wire),
+        .manual(manual),
+        .abrir_valv(abre_valv_manual)
     );
 
     assign distancia = s_media;

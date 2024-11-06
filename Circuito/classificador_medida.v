@@ -1,9 +1,9 @@
 module classificador_medida #(
-    parameter MAX_DIFF = 12'b000000000100,    // Diferença máxima entre a maior e a menor medida
-    parameter VALOR_BAIXO = 12'b000000010010,
-    parameter VALOR_ALTO = 12'b000000100100,
-    parameter VALOR_MUITO_ALTO = 12'b000000100111
+    parameter MAX_DIFF = 12'b000000000100    // Diferença máxima entre a maior e a menor medida
 )(
+    input wire [11:0] nv_baixo,
+    input wire [11:0] nv_alto,
+    input wire [11:0] nv_crit,
     input wire clock,
     input wire zera,
     input wire iniciar,        // Sinal para iniciar o processo
@@ -50,11 +50,11 @@ module classificador_medida #(
                 descartar_medida <= 0;
 
             // Classificação da média
-            if (media < VALOR_BAIXO)
+            if (media < nv_baixo)
                 medida_classificacao <= 3'b001;
-            else if (media >= VALOR_BAIXO && media < VALOR_ALTO)
+            else if (media >= nv_baixo && media < nv_alto)
                 medida_classificacao <= 3'b100;
-            else if (media >= VALOR_ALTO && media <= VALOR_MUITO_ALTO)
+            else if (media >= nv_alto && media <= nv_crit)
                 medida_classificacao <= 3'b010;
             else
                 medida_classificacao <= 3'b011;
