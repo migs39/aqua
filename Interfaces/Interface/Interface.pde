@@ -13,9 +13,9 @@ Serial myPort; // define objeto da porta serial
 
     String   porta = "COM19";  //acertar valor
     int   baudrate = 115200;
-    float stopbits = 1.0;s
-    char    parity = 'O';
-    int   databits = 7;
+    float stopbits = 1.0;
+    char    parity = 'N';
+    int   databits = 8;
 
 //========================================================
 
@@ -61,10 +61,8 @@ void setup() {
   
   //============================ Ports Config ==============
 
-  myPortIn = new Serial(this, porta, baudrate, parityIn, databitsIn, stopbits); 
-  myPortIn.bufferUntil('#'); 
-
-  myPortOut = new Serial(this, porta, baudrate, parityOut, databitsOut, stopbits); 
+  myPort = new Serial(this, porta, baudrate, parity, databits, stopbits); 
+  myPort.bufferUntil('#'); 
 
   //================================== Config ==============
 
@@ -425,13 +423,13 @@ void drawAqua(int x0, int y0, int pixelSize) {
 //============================ Serial ====================
 
 void output(String s) {
-  myPortOut.write(Integer.parseInt(s, 2));
+  myPort.write(Integer.parseInt(s, 2));
 }
 
-void serialEvent (Serial myPortIn) { 
+void serialEvent (Serial myPort) { 
     try {
         // leitura da porta serial até o caractere '#' na variavel sensorReading
-        sensorReading = myPortIn.readStringUntil('#');
+        sensorReading = myPort.readStringUntil('#');
         if(sensorReading != null) sensorReading = trim(sensorReading);
         distance = sensorReading.substring(0,sensorReading.length()-1);  
    
