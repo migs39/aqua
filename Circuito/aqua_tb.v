@@ -9,13 +9,13 @@ module aqua_tb;
     reg         echo_in_1 = 0;
     reg         echo_in_2 = 0;
     reg         echo_in_3 = 0;
+    reg         RX_in = 0;
     wire        trigger_out_1;
     wire        trigger_out_2;
     wire        trigger_out_3;
     wire        buzzer_alta_out;
     wire        buzzer_baixa_out;
     wire        abre_valvula_out;
-    wire        fecha_valvula_out;
     wire [6:0]  hex0_out;
     wire [6:0]  hex1_out;
     wire [6:0]  hex2_out;
@@ -34,13 +34,13 @@ module aqua_tb;
         .echo1(echo_in_1),
         .echo2(echo_in_2),
         .echo3(echo_in_3),
+        .RX(RX_in),
         .trigger1(trigger_out_1),
         .trigger2(trigger_out_2),
         .trigger3(trigger_out_3),
         .buzzer_alta(buzzer_alta_out),
         .buzzer_baixa(buzzer_baixa_out),
         .abre_valvula(abre_valvula_out),
-        .fecha_valvula(fecha_valvula_out),
         .saida_serial(saida_serial_out),
         .hex0(hex0_out),
         .hex1(hex1_out),
@@ -84,9 +84,9 @@ module aqua_tb;
         casos_teste_dist[2][1] = 5882;
         casos_teste_dist[2][2] = 5882;
 
-        casos_teste_dist[3][0] = 4399;
-        casos_teste_dist[3][1] = 4399;
-        casos_teste_dist[3][2] = 4399;  // 4399us (74,79cm) arredondar para 75cm
+        casos_teste_dist[3][0] = 1167;
+        casos_teste_dist[3][1] = 1167;
+        casos_teste_dist[3][2] = 1167;  // 1167us (20cm) 
 
 
         // Valores iniciais

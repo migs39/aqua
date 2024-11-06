@@ -5,6 +5,7 @@ module circuito_projeto (
     input wire echo1,
     input wire echo2,
     input wire echo3,
+    input wire RX,
     output wire trigger1,
     output wire trigger2,
     output wire trigger3,
@@ -14,7 +15,6 @@ module circuito_projeto (
     output wire buzzer_baixa,
     output wire pronto,
     output wire abre_valvula,
-    output wire fecha_valvula,
     output wire [3:0] db_estado,
     output wire [3:0] db_sensor,
     output wire db_fim_medida
@@ -38,6 +38,8 @@ module circuito_projeto (
     wire s_liga_buzzer_baixa;
     wire s_desliga_buzzer;
     wire s_zera_vlv;
+    wire abre_valvula_auto;
+    wire fecha_valvula_auto;
 
     circuito_projeto_fd FD(
         .clock(clock),
@@ -46,7 +48,7 @@ module circuito_projeto (
         .echo3(echo3),
         .zera(s_zera),
         .conta_1s(s_conta_1s),
-		  .conta_2s(s_conta_2s),
+		.conta_2s(s_conta_2s),
         .mensurar(s_mensurar),
         .envia(s_envia),
         .muda(s_muda),
@@ -55,6 +57,9 @@ module circuito_projeto (
         .liga_buzzer_alta(s_liga_buzzer_alta),
         .desliga_buzzers(s_desliga_buzzer),
         .zera_vlv(s_zera_vlv),
+        .RX(RX),
+        .abre_valvula_auto(abre_valvula_auto),
+        .fecha_valvula_auto(fecha_valvula_auto),
         .fim_medida(s_fim_medida),
         .fim_carater(s_fim_caracter),
         .fim_mensagem(s_fim_mensagem),
@@ -70,6 +75,7 @@ module circuito_projeto (
         .descartar_medida(s_descartar_medida),
         .buzzer_alta(buzzer_alta),
         .buzzer_baixa(buzzer_baixa),
+        .abrir_valv(abre_valvula),
         .db_sensor(db_sensor)       
     );
 
@@ -93,8 +99,8 @@ module circuito_projeto (
         .liga_buzzer_baixa(s_liga_buzzer_baixa),
         .liga_buzzer_alta(s_liga_buzzer_alta),
         .desliga_buzzers(s_desliga_buzzer),
-        .abre(abre_valvula),
-        .fecha(fecha_valvula),
+        .abre(abre_valvula_auto),
+        .fecha(fecha_valvula_auto),
         .conta_1s(s_conta_1s),
 		.conta_2s(s_conta_2s),
         .envia(s_envia),
