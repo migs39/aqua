@@ -97,8 +97,8 @@ module circuito_projeto_fd (
 
 
     contador_m #(
-        .M (50000),
-        //.M (50000000),
+        //.M (50000),
+        .M (50000000),
         .N (27)
     ) contador_1s (
         .clock   (clock     ),
@@ -111,8 +111,8 @@ module circuito_projeto_fd (
     );
 	 
 	 contador_m #(
-        .M (100000),
-        //.M (100000000),
+        //.M (100000),
+        .M (100000000),
         .N (27)
     ) contador_2s (
         .clock   (clock     ),
