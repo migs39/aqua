@@ -215,7 +215,7 @@ public void draw() {
     if (t >= 2073600) t = 0;
     drawAqua(671, 440, 2);
     drawBox(465, 110, level, t);
-    plotGraph(70, 50, 330, 200, 10);
+    plotGraph(50, 50, 350, 200, 10);
 }
 
 public void  drawBox(int x, int y, int level, int t){
@@ -445,9 +445,9 @@ void plotGraph(int x0, int y0, int x, int y, int fontSize) {
   // Adiciona rótulos para a escala dos eixos
   fill(0);
   textAlign(CENTER);
-  text("Time (s)", x0 + graphWidth / 2, y0 + graphHeight + 20); // Rótulo do eixo X
+  text("Tempo", x0 + graphWidth / 2, y0 + graphHeight + 20); // Rótulo do eixo X
   textAlign(RIGHT);
-  text("Level (%)", x0 - 10, y0 + graphHeight / 2);              // Rótulo do eixo Y
+  text("Nível", x0 - 10, y0 + graphHeight / 2);              // Rótulo do eixo Y
 
   // Mostra a escala do eixo X (tempo) nos extremos
   textAlign(CENTER);
@@ -629,8 +629,7 @@ void keyPressed(){
 
     case 'c': {
       times.clear();
-      levels.clear();
-      t = 0;
+      levels.clear(); 
       break;
     }
   }

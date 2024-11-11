@@ -417,8 +417,113 @@ void drawAqua(int x0, int y0, int pixelSize) {
   }
 }
 
-//========================== No Grapph Function Yet ======
-//========================================================
+//========================== graphFunctions.start ========
+
+void plotGraph(int x0, int y0, int x, int y, int fontSize) {
+  if (levels.size() < 2) return;  // Espera pelo menos dois pontos para desenhar
+  
+  // Determina os limites dos eixos
+  int minTime = findMin(times);
+  int maxTime = findMax(times);
+  int minLevel = findMin(levels);
+  int maxLevel = findMax(levels);
+  
+  // Define a margem e a área do gráfico
+  float margin = 10; // Margem interna
+  float graphWidth = x; // Largura da área do gráfico
+  float graphHeight = y; // Altura da área do gráfico
+  
+  // Define o fundo do gráfico
+  fill(255); // Define o preenchimento como branco
+  noStroke(); // Remove a borda do retângulo (opcional)
+  rect(x0, y0, graphWidth, graphHeight); // Desenha o retângulo de fundo
+
+  // Desenha os eixos
+  stroke(0);
+  line(x0, y0 + graphHeight, x0 + graphWidth, y0 + graphHeight);  // Eixo X
+  line(x0, y0, x0, y0 + graphHeight);                               // Eixo Y
+  
+  // Desenha os pontos e as linhas do gráfico
+  stroke(0, 0, 255);
+  noFill();
+  beginShape();
+  int[] timeArray = toArray(times); // Converte a fila de tempos em um array
+  int[] levelArray = toArray(levels); // Converte a fila de níveis em um array
+  
+  for (int i = 0; i < levelArray.length; i++) {
+    float xPos = map(timeArray[i], minTime, maxTime, x0, x0 + graphWidth);
+    float yPos = map(levelArray[i], minLevel, maxLevel, y0 + graphHeight, y0);
+    vertex(xPos, yPos);  // Adiciona o ponto ao gráfico
+  }
+  endShape();
+  // Ajusta o tamanho da fonte para o valor de fontSize
+  textSize(fontSize);
+
+  // Adiciona rótulos para a escala dos eixos
+  fill(0);
+  textAlign(CENTER);
+  text("Time (s)", x0 + graphWidth / 2, y0 + graphHeight + 20); // Rótulo do eixo X
+  textAlign(RIGHT);
+  text("Level (%)", x0 - 10, y0 + graphHeight / 2);              // Rótulo do eixo Y
+
+  // Mostra a escala do eixo X (tempo) nos extremos
+  textAlign(CENTER);
+  text(minTime/24, x0, y0 + graphHeight + 20);                  // Tempo mínimo
+  text(maxTime/24, x0 + graphWidth, y0 + graphHeight + 20);     // Tempo máximo
+
+  // Mostra a escala do eixo Y (nível) nos extremos
+  textAlign(RIGHT);
+  text(minLevel, x0 - 10, y0 + graphHeight);                 // Nível mínimo
+  text(maxLevel, x0 - 10, y0);                               // Nível máximo
+
+}
+
+
+// Função para encontrar o valor mínimo em uma fila
+int findMin(Queue<Integer> queue) {
+  if (queue.isEmpty()) return Integer.MAX_VALUE; // Retorna o maior valor se a fila estiver vazia
+  int minValue = Integer.MAX_VALUE;
+  for (int level : queue) {
+    if (level < minValue) {
+      minValue = level;
+    }
+  }
+  return minValue;
+}
+
+// Função para encontrar o valor máximo em uma fila
+int findMax(Queue<Integer> queue) {
+  if (queue.isEmpty()) return Integer.MIN_VALUE; // Retorna o menor valor se a fila estiver vazia
+  int maxValue = Integer.MIN_VALUE;
+  for (int level : queue) {
+    if (level > maxValue) {
+      maxValue = level;
+    }
+  }
+  return maxValue;
+}
+
+// Função para converter a fila em um array
+int[] toArray(Queue<Integer> queue) {
+  int[] array = new int[queue.size()];
+  int index = 0;
+  for (int value : queue) {
+    array[index++] = value;
+  }
+  return array;
+}
+
+void keyPressed(){
+  switch (key){
+    case 'c':{
+      levels.clear();
+      times.clear();
+      t = 0;
+      break;
+    }
+  }
+}
+//========================== graphFunctions.end ==========
 
 //============================ Serial ====================
 
