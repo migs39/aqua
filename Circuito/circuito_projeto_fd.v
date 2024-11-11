@@ -36,11 +36,11 @@ module circuito_projeto_fd (
     output wire [3:0]  db_sensor
 );
 
-    parameter HEXA_30 = 7'b0110000;
-    parameter HEXA_23 = 7'b0100011; 
+    parameter HEXA_30 = 8'b00110000;
+    parameter HEXA_23 = 8'b00100011; 
 
     wire s_pulso_mensurar;
-    wire [6:0] s_caracter;
+    wire [7:0] s_caracter;
     wire [2:0] s_posicao;
     wire [23:0] s_asc_posicao;
     wire [1:0] s_seletor_asc;
@@ -97,7 +97,8 @@ module circuito_projeto_fd (
 
 
     contador_m #(
-        .M (50000000),
+        .M (50000),
+        //.M (50000000),
         .N (27)
     ) contador_1s (
         .clock   (clock     ),
@@ -110,7 +111,8 @@ module circuito_projeto_fd (
     );
 	 
 	 contador_m #(
-        .M (100000000),
+        .M (100000),
+        //.M (100000000),
         .N (27)
     ) contador_2s (
         .clock   (clock     ),
@@ -143,7 +145,7 @@ module circuito_projeto_fd (
 
 
     mux_4x1_n #(
-        .BITS (7)
+        .BITS (8)
     ) saida_asc (
         .D3(HEXA_23),
         .D2(s_media[3:0] + HEXA_30),
@@ -153,7 +155,7 @@ module circuito_projeto_fd (
         .MUX_OUT(s_caracter)
     );
 
-    tx_serial_7O1 envia_asc(
+    tx_serial_8N1 envia_asc(
         .clock(clock),
         .reset(zera),
         .partida(envia),   
