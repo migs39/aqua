@@ -3,83 +3,131 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'clock'
-Slack : -23.953
-TNS   : -1726.730
+Slack : -22.995
+TNS   : -1829.593
+
+Type  : Slow 1100mV 85C Model Setup 'circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0]'
+Slack : -5.134
+TNS   : -5.134
 
 Type  : Slow 1100mV 85C Model Hold 'clock'
-Slack : 0.317
+Slack : 0.248
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0]'
+Slack : 0.726
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'clock'
-Slack : -1.000
-TNS   : -180.855
+Slack : -1.079
+TNS   : -250.797
 
 Type  : Slow 1100mV 85C Model Removal 'clock'
-Slack : 0.659
+Slack : 0.656
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
 Slack : -0.538
-TNS   : -437.637
+TNS   : -506.784
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0]'
+Slack : 0.410
+TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'clock'
-Slack : -25.249
-TNS   : -1737.086
+Slack : -24.390
+TNS   : -1839.010
+
+Type  : Slow 1100mV 0C Model Setup 'circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0]'
+Slack : -5.281
+TNS   : -5.281
 
 Type  : Slow 1100mV 0C Model Hold 'clock'
-Slack : 0.301
+Slack : 0.227
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0]'
+Slack : 0.769
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'clock'
-Slack : -0.927
-TNS   : -162.518
+Slack : -1.009
+TNS   : -225.491
 
 Type  : Slow 1100mV 0C Model Removal 'clock'
-Slack : 0.627
+Slack : 0.624
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
 Slack : -0.538
-TNS   : -448.691
+TNS   : -517.207
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0]'
+Slack : 0.446
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'clock'
-Slack : -10.792
-TNS   : -580.003
+Slack : -10.075
+TNS   : -594.223
+
+Type  : Fast 1100mV 85C Model Setup 'circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0]'
+Slack : -2.311
+TNS   : -2.311
 
 Type  : Fast 1100mV 85C Model Hold 'clock'
-Slack : 0.167
+Slack : 0.135
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0]'
+Slack : 0.341
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'clock'
-Slack : -0.075
-TNS   : -0.590
+Slack : -0.135
+TNS   : -7.804
 
 Type  : Fast 1100mV 85C Model Removal 'clock'
-Slack : 0.301
+Slack : 0.299
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
-Slack : -0.097
-TNS   : -51.313
+Slack : -0.100
+TNS   : -60.555
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0]'
+Slack : 0.471
+TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'clock'
-Slack : -10.233
-TNS   : -494.789
+Slack : -9.617
+TNS   : -503.626
+
+Type  : Fast 1100mV 0C Model Setup 'circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0]'
+Slack : -2.211
+TNS   : -2.211
 
 Type  : Fast 1100mV 0C Model Hold 'clock'
-Slack : 0.153
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0]'
+Slack : 0.329
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'clock'
-Slack : 0.038
-TNS   : 0.000
+Slack : -0.021
+TNS   : -0.202
 
 Type  : Fast 1100mV 0C Model Removal 'clock'
-Slack : 0.273
+Slack : 0.272
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
-Slack : -0.098
-TNS   : -52.351
+Slack : -0.099
+TNS   : -61.563
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0]'
+Slack : 0.479
+TNS   : 0.000
 
 ------------------------------------------------------------

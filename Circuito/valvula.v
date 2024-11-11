@@ -3,7 +3,7 @@ module valvula (
     input abre_auto,
     input fecha_auto,
     input abre_manual,
-    output reg abre_valvula
+    output wire abre_valvula
 );
 
     reg sig = 1'b0;

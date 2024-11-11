@@ -27,8 +27,8 @@ int mockDistance = 22;
 String sensorReading = "";
 String distance = "000";
 int iDistance = 0;
-int emptyDistance = 35;
-int fullDistance = 9;
+int emptyDistance = 50;
+int fullDistance = 0;
 float percentage = .5;
 
 Textlabel lowLabel;
@@ -516,7 +516,7 @@ void keyPressed(){
           // converte string para inteiro
           iDistance = int(distance);
           percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
-          level = round(100 * (1. - percentage));
+          level = round(100 * (percentage));
           waterLevel.setText("" + level + "%");
           if (level >= critical) waterLevel.setColor(0xffff0000);
           else if (level <= low || level >= high) waterLevel.setColor(0xffff5500);
@@ -546,7 +546,7 @@ void keyPressed(){
           // converte string para inteiro
           iDistance = int(distance);
           percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
-          level = round(100 * (1. - percentage));
+          level = round(100 * (percentage));
           waterLevel.setText("" + level + "%");
           if (level >= critical) waterLevel.setColor(0xffff0000);
           else if (level <= low || level >= high) waterLevel.setColor(0xffff5500);
@@ -576,7 +576,7 @@ void keyPressed(){
           // converte string para inteiro
           iDistance = int(distance);
           percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
-          level = round(100 * (1. - percentage));
+          level = round(100 * (percentage));
           waterLevel.setText("" + level + "%");
           if (level >= critical) waterLevel.setColor(0xffff0000);
           else if (level <= low || level >= high) waterLevel.setColor(0xffff5500);

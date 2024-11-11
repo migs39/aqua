@@ -1,7 +1,7 @@
 module controle_recepcao_serial (
-    input reg clock,
-    input reg reset,
-    input reg RX,
+    input clock,
+    input reset,
+    input RX,
     output wire [11:0]nv_crit,
     output wire [11:0]nv_alto,
     output wire [11:0]nv_baixo,

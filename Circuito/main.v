@@ -6,6 +6,7 @@ module main (
     input wire        echo2,
     input wire        echo3,
     input wire        RX,
+    input wire        switch_teste_in,
     output wire       trigger1,
     output wire       trigger2,
     output wire       trigger3,
@@ -20,7 +21,8 @@ module main (
     output wire       db_iniciar,
     output wire       db_fim_medida,
     output wire [6:0] db_estado,
-    output wire [6:0] db_sensor
+    output wire [6:0] db_sensor,
+    output wire       switch_teste_out
 );
 
     // Sinais internos

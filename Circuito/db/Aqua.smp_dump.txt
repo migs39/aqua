@@ -18,7 +18,16 @@ Eatual.envia_caracter 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1
 Eatual.muda_caracter 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 Eatual.fim_ciclo 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 
-State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_7O1:envia_asc|tx_serial_uc:U2_UC|Eatual
+State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|rx_serial_8N1:recepcao|rx_serial_uc:U2_UC|Eatual
+Name Eatual.final_rx Eatual.registrar Eatual.recepcao Eatual.espera Eatual.preparacao Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 
+Eatual.preparacao 0 0 0 0 1 1 
+Eatual.espera 0 0 0 1 0 1 
+Eatual.recepcao 0 0 1 0 0 1 
+Eatual.registrar 0 1 0 0 0 1 
+Eatual.final_rx 1 0 0 0 0 1 
+
+State Machine - |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_uc:U2_UC|Eatual
 Name Eatual.transmissao Eatual.espera Eatual.preparacao Eatual.final_tx Eatual.inicial 
 Eatual.inicial 0 0 0 0 0 
 Eatual.preparacao 0 0 1 0 1 

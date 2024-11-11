@@ -11,7 +11,7 @@ import java.io.IOException;
 
 Serial myPort; // define objeto da porta serial
 
-    String   porta = "COM19";  //acertar valor
+    String   porta = "COM10";  //acertar valor
     int   baudrate = 115200;
     float stopbits = 1.0;
     char    parity = 'N';
@@ -40,8 +40,8 @@ int mockDistance = 22;
 String sensorReading = "";
 String distance = "000";
 int iDistance = 0;
-int emptyDistance = 35;
-int fullDistance = 9;
+int emptyDistance = 100;
+int fullDistance = 0;
 float percentage = .5;
 
 Textlabel lowLabel;
@@ -66,7 +66,7 @@ void setup() {
 
   //================================== Config ==============
 
- background(color(200, 220, 255));
+  background(color(200, 220, 255));
 
   img = loadImage("aqua.png");
 
@@ -232,7 +232,7 @@ public void draw() {
     if (t >= 2073600) t = 0;
     drawAqua(671, 440, 2);
     drawBox(465, 110, level, t);
-    //plotGraph(50, 50, 300, 200);
+    plotGraph(70, 50, 330, 200, 10);
 }
 
 public void  drawBox(int x, int y, int level, int t){
@@ -513,16 +513,6 @@ int[] toArray(Queue<Integer> queue) {
   return array;
 }
 
-void keyPressed(){
-  switch (key){
-    case 'c':{
-      levels.clear();
-      times.clear();
-      t = 0;
-      break;
-    }
-  }
-}
 //========================== graphFunctions.end ==========
 
 //============================ Serial ====================
@@ -540,12 +530,37 @@ void serialEvent (Serial myPort) {
    
         // converte string para inteiro
         iDistance = int(distance);
+        println(iDistance);
         percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
-        level = round(100 * (1. - percentage));
+        level = round(100 * (percentage));
+        println(level);
         waterLevel.setText("" + level).draw();
+        if (level >= critical) waterLevel.setColor(0xffff0000);
+        else if (level <= low || level >= high) waterLevel.setColor(0xffff5500);
+        else waterLevel.setColor(color(0, 100, 255));
+
+        levels.add(level);
+        times.add(t);
+        timeRange = t - times.peek();
+        while (timeRange > maxTimeRange) {
+          times.poll();
+          levels.poll();
+          timeRange = t - times.peek();
+        }
     }
     catch(RuntimeException e) {
         e.printStackTrace();
     }
 }
 //========================================================
+
+void keyPressed(){
+  switch (key){
+    case 'c':{
+      times.clear();
+      levels.clear();
+      t = 0;
+      break;
+    }
+  }
+}
