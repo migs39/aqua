@@ -33,7 +33,10 @@ module circuito_projeto_fd (
     output wire        buzzer_alta,
     output wire        buzzer_baixa,
     output wire        abrir_valv,
-    output wire [3:0]  db_sensor
+    output wire [3:0]  db_sensor,
+    output wire        db_manual,
+    output wire        db_fecha_auto,
+    output wire        db_abre_auto
 );
 
     parameter HEXA_30 = 8'b00110000;
@@ -198,7 +201,10 @@ module circuito_projeto_fd (
         .abre_auto(abre_valvula_auto),
         .fecha_auto(fecha_valvula_auto),
         .abre_manual(abre_valv_manual),
-        .abre_valvula(abrir_valv)
+        .abre_valvula(abrir_valv),
+        .db_manual(db_manual),
+        .db_abre_auto(db_abre_auto),
+        .db_fecha_auto(db_fecha_auto)
     );
 
     //-----------------------------------------------------------

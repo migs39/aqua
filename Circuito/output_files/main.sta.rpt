@@ -1,5 +1,5 @@
 Timing Analyzer report for main
-Mon Nov 11 13:02:33 2024
+Wed Nov 13 11:27:28 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -102,14 +102,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.40        ;
+; Average used               ; 1.44        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  13.4%      ;
-;     Processor 3            ;  13.1%      ;
-;     Processor 4            ;  13.0%      ;
+;     Processor 2            ;  14.8%      ;
+;     Processor 3            ;  14.7%      ;
+;     Processor 4            ;  14.6%      ;
 +----------------------------+-------------+
 
 
@@ -128,8 +128,8 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                                                             ; Note ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
-; 41.68 MHz  ; 41.68 MHz       ; clock                                                                                                                  ;      ;
-; 244.74 MHz ; 244.74 MHz      ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ;      ;
+; 41.78 MHz  ; 41.78 MHz       ; clock                                                                                                                  ;      ;
+; 212.77 MHz ; 212.77 MHz      ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ;      ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -145,8 +145,8 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                                                  ; Slack   ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
-; clock                                                                                                                  ; -22.995 ; -1829.593     ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.134  ; -5.134        ;
+; clock                                                                                                                  ; -22.937 ; -1832.061     ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.381  ; -5.381        ;
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -155,8 +155,8 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                                  ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
-; clock                                                                                                                  ; 0.248 ; 0.000         ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.726 ; 0.000         ;
+; clock                                                                                                                  ; 0.310 ; 0.000         ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.936 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -165,7 +165,7 @@ HTML report is unavailable in plain text report export.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clock ; -1.079 ; -250.797              ;
+; clock ; -1.060 ; -229.614              ;
 +-------+--------+-----------------------+
 
 
@@ -174,7 +174,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+-----------------------+
 ; Clock ; Slack ; End Point TNS         ;
 +-------+-------+-----------------------+
-; clock ; 0.656 ; 0.000                 ;
+; clock ; 0.860 ; 0.000                 ;
 +-------+-------+-----------------------+
 
 
@@ -183,8 +183,8 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                  ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock                                                                                                                  ; -0.538 ; -506.784      ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.410  ; 0.000         ;
+; clock                                                                                                                  ; -0.538 ; -498.212      ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.413  ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -199,8 +199,8 @@ No synchronizer chains to report.
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                                                             ; Note ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
-; 39.39 MHz  ; 39.39 MHz       ; clock                                                                                                                  ;      ;
-; 238.55 MHz ; 238.55 MHz      ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ;      ;
+; 39.56 MHz  ; 39.56 MHz       ; clock                                                                                                                  ;      ;
+; 208.68 MHz ; 208.68 MHz      ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ;      ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -210,8 +210,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                                                  ; Slack   ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
-; clock                                                                                                                  ; -24.390 ; -1839.010     ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.281  ; -5.281        ;
+; clock                                                                                                                  ; -24.281 ; -1835.250     ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.498  ; -5.498        ;
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -220,8 +220,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                                  ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
-; clock                                                                                                                  ; 0.227 ; 0.000         ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.769 ; 0.000         ;
+; clock                                                                                                                  ; 0.297 ; 0.000         ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.956 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -230,7 +230,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+----------------------+
 ; Clock ; Slack  ; End Point TNS        ;
 +-------+--------+----------------------+
-; clock ; -1.009 ; -225.491             ;
+; clock ; -0.967 ; -205.611             ;
 +-------+--------+----------------------+
 
 
@@ -239,7 +239,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+----------------------+
 ; Clock ; Slack ; End Point TNS        ;
 +-------+-------+----------------------+
-; clock ; 0.624 ; 0.000                ;
+; clock ; 0.826 ; 0.000                ;
 +-------+-------+----------------------+
 
 
@@ -248,8 +248,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                  ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock                                                                                                                  ; -0.538 ; -517.207      ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.446  ; 0.000         ;
+; clock                                                                                                                  ; -0.538 ; -510.064      ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.397  ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -259,14 +259,14 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 No synchronizer chains to report.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast 1100mV 85C Model Setup Summary                                                                                                              ;
-+------------------------------------------------------------------------------------------------------------------------+---------+---------------+
-; Clock                                                                                                                  ; Slack   ; End Point TNS ;
-+------------------------------------------------------------------------------------------------------------------------+---------+---------------+
-; clock                                                                                                                  ; -10.075 ; -594.223      ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -2.311  ; -2.311        ;
-+------------------------------------------------------------------------------------------------------------------------+---------+---------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1100mV 85C Model Setup Summary                                                                                                             ;
++------------------------------------------------------------------------------------------------------------------------+--------+---------------+
+; Clock                                                                                                                  ; Slack  ; End Point TNS ;
++------------------------------------------------------------------------------------------------------------------------+--------+---------------+
+; clock                                                                                                                  ; -9.938 ; -591.882      ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -2.437 ; -2.437        ;
++------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -274,8 +274,8 @@ No synchronizer chains to report.
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                                  ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
-; clock                                                                                                                  ; 0.135 ; 0.000         ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.341 ; 0.000         ;
+; clock                                                                                                                  ; 0.159 ; 0.000         ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.404 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -284,7 +284,7 @@ No synchronizer chains to report.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clock ; -0.135 ; -7.804                ;
+; clock ; -0.108 ; -0.645                ;
 +-------+--------+-----------------------+
 
 
@@ -293,7 +293,7 @@ No synchronizer chains to report.
 +-------+-------+-----------------------+
 ; Clock ; Slack ; End Point TNS         ;
 +-------+-------+-----------------------+
-; clock ; 0.299 ; 0.000                 ;
+; clock ; 0.400 ; 0.000                 ;
 +-------+-------+-----------------------+
 
 
@@ -302,8 +302,8 @@ No synchronizer chains to report.
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                  ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock                                                                                                                  ; -0.100 ; -60.555       ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.471  ; 0.000         ;
+; clock                                                                                                                  ; -0.096 ; -58.307       ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.497  ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -318,8 +318,8 @@ No synchronizer chains to report.
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                  ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock                                                                                                                  ; -9.617 ; -503.626      ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -2.211 ; -2.211        ;
+; clock                                                                                                                  ; -9.482 ; -497.343      ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -2.323 ; -2.323        ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -328,18 +328,18 @@ No synchronizer chains to report.
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                                  ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
-; clock                                                                                                                  ; 0.127 ; 0.000         ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.329 ; 0.000         ;
+; clock                                                                                                                  ; 0.147 ; 0.000         ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.373 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
 +---------------------------------------+
 ; Fast 1100mV 0C Model Recovery Summary ;
-+-------+--------+----------------------+
-; Clock ; Slack  ; End Point TNS        ;
-+-------+--------+----------------------+
-; clock ; -0.021 ; -0.202               ;
-+-------+--------+----------------------+
++-------+-------+-----------------------+
+; Clock ; Slack ; End Point TNS         ;
++-------+-------+-----------------------+
+; clock ; 0.009 ; 0.000                 ;
++-------+-------+-----------------------+
 
 
 +--------------------------------------+
@@ -347,7 +347,7 @@ No synchronizer chains to report.
 +-------+-------+----------------------+
 ; Clock ; Slack ; End Point TNS        ;
 +-------+-------+----------------------+
-; clock ; 0.272 ; 0.000                ;
+; clock ; 0.365 ; 0.000                ;
 +-------+-------+----------------------+
 
 
@@ -356,8 +356,8 @@ No synchronizer chains to report.
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                  ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock                                                                                                                  ; -0.099 ; -61.563       ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.479  ; 0.000         ;
+; clock                                                                                                                  ; -0.097 ; -59.604       ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.494  ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -372,12 +372,12 @@ No synchronizer chains to report.
 +-------------------------------------------------------------------------------------------------------------------------+-----------+-------+----------+---------+---------------------+
 ; Clock                                                                                                                   ; Setup     ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +-------------------------------------------------------------------------------------------------------------------------+-----------+-------+----------+---------+---------------------+
-; Worst-case Slack                                                                                                        ; -24.390   ; 0.127 ; -1.079   ; 0.272   ; -0.538              ;
-;  circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.281    ; 0.329 ; N/A      ; N/A     ; 0.410               ;
-;  clock                                                                                                                  ; -24.390   ; 0.127 ; -1.079   ; 0.272   ; -0.538              ;
-; Design-wide TNS                                                                                                         ; -1844.291 ; 0.0   ; -250.797 ; 0.0     ; -517.207            ;
-;  circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.281    ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-;  clock                                                                                                                  ; -1839.010 ; 0.000 ; -250.797 ; 0.000   ; -517.207            ;
+; Worst-case Slack                                                                                                        ; -24.281   ; 0.147 ; -1.060   ; 0.365   ; -0.538              ;
+;  circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.498    ; 0.373 ; N/A      ; N/A     ; 0.397               ;
+;  clock                                                                                                                  ; -24.281   ; 0.147 ; -1.060   ; 0.365   ; -0.538              ;
+; Design-wide TNS                                                                                                         ; -1840.748 ; 0.0   ; -229.614 ; 0.0     ; -510.064            ;
+;  circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.498    ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  clock                                                                                                                  ; -1835.250 ; 0.000 ; -229.614 ; 0.000   ; -510.064            ;
 +-------------------------------------------------------------------------------------------------------------------------+-----------+-------+----------+---------+---------------------+
 
 
@@ -432,6 +432,10 @@ No synchronizer chains to report.
 ; db_sensor[5]     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; db_sensor[6]     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; switch_teste_out ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; db_abre_valvula  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; db_manual        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; db_abre_auto     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; db_fecha_auto    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 
 
@@ -440,8 +444,8 @@ No synchronizer chains to report.
 +-----------------+--------------+-----------------+-----------------+
 ; Pin             ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +-----------------+--------------+-----------------+-----------------+
-; switch_teste_in ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; iniciar         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; switch_teste_in ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; clock           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; reset           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; echo1           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -502,6 +506,10 @@ No synchronizer chains to report.
 ; db_sensor[5]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.19e-07 V                   ; 2.4 V               ; -0.039 V            ; 0.21 V                               ; 0.145 V                              ; 4.67e-10 s                  ; 4.63e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.19e-07 V                  ; 2.4 V              ; -0.039 V           ; 0.21 V                              ; 0.145 V                             ; 4.67e-10 s                 ; 4.63e-10 s                 ; No                        ; Yes                       ;
 ; db_sensor[6]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.88e-07 V                   ; 2.35 V              ; -0.0185 V           ; 0.153 V                              ; 0.099 V                              ; 4.6e-10 s                   ; 4.48e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.88e-07 V                  ; 2.35 V             ; -0.0185 V          ; 0.153 V                             ; 0.099 V                             ; 4.6e-10 s                  ; 4.48e-10 s                 ; No                        ; Yes                       ;
 ; switch_teste_out ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0492 V           ; 0.181 V                              ; 0.116 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0492 V          ; 0.181 V                             ; 0.116 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; db_abre_valvula  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0495 V           ; 0.18 V                               ; 0.115 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0495 V          ; 0.18 V                              ; 0.115 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; db_manual        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0495 V           ; 0.18 V                               ; 0.115 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0495 V          ; 0.18 V                              ; 0.115 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; db_abre_auto     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.88e-07 V                   ; 2.35 V              ; -0.0185 V           ; 0.153 V                              ; 0.099 V                              ; 4.6e-10 s                   ; 4.48e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.88e-07 V                  ; 2.35 V             ; -0.0185 V          ; 0.153 V                             ; 0.099 V                             ; 4.6e-10 s                  ; 4.48e-10 s                 ; No                        ; Yes                       ;
+; db_fecha_auto    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.19e-07 V                   ; 2.4 V               ; -0.039 V            ; 0.21 V                               ; 0.145 V                              ; 4.67e-10 s                  ; 4.63e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.19e-07 V                  ; 2.4 V              ; -0.039 V           ; 0.21 V                              ; 0.145 V                             ; 4.67e-10 s                 ; 4.63e-10 s                 ; No                        ; Yes                       ;
 +------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -556,6 +564,10 @@ No synchronizer chains to report.
 ; db_sensor[5]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.56e-05 V                   ; 2.38 V              ; -0.026 V            ; 0.249 V                              ; 0.089 V                              ; 4.95e-10 s                  ; 6.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.56e-05 V                  ; 2.38 V             ; -0.026 V           ; 0.249 V                             ; 0.089 V                             ; 4.95e-10 s                 ; 6.01e-10 s                 ; No                        ; Yes                       ;
 ; db_sensor[6]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.27e-05 V                   ; 2.34 V              ; -0.0089 V           ; 0.206 V                              ; 0.058 V                              ; 4.97e-10 s                  ; 5.13e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.27e-05 V                  ; 2.34 V             ; -0.0089 V          ; 0.206 V                             ; 0.058 V                             ; 4.97e-10 s                 ; 5.13e-10 s                 ; Yes                       ; Yes                       ;
 ; switch_teste_out ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.032 V            ; 0.204 V                              ; 0.181 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.032 V           ; 0.204 V                             ; 0.181 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
+; db_abre_valvula  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.0315 V           ; 0.205 V                              ; 0.182 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.0315 V          ; 0.205 V                             ; 0.182 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
+; db_manual        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.0315 V           ; 0.205 V                              ; 0.182 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.0315 V          ; 0.205 V                             ; 0.182 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
+; db_abre_auto     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.27e-05 V                   ; 2.34 V              ; -0.0089 V           ; 0.206 V                              ; 0.058 V                              ; 4.97e-10 s                  ; 5.13e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.27e-05 V                  ; 2.34 V             ; -0.0089 V          ; 0.206 V                             ; 0.058 V                             ; 4.97e-10 s                 ; 5.13e-10 s                 ; Yes                       ; Yes                       ;
+; db_fecha_auto    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.56e-05 V                   ; 2.38 V              ; -0.026 V            ; 0.249 V                              ; 0.089 V                              ; 4.95e-10 s                  ; 6.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.56e-05 V                  ; 2.38 V             ; -0.026 V           ; 0.249 V                             ; 0.089 V                             ; 4.95e-10 s                 ; 6.01e-10 s                 ; No                        ; Yes                       ;
 +------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -610,6 +622,10 @@ No synchronizer chains to report.
 ; db_sensor[5]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
 ; db_sensor[6]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
 ; switch_teste_out ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; db_abre_valvula  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; db_manual        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; db_abre_auto     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; db_fecha_auto    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
 +------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -664,6 +680,10 @@ No synchronizer chains to report.
 ; db_sensor[5]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
 ; db_sensor[6]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
 ; switch_teste_out ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; db_abre_valvula  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; db_manual        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; db_abre_auto     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; db_fecha_auto    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
 +------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -674,7 +694,7 @@ No synchronizer chains to report.
 +------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-----------+----------+----------+----------+
 ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0         ; 0        ; 1        ; 1        ;
 ; clock                                                                                                                  ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0         ; 0        ; 2        ; 0        ;
-; clock                                                                                                                  ; clock                                                                                                                  ; 263845671 ; 0        ; 0        ; 0        ;
+; clock                                                                                                                  ; clock                                                                                                                  ; 215678409 ; 0        ; 0        ; 0        ;
 +------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -686,7 +706,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-----------+----------+----------+----------+
 ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0         ; 0        ; 1        ; 1        ;
 ; clock                                                                                                                  ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0         ; 0        ; 2        ; 0        ;
-; clock                                                                                                                  ; clock                                                                                                                  ; 263845671 ; 0        ; 0        ; 0        ;
+; clock                                                                                                                  ; clock                                                                                                                  ; 215678409 ; 0        ; 0        ; 0        ;
 +------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -696,7 +716,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clock      ; clock    ; 327      ; 0        ; 0        ; 0        ;
+; clock      ; clock    ; 322      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -706,7 +726,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clock      ; clock    ; 327      ; 0        ; 0        ; 0        ;
+; clock      ; clock    ; 322      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -730,10 +750,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 6     ; 6    ;
+; Unconstrained Input Ports       ; 7     ; 7    ;
 ; Unconstrained Input Port Paths  ; 46    ; 46   ;
-; Unconstrained Output Ports      ; 45    ; 45   ;
-; Unconstrained Output Port Paths ; 243   ; 243  ;
+; Unconstrained Output Ports      ; 49    ; 49   ;
+; Unconstrained Output Port Paths ; 247   ; 247  ;
 +---------------------------------+-------+------+
 
 
@@ -747,138 +767,148 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                         ;
-+------------+--------------------------------------------------------------------------------------+
-; Input Port ; Comment                                                                              ;
-+------------+--------------------------------------------------------------------------------------+
-; RX         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; echo1      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; echo2      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; echo3      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; iniciar    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+------------+--------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                              ;
++-----------------+--------------------------------------------------------------------------------------+
+; Input Port      ; Comment                                                                              ;
++-----------------+--------------------------------------------------------------------------------------+
+; RX              ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; echo1           ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; echo2           ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; echo3           ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; iniciar         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reset           ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch_teste_in ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-----------------+--------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                            ;
-+---------------+---------------------------------------------------------------------------------------+
-; Output Port   ; Comment                                                                               ;
-+---------------+---------------------------------------------------------------------------------------+
-; abre_valvula  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; buzzer_alta   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; buzzer_baixa  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_fim_medida ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_iniciar    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[4]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[5]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[6]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[4]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[5]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[6]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[4]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[5]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[6]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; pronto        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; saida_serial  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; trigger1      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; trigger2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; trigger3      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+---------------+---------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                               ;
++------------------+---------------------------------------------------------------------------------------+
+; Output Port      ; Comment                                                                               ;
++------------------+---------------------------------------------------------------------------------------+
+; abre_valvula     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buzzer_alta      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buzzer_baixa     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_abre_auto     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_abre_valvula  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_fim_medida    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_iniciar       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_manual        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[0]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[1]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[2]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[3]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[4]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[5]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[6]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[0]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[1]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[2]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[3]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[4]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[5]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[6]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[0]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[1]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[2]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[3]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[4]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[5]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[6]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pronto           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; saida_serial     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch_teste_out ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; trigger1         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; trigger2         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; trigger3         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------------+---------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                         ;
-+------------+--------------------------------------------------------------------------------------+
-; Input Port ; Comment                                                                              ;
-+------------+--------------------------------------------------------------------------------------+
-; RX         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; echo1      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; echo2      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; echo3      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; iniciar    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+------------+--------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                              ;
++-----------------+--------------------------------------------------------------------------------------+
+; Input Port      ; Comment                                                                              ;
++-----------------+--------------------------------------------------------------------------------------+
+; RX              ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; echo1           ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; echo2           ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; echo3           ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; iniciar         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reset           ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch_teste_in ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-----------------+--------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                            ;
-+---------------+---------------------------------------------------------------------------------------+
-; Output Port   ; Comment                                                                               ;
-+---------------+---------------------------------------------------------------------------------------+
-; abre_valvula  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; buzzer_alta   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; buzzer_baixa  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_estado[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_fim_medida ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_iniciar    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; db_sensor[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[4]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[5]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex0[6]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[4]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[5]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex1[6]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[0]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[1]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[2]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[3]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[4]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[5]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; hex2[6]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; pronto        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; saida_serial  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; trigger1      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; trigger2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; trigger3      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+---------------+---------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                               ;
++------------------+---------------------------------------------------------------------------------------+
+; Output Port      ; Comment                                                                               ;
++------------------+---------------------------------------------------------------------------------------+
+; abre_valvula     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buzzer_alta      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; buzzer_baixa     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_abre_auto     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_abre_valvula  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_estado[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_fim_medida    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_iniciar       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_manual        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; db_sensor[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[0]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[1]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[2]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[3]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[4]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[5]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex0[6]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[0]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[1]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[2]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[3]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[4]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[5]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex1[6]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[0]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[1]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[2]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[3]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[4]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[5]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; hex2[6]          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pronto           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; saida_serial     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch_teste_out ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; trigger1         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; trigger2         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; trigger3         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------------+---------------------------------------------------------------------------------------+
 
 
 +--------------------------+
@@ -887,7 +917,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Nov 11 13:02:25 2024
+    Info: Processing started: Wed Nov 13 11:27:20 2024
 Info: Command: quartus_sta Aqua -c main
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -906,120 +936,120 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -22.995
+Info (332146): Worst-case setup slack is -22.937
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -22.995           -1829.593 clock 
-    Info (332119):    -5.134              -5.134 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case hold slack is 0.248
+    Info (332119):   -22.937           -1832.061 clock 
+    Info (332119):    -5.381              -5.381 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case hold slack is 0.310
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.248               0.000 clock 
-    Info (332119):     0.726               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case recovery slack is -1.079
+    Info (332119):     0.310               0.000 clock 
+    Info (332119):     0.936               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case recovery slack is -1.060
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.079            -250.797 clock 
-Info (332146): Worst-case removal slack is 0.656
+    Info (332119):    -1.060            -229.614 clock 
+Info (332146): Worst-case removal slack is 0.860
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.656               0.000 clock 
+    Info (332119):     0.860               0.000 clock 
 Info (332146): Worst-case minimum pulse width slack is -0.538
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.538            -506.784 clock 
-    Info (332119):     0.410               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+    Info (332119):    -0.538            -498.212 clock 
+    Info (332119):     0.413               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -24.390
+Info (332146): Worst-case setup slack is -24.281
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -24.390           -1839.010 clock 
-    Info (332119):    -5.281              -5.281 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case hold slack is 0.227
+    Info (332119):   -24.281           -1835.250 clock 
+    Info (332119):    -5.498              -5.498 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case hold slack is 0.297
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.227               0.000 clock 
-    Info (332119):     0.769               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case recovery slack is -1.009
+    Info (332119):     0.297               0.000 clock 
+    Info (332119):     0.956               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case recovery slack is -0.967
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.009            -225.491 clock 
-Info (332146): Worst-case removal slack is 0.624
+    Info (332119):    -0.967            -205.611 clock 
+Info (332146): Worst-case removal slack is 0.826
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.624               0.000 clock 
+    Info (332119):     0.826               0.000 clock 
 Info (332146): Worst-case minimum pulse width slack is -0.538
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.538            -517.207 clock 
-    Info (332119):     0.446               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+    Info (332119):    -0.538            -510.064 clock 
+    Info (332119):     0.397               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -10.075
+Info (332146): Worst-case setup slack is -9.938
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -10.075            -594.223 clock 
-    Info (332119):    -2.311              -2.311 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case hold slack is 0.135
+    Info (332119):    -9.938            -591.882 clock 
+    Info (332119):    -2.437              -2.437 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case hold slack is 0.159
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.135               0.000 clock 
-    Info (332119):     0.341               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case recovery slack is -0.135
+    Info (332119):     0.159               0.000 clock 
+    Info (332119):     0.404               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case recovery slack is -0.108
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.135              -7.804 clock 
-Info (332146): Worst-case removal slack is 0.299
+    Info (332119):    -0.108              -0.645 clock 
+Info (332146): Worst-case removal slack is 0.400
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.299               0.000 clock 
-Info (332146): Worst-case minimum pulse width slack is -0.100
+    Info (332119):     0.400               0.000 clock 
+Info (332146): Worst-case minimum pulse width slack is -0.096
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.100             -60.555 clock 
-    Info (332119):     0.471               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+    Info (332119):    -0.096             -58.307 clock 
+    Info (332119):     0.497               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -9.617
+Info (332146): Worst-case setup slack is -9.482
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -9.617            -503.626 clock 
-    Info (332119):    -2.211              -2.211 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case hold slack is 0.127
+    Info (332119):    -9.482            -497.343 clock 
+    Info (332119):    -2.323              -2.323 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case hold slack is 0.147
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.127               0.000 clock 
-    Info (332119):     0.329               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case recovery slack is -0.021
+    Info (332119):     0.147               0.000 clock 
+    Info (332119):     0.373               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case recovery slack is 0.009
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.021              -0.202 clock 
-Info (332146): Worst-case removal slack is 0.272
+    Info (332119):     0.009               0.000 clock 
+Info (332146): Worst-case removal slack is 0.365
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.272               0.000 clock 
-Info (332146): Worst-case minimum pulse width slack is -0.099
+    Info (332119):     0.365               0.000 clock 
+Info (332146): Worst-case minimum pulse width slack is -0.097
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.099             -61.563 clock 
-    Info (332119):     0.479               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+    Info (332119):    -0.097             -59.604 clock 
+    Info (332119):     0.494               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5091 megabytes
-    Info: Processing ended: Mon Nov 11 13:02:33 2024
+    Info: Peak virtual memory: 5088 megabytes
+    Info: Processing ended: Wed Nov 13 11:27:28 2024
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Total CPU time (on all processors): 00:00:10
 
 

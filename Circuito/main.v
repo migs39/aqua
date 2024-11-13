@@ -22,7 +22,11 @@ module main (
     output wire       db_fim_medida,
     output wire [6:0] db_estado,
     output wire [6:0] db_sensor,
-    output wire       switch_teste_out
+    output wire       switch_teste_out,
+    output wire       db_abre_valvula,
+    output wire       db_manual,
+    output wire       db_abre_auto,
+    output wire       db_fecha_auto
 );
 
     // Sinais internos
@@ -55,7 +59,10 @@ module main (
         .abre_valvula(abre_valvula),
         .db_estado(s_estado),
         .db_sensor(s_sensor),
-        .db_fim_medida(db_fim_medida)
+        .db_fim_medida(db_fim_medida),
+        .db_manual(db_manual),
+        .db_abre_auto(db_abre_auto),
+        .db_fecha_auto(db_fecha_auto)
     );
 
     // Displays para medida (4 dígitos BCD)
@@ -85,5 +92,7 @@ module main (
     );
 
     assign db_iniciar   = iniciar;
+    assign switch_teste_out = switch_teste_in;
+    assign db_abre_valvula = abre_valvula;
 
 endmodule

@@ -6,7 +6,7 @@ echo1 => echo1.IN1
 echo2 => echo2.IN1
 echo3 => echo3.IN1
 RX => RX.IN1
-switch_teste_in => ~NO_FANOUT~
+switch_teste_in => switch_teste_out.DATAIN
 trigger1 << circuito_projeto:main.trigger1
 trigger2 << circuito_projeto:main.trigger2
 trigger3 << circuito_projeto:main.trigger3
@@ -52,7 +52,11 @@ db_sensor[3] << hexa7seg:H4.display
 db_sensor[4] << hexa7seg:H4.display
 db_sensor[5] << hexa7seg:H4.display
 db_sensor[6] << hexa7seg:H4.display
-switch_teste_out << <GND>
+switch_teste_out << switch_teste_in.DB_MAX_OUTPUT_PORT_TYPE
+db_abre_valvula << circuito_projeto:main.abre_valvula
+db_manual << circuito_projeto:main.db_manual
+db_abre_auto << circuito_projeto:main.db_abre_auto
+db_fecha_auto << circuito_projeto:main.db_fecha_auto
 
 
 |main|circuito_projeto:main
@@ -92,6 +96,9 @@ db_sensor[1] <= circuito_projeto_fd:FD.db_sensor
 db_sensor[2] <= circuito_projeto_fd:FD.db_sensor
 db_sensor[3] <= circuito_projeto_fd:FD.db_sensor
 db_fim_medida <= s_fim_medida.DB_MAX_OUTPUT_PORT_TYPE
+db_manual <= circuito_projeto_fd:FD.db_manual
+db_abre_auto <= circuito_projeto_fd:FD.db_abre_auto
+db_fecha_auto <= circuito_projeto_fd:FD.db_fecha_auto
 
 
 |main|circuito_projeto:main|circuito_projeto_fd:FD
@@ -146,6 +153,9 @@ db_sensor[0] <= x3_interface:sensores.db_sensor
 db_sensor[1] <= x3_interface:sensores.db_sensor
 db_sensor[2] <= x3_interface:sensores.db_sensor
 db_sensor[3] <= x3_interface:sensores.db_sensor
+db_manual <= valvula:V.db_manual
+db_fecha_auto <= valvula:V.db_fecha_auto
+db_abre_auto <= valvula:V.db_abre_auto
 
 
 |main|circuito_projeto:main|circuito_projeto_fd:FD|edge_detector:pulsoMensurar
@@ -2944,11 +2954,17 @@ sinal <= estado_buzzer.DB_MAX_OUTPUT_PORT_TYPE
 |main|circuito_projeto:main|circuito_projeto_fd:FD|valvula:V
 manual => sig.OUTPUTSELECT
 manual => sig.IN1
+manual => db_manual.DATAIN
 abre_auto => sig.IN0
 abre_auto => sig.DATAA
+abre_auto => db_abre_auto.DATAIN
 fecha_auto => sig.IN1
+fecha_auto => db_fecha_auto.DATAIN
 abre_manual => sig.DATAB
 abre_valvula <= sig.DB_MAX_OUTPUT_PORT_TYPE
+db_manual <= manual.DB_MAX_OUTPUT_PORT_TYPE
+db_abre_auto <= abre_auto.DB_MAX_OUTPUT_PORT_TYPE
+db_fecha_auto <= fecha_auto.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial

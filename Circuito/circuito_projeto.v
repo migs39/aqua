@@ -17,7 +17,10 @@ module circuito_projeto (
     output wire abre_valvula,
     output wire [3:0] db_estado,
     output wire [3:0] db_sensor,
-    output wire db_fim_medida
+    output wire db_fim_medida,
+    output wire db_manual,
+    output wire db_abre_auto,
+    output wire db_fecha_auto
 );
     wire s_zera;
     wire s_fim_1s;
@@ -76,7 +79,10 @@ module circuito_projeto (
         .buzzer_alta(buzzer_alta),
         .buzzer_baixa(buzzer_baixa),
         .abrir_valv(abre_valvula),
-        .db_sensor(db_sensor)       
+        .db_sensor(db_sensor),
+        .db_manual(db_manual),
+        .db_abre_auto(db_abre_auto),
+        .db_fecha_auto(db_fecha_auto)       
     );
 
     circuito_projeto_uc UC(

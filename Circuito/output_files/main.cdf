@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEBA4F23) Path("C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/output_files/") File("main.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEBA4F23) Path("C:/Users/Operador/Desktop/aqua/Circuito/output_files/") File("main.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

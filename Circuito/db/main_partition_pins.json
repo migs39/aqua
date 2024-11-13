@@ -184,7 +184,27 @@
 					"strict" : false
 				},
 				{
+					"name" : "switch_teste_out",
+					"strict" : false
+				},
+				{
+					"name" : "db_abre_valvula",
+					"strict" : false
+				},
+				{
+					"name" : "db_manual",
+					"strict" : false
+				},
+				{
+					"name" : "db_abre_auto",
+					"strict" : false
+				},
+				{
 					"name" : "iniciar",
+					"strict" : false
+				},
+				{
+					"name" : "switch_teste_in",
 					"strict" : false
 				},
 				{

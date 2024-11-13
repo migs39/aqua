@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Mon Nov 11 13:01:42 2024
+Wed Nov 13 11:26:37 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -130,14 +130,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 11 13:01:41 2024       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 13 11:26:37 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; main                                        ;
 ; Top-level Entity Name           ; main                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 532                                         ;
-; Total pins                      ; 54                                          ;
+; Total pins                      ; 58                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -256,55 +256,55 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                        ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
-; x3_interface.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/x3_interface.v             ;         ;
-; valvula.v                        ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/valvula.v                  ;         ;
-; tx_serial_uc.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/tx_serial_uc.v             ;         ;
-; tx_serial_8N1_fd.v               ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/tx_serial_8N1_fd.v         ;         ;
-; tx_serial_8N1.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/tx_serial_8N1.v            ;         ;
-; rx_serial_uc.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/rx_serial_uc.v             ;         ;
-; rx_serial_8N1_fd.v               ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/rx_serial_8N1_fd.v         ;         ;
-; rx_serial_8N1.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/rx_serial_8N1.v            ;         ;
-; registrador_n_initial.v          ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/registrador_n_initial.v    ;         ;
-; registrador_n.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/registrador_n.v            ;         ;
-; mux_4x1_n.v                      ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/mux_4x1_n.v                ;         ;
-; mux_1x4_n.v                      ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/mux_1x4_n.v                ;         ;
-; main.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/main.v                     ;         ;
-; interface_hcsr04_uc.v            ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/interface_hcsr04_uc.v      ;         ;
-; interface_hcsr04_fd.v            ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/interface_hcsr04_fd.v      ;         ;
-; interface_hcsr04.v               ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/interface_hcsr04.v         ;         ;
-; hexa7seg.v                       ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/hexa7seg.v                 ;         ;
-; gerador_pulso.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/gerador_pulso.v            ;         ;
-; edge_detector.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/edge_detector.v            ;         ;
-; deslocador_n.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/deslocador_n.v             ;         ;
-; dec2hex.v                        ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v                  ;         ;
-; controle_recepcao_serial.v       ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/controle_recepcao_serial.v ;         ;
-; contador_m.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_m.v               ;         ;
-; contador_cm_uc.v                 ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_cm_uc.v           ;         ;
-; contador_cm_fd.v                 ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_cm_fd.v           ;         ;
-; contador_cm.v                    ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_cm.v              ;         ;
-; contador_bcd_3digitos.v          ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_bcd_3digitos.v    ;         ;
-; classificador_medida.v           ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/classificador_medida.v     ;         ;
-; circuito_projeto_uc.v            ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_uc.v      ;         ;
-; circuito_projeto_fd.v            ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_fd.v      ;         ;
-; circuito_projeto.v               ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto.v         ;         ;
-; buzzer.v                         ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/buzzer.v                   ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf               ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc              ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc          ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc               ;         ;
-; db/lpm_divide_gbm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/lpm_divide_gbm.tdf      ;         ;
-; db/sign_div_unsign_mlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/sign_div_unsign_mlh.tdf ;         ;
-; db/alt_u_div_ive.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/alt_u_div_ive.tdf       ;         ;
-; db/lpm_divide_3am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/lpm_divide_3am.tdf      ;         ;
-; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/sign_div_unsign_9kh.tdf ;         ;
-; db/alt_u_div_ose.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/alt_u_div_ose.tdf       ;         ;
-; db/lpm_divide_62m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/lpm_divide_62m.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; x3_interface.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/x3_interface.v                     ;         ;
+; valvula.v                        ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/valvula.v                          ;         ;
+; tx_serial_uc.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_uc.v                     ;         ;
+; tx_serial_8N1_fd.v               ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_8N1_fd.v                 ;         ;
+; tx_serial_8N1.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_8N1.v                    ;         ;
+; rx_serial_uc.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/rx_serial_uc.v                     ;         ;
+; rx_serial_8N1_fd.v               ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/rx_serial_8N1_fd.v                 ;         ;
+; rx_serial_8N1.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/rx_serial_8N1.v                    ;         ;
+; registrador_n_initial.v          ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/registrador_n_initial.v            ;         ;
+; registrador_n.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/registrador_n.v                    ;         ;
+; mux_4x1_n.v                      ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/mux_4x1_n.v                        ;         ;
+; mux_1x4_n.v                      ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/mux_1x4_n.v                        ;         ;
+; main.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/main.v                             ;         ;
+; interface_hcsr04_uc.v            ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_uc.v              ;         ;
+; interface_hcsr04_fd.v            ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_fd.v              ;         ;
+; interface_hcsr04.v               ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04.v                 ;         ;
+; hexa7seg.v                       ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/hexa7seg.v                         ;         ;
+; gerador_pulso.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/gerador_pulso.v                    ;         ;
+; edge_detector.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/edge_detector.v                    ;         ;
+; deslocador_n.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/deslocador_n.v                     ;         ;
+; dec2hex.v                        ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v                          ;         ;
+; controle_recepcao_serial.v       ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/controle_recepcao_serial.v         ;         ;
+; contador_m.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/contador_m.v                       ;         ;
+; contador_cm_uc.v                 ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/contador_cm_uc.v                   ;         ;
+; contador_cm_fd.v                 ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/contador_cm_fd.v                   ;         ;
+; contador_cm.v                    ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/contador_cm.v                      ;         ;
+; contador_bcd_3digitos.v          ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/contador_bcd_3digitos.v            ;         ;
+; classificador_medida.v           ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/classificador_medida.v             ;         ;
+; circuito_projeto_uc.v            ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_uc.v              ;         ;
+; circuito_projeto_fd.v            ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v              ;         ;
+; circuito_projeto.v               ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto.v                 ;         ;
+; buzzer.v                         ; yes             ; User Verilog HDL File        ; C:/Users/Operador/Desktop/aqua/Circuito/buzzer.v                           ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc      ;         ;
+; db/lpm_divide_gbm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Desktop/aqua/Circuito/db/lpm_divide_gbm.tdf              ;         ;
+; db/sign_div_unsign_mlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Desktop/aqua/Circuito/db/sign_div_unsign_mlh.tdf         ;         ;
+; db/alt_u_div_ive.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Desktop/aqua/Circuito/db/alt_u_div_ive.tdf               ;         ;
+; db/lpm_divide_3am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Desktop/aqua/Circuito/db/lpm_divide_3am.tdf              ;         ;
+; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Desktop/aqua/Circuito/db/sign_div_unsign_9kh.tdf         ;         ;
+; db/alt_u_div_ose.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Desktop/aqua/Circuito/db/alt_u_div_ose.tdf               ;         ;
+; db/lpm_divide_62m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Operador/Desktop/aqua/Circuito/db/lpm_divide_62m.tdf              ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -323,14 +323,14 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;             ;
 ; Dedicated logic registers                   ; 532         ;
 ;                                             ;             ;
-; I/O pins                                    ; 54          ;
+; I/O pins                                    ; 58          ;
 ;                                             ;             ;
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 532         ;
-; Total fan-out                               ; 5192        ;
-; Average fan-out                             ; 3.07        ;
+; Total fan-out                               ; 5200        ;
+; Average fan-out                             ; 3.06        ;
 +---------------------------------------------+-------------+
 
 
@@ -339,7 +339,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
 ; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                              ; Entity Name              ; Library Name ;
 +-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
-; |main                                               ; 1050 (0)            ; 532 (0)                   ; 0                 ; 0          ; 54   ; 0            ; |main                                                                                                                                                                                                            ; circuito_projeto         ; work         ;
+; |main                                               ; 1050 (0)            ; 532 (0)                   ; 0                 ; 0          ; 58   ; 0            ; |main                                                                                                                                                                                                            ; circuito_projeto         ; work         ;
 ;    |circuito_projeto:main|                          ; 1015 (0)            ; 532 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main                                                                                                                                                                                      ; circuito_projeto         ; work         ;
 ;       |circuito_projeto_fd:FD|                      ; 991 (0)             ; 517 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD                                                                                                                                                               ; circuito_projeto_fd      ; work         ;
 ;          |buzzer:b1|                                ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |main|circuito_projeto:main|circuito_projeto_fd:FD|buzzer:b1                                                                                                                                                     ; buzzer                   ; work         ;
@@ -745,20 +745,20 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; 4:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout|Q[0]                                 ;
 ; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1|Q[0]                 ;
 ; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1|Q[5]                 ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1|Q[8]                 ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1|Q[6]                 ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig2[3] ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig0[0] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig1[2] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig2[1] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig0[1] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig1[0] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig2[0] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig0[1] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor3|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig1[3] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig2[2] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig0[3] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor2|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig1[1] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig2[1] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig0[3] ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2|s_dig1[2] ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|rx_serial_8N1:recepcao|rx_serial_8N1_fd:U1_FD|deslocador_n:DESL|IQ[6]                            ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|rx_serial_8N1:recepcao|rx_serial_8N1_fd:U1_FD|deslocador_n:DESL|IQ[2]                            ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_8N1_fd:U1_FD|deslocador_n:U1|IQ[1]                                                                      ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_8N1_fd:U1_FD|deslocador_n:U1|IQ[6]                                                                      ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_8N1_fd:U1_FD|deslocador_n:U1|IQ[3]                                                                      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_8N1_fd:U1_FD|deslocador_n:U1|IQ[9]                                                                      ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |main|circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_8N1_fd:U1_FD|deslocador_n:U1|IQ[4]                                                                      ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |main|circuito_projeto:main|circuito_projeto_uc:UC|Eprox.medida_critica_muito_alta                                                                                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -1700,7 +1700,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         1 data inputs ; 24                          ;
 ;         2 data inputs ; 12                          ;
 ;         3 data inputs ; 12                          ;
-; boundary_port         ; 54                          ;
+; boundary_port         ; 58                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 19.80                       ;
 ; Average LUT depth     ; 5.14                        ;
@@ -1722,183 +1722,180 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Nov 11 13:01:28 2024
+    Info: Processing started: Wed Nov 13 11:26:23 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aqua -c main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file x3_interface.v
-    Info (12023): Found entity 1: x3_interface File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/x3_interface.v Line: 1
+    Info (12023): Found entity 1: x3_interface File: C:/Users/Operador/Desktop/aqua/Circuito/x3_interface.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file valvula.v
-    Info (12023): Found entity 1: valvula File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/valvula.v Line: 1
+    Info (12023): Found entity 1: valvula File: C:/Users/Operador/Desktop/aqua/Circuito/valvula.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tx_serial_uc.v
-    Info (12023): Found entity 1: tx_serial_uc File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/tx_serial_uc.v Line: 16
+    Info (12023): Found entity 1: tx_serial_uc File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_uc.v Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file tx_serial_8n1_fd.v
-    Info (12023): Found entity 1: tx_serial_8N1_fd File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/tx_serial_8N1_fd.v Line: 5
+    Info (12023): Found entity 1: tx_serial_8N1_fd File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_8N1_fd.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file tx_serial_8n1.v
-    Info (12023): Found entity 1: tx_serial_8N1 File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/tx_serial_8N1.v Line: 5
+    Info (12023): Found entity 1: tx_serial_8N1 File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_8N1.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file rx_serial_uc.v
-    Info (12023): Found entity 1: rx_serial_uc File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/rx_serial_uc.v Line: 15
+    Info (12023): Found entity 1: rx_serial_uc File: C:/Users/Operador/Desktop/aqua/Circuito/rx_serial_uc.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file rx_serial_8n1_fd.v
-    Info (12023): Found entity 1: rx_serial_8N1_fd File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/rx_serial_8N1_fd.v Line: 14
+    Info (12023): Found entity 1: rx_serial_8N1_fd File: C:/Users/Operador/Desktop/aqua/Circuito/rx_serial_8N1_fd.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file rx_serial_8n1.v
-    Info (12023): Found entity 1: rx_serial_8N1 File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/rx_serial_8N1.v Line: 17
+    Info (12023): Found entity 1: rx_serial_8N1 File: C:/Users/Operador/Desktop/aqua/Circuito/rx_serial_8N1.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file registrador_n_initial.v
-    Info (12023): Found entity 1: registrador_n_initial File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/registrador_n_initial.v Line: 17
+    Info (12023): Found entity 1: registrador_n_initial File: C:/Users/Operador/Desktop/aqua/Circuito/registrador_n_initial.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file registrador_n.v
-    Info (12023): Found entity 1: registrador_n File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/registrador_n.v Line: 17
+    Info (12023): Found entity 1: registrador_n File: C:/Users/Operador/Desktop/aqua/Circuito/registrador_n.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file mux_4x1_n.v
-    Info (12023): Found entity 1: mux_4x1_n File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/mux_4x1_n.v Line: 1
+    Info (12023): Found entity 1: mux_4x1_n File: C:/Users/Operador/Desktop/aqua/Circuito/mux_4x1_n.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_1x4_n.v
-    Info (12023): Found entity 1: mux_1x4 File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/mux_1x4_n.v Line: 1
+    Info (12023): Found entity 1: mux_1x4 File: C:/Users/Operador/Desktop/aqua/Circuito/mux_1x4_n.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main.v
-    Info (12023): Found entity 1: main File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/main.v Line: 1
+    Info (12023): Found entity 1: main File: C:/Users/Operador/Desktop/aqua/Circuito/main.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file interface_hcsr04_uc.v
-    Info (12023): Found entity 1: interface_hcsr04_uc File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/interface_hcsr04_uc.v Line: 14
+    Info (12023): Found entity 1: interface_hcsr04_uc File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_uc.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file interface_hcsr04_fd.v
-    Info (12023): Found entity 1: interface_hcsr04_fd File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/interface_hcsr04_fd.v Line: 14
+    Info (12023): Found entity 1: interface_hcsr04_fd File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_fd.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file interface_hcsr04.v
-    Info (12023): Found entity 1: interface_hcsr04 File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/interface_hcsr04.v Line: 13
+    Info (12023): Found entity 1: interface_hcsr04 File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04.v Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file hexa7seg.v
-    Info (12023): Found entity 1: hexa7seg File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/hexa7seg.v Line: 22
+    Info (12023): Found entity 1: hexa7seg File: C:/Users/Operador/Desktop/aqua/Circuito/hexa7seg.v Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file gerador_pulso.v
-    Info (12023): Found entity 1: gerador_pulso File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/gerador_pulso.v Line: 14
+    Info (12023): Found entity 1: gerador_pulso File: C:/Users/Operador/Desktop/aqua/Circuito/gerador_pulso.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file flip_flop.v
-    Info (12023): Found entity 1: flip_flop File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/flip_flop.v Line: 1
+    Info (12023): Found entity 1: flip_flop File: C:/Users/Operador/Desktop/aqua/Circuito/flip_flop.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file edge_detector.v
-    Info (12023): Found entity 1: edge_detector File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/edge_detector.v Line: 19
+    Info (12023): Found entity 1: edge_detector File: C:/Users/Operador/Desktop/aqua/Circuito/edge_detector.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file deslocador_n.v
-    Info (12023): Found entity 1: deslocador_n File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/deslocador_n.v Line: 15
+    Info (12023): Found entity 1: deslocador_n File: C:/Users/Operador/Desktop/aqua/Circuito/deslocador_n.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file dec2hex.v
-    Info (12023): Found entity 1: dec2hex File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v Line: 1
+    Info (12023): Found entity 1: dec2hex File: C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file controle_recepcao_serial.v
-    Info (12023): Found entity 1: controle_recepcao_serial File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/controle_recepcao_serial.v Line: 1
+    Info (12023): Found entity 1: controle_recepcao_serial File: C:/Users/Operador/Desktop/aqua/Circuito/controle_recepcao_serial.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contador_m.v
-    Info (12023): Found entity 1: contador_m File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_m.v Line: 16
+    Info (12023): Found entity 1: contador_m File: C:/Users/Operador/Desktop/aqua/Circuito/contador_m.v Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file contador_cm_uc.v
-    Info (12023): Found entity 1: contador_cm_uc File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_cm_uc.v Line: 16
+    Info (12023): Found entity 1: contador_cm_uc File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm_uc.v Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file contador_cm_fd.v
-    Info (12023): Found entity 1: contador_cm_fd File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_cm_fd.v Line: 15
+    Info (12023): Found entity 1: contador_cm_fd File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm_fd.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file contador_cm.v
-    Info (12023): Found entity 1: contador_cm File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_cm.v Line: 15
+    Info (12023): Found entity 1: contador_cm File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file contador_bcd_3digitos.v
-    Info (12023): Found entity 1: contador_bcd_3digitos File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_bcd_3digitos.v Line: 14
+    Info (12023): Found entity 1: contador_bcd_3digitos File: C:/Users/Operador/Desktop/aqua/Circuito/contador_bcd_3digitos.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file classificador_medida.v
-    Info (12023): Found entity 1: classificador_medida File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/classificador_medida.v Line: 1
+    Info (12023): Found entity 1: classificador_medida File: C:/Users/Operador/Desktop/aqua/Circuito/classificador_medida.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file circuito_projeto_uc.v
-    Info (12023): Found entity 1: circuito_projeto_uc File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_uc.v Line: 1
+    Info (12023): Found entity 1: circuito_projeto_uc File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_uc.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file circuito_projeto_fd.v
-    Info (12023): Found entity 1: circuito_projeto_fd File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_fd.v Line: 1
+    Info (12023): Found entity 1: circuito_projeto_fd File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file circuito_projeto.v
-    Info (12023): Found entity 1: circuito_projeto File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto.v Line: 1
+    Info (12023): Found entity 1: circuito_projeto File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file buzzer.v
-    Info (12023): Found entity 1: buzzer File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/buzzer.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at circuito_projeto_fd.v(59): created implicit net for "reset" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_fd.v Line: 59
+    Info (12023): Found entity 1: buzzer File: C:/Users/Operador/Desktop/aqua/Circuito/buzzer.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at circuito_projeto_fd.v(62): created implicit net for "reset" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 62
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (10034): Output port "switch_teste_out" at main.v(26) has no driver File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/main.v Line: 26
-Info (12128): Elaborating entity "circuito_projeto" for hierarchy "circuito_projeto:main" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/main.v Line: 59
-Info (12128): Elaborating entity "circuito_projeto_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto.v Line: 80
-Info (12128): Elaborating entity "edge_detector" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|edge_detector:pulsoMensurar" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_fd.v Line: 62
-Info (12128): Elaborating entity "classificador_medida" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_fd.v Line: 78
-Warning (10230): Verilog HDL assignment warning at classificador_medida.v(36): truncated value with size 32 to match size of target (12) File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/classificador_medida.v Line: 36
-Info (12128): Elaborating entity "x3_interface" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_fd.v Line: 95
-Info (12128): Elaborating entity "interface_hcsr04" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/x3_interface.v Line: 30
-Info (12128): Elaborating entity "interface_hcsr04_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/interface_hcsr04.v Line: 47
-Info (12128): Elaborating entity "interface_hcsr04_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/interface_hcsr04.v Line: 62
-Info (12128): Elaborating entity "gerador_pulso" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|gerador_pulso:U1" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/interface_hcsr04_fd.v Line: 41
-Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/interface_hcsr04_fd.v Line: 54
-Info (12128): Elaborating entity "contador_cm" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/interface_hcsr04_fd.v Line: 69
-Info (12128): Elaborating entity "contador_cm_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_cm.v Line: 52
-Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_cm_fd.v Line: 44
-Info (12128): Elaborating entity "contador_bcd_3digitos" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_cm_fd.v Line: 55
-Info (12128): Elaborating entity "contador_cm_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/contador_cm.v Line: 65
-Info (12128): Elaborating entity "registrador_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|registrador_n:U3" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/interface_hcsr04_fd.v Line: 80
-Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_fd.v Line: 111
-Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_caracter" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_fd.v Line: 144
-Info (12128): Elaborating entity "mux_4x1_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|mux_4x1_n:saida_asc" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_fd.v Line: 156
-Info (12128): Elaborating entity "tx_serial_8N1" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_fd.v Line: 170
-Info (12128): Elaborating entity "tx_serial_8N1_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_8N1_fd:U1_FD" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/tx_serial_8N1.v Line: 46
-Info (12128): Elaborating entity "deslocador_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_8N1_fd:U1_FD|deslocador_n:U1" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/tx_serial_8N1_fd.v Line: 37
-Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_8N1_fd:U1_FD|contador_m:U2" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/tx_serial_8N1_fd.v Line: 51
-Info (12128): Elaborating entity "tx_serial_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_uc:U2_UC" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/tx_serial_8N1.v Line: 62
-Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|contador_m:U3_TICK" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/tx_serial_8N1.v Line: 78
-Info (12128): Elaborating entity "hexa7seg" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|hexa7seg:HEX0" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/tx_serial_8N1.v Line: 103
-Info (12128): Elaborating entity "buzzer" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|buzzer:b1" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_fd.v Line: 182
-Info (12128): Elaborating entity "valvula" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|valvula:V" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_fd.v Line: 202
-Warning (10240): Verilog HDL Always Construct warning at valvula.v(12): inferring latch(es) for variable "sig", which holds its previous value in one or more paths through the always construct File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/valvula.v Line: 12
-Info (10041): Inferred latch for "sig" at valvula.v(15) File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/valvula.v Line: 15
-Info (12128): Elaborating entity "controle_recepcao_serial" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_fd.v Line: 217
-Info (12128): Elaborating entity "rx_serial_8N1" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|rx_serial_8N1:recepcao" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/controle_recepcao_serial.v Line: 31
-Info (12128): Elaborating entity "rx_serial_8N1_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|rx_serial_8N1:recepcao|rx_serial_8N1_fd:U1_FD" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/rx_serial_8N1.v Line: 57
-Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|rx_serial_8N1:recepcao|rx_serial_8N1_fd:U1_FD|contador_m:CONT" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/rx_serial_8N1_fd.v Line: 57
-Info (12128): Elaborating entity "registrador_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|rx_serial_8N1:recepcao|rx_serial_8N1_fd:U1_FD|registrador_n:REG" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/rx_serial_8N1_fd.v Line: 67
-Info (12128): Elaborating entity "rx_serial_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|rx_serial_8N1:recepcao|rx_serial_uc:U2_UC" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/rx_serial_8N1.v Line: 75
-Info (12128): Elaborating entity "registrador_n_initial" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:critico" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/controle_recepcao_serial.v Line: 42
-Info (12128): Elaborating entity "dec2hex" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_critico" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/controle_recepcao_serial.v Line: 47
-Warning (10230): Verilog HDL assignment warning at dec2hex.v(11): truncated value with size 32 to match size of target (4) File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v Line: 11
-Warning (10230): Verilog HDL assignment warning at dec2hex.v(12): truncated value with size 32 to match size of target (4) File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v Line: 12
-Info (12128): Elaborating entity "registrador_n_initial" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:alto" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/controle_recepcao_serial.v Line: 58
-Info (12128): Elaborating entity "registrador_n_initial" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:baixo" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/controle_recepcao_serial.v Line: 75
-Info (12128): Elaborating entity "registrador_n_initial" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/controle_recepcao_serial.v Line: 92
-Info (12128): Elaborating entity "mux_1x4" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|mux_1x4:seletor" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/controle_recepcao_serial.v Line: 112
-Info (12128): Elaborating entity "circuito_projeto_uc" for hierarchy "circuito_projeto:main|circuito_projeto_uc:UC" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto.v Line: 110
+Info (12128): Elaborating entity "circuito_projeto" for hierarchy "circuito_projeto:main" File: C:/Users/Operador/Desktop/aqua/Circuito/main.v Line: 66
+Info (12128): Elaborating entity "circuito_projeto_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto.v Line: 86
+Info (12128): Elaborating entity "edge_detector" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|edge_detector:pulsoMensurar" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 65
+Info (12128): Elaborating entity "classificador_medida" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 81
+Warning (10230): Verilog HDL assignment warning at classificador_medida.v(36): truncated value with size 32 to match size of target (12) File: C:/Users/Operador/Desktop/aqua/Circuito/classificador_medida.v Line: 36
+Info (12128): Elaborating entity "x3_interface" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 98
+Info (12128): Elaborating entity "interface_hcsr04" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1" File: C:/Users/Operador/Desktop/aqua/Circuito/x3_interface.v Line: 30
+Info (12128): Elaborating entity "interface_hcsr04_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_uc:U1" File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04.v Line: 47
+Info (12128): Elaborating entity "interface_hcsr04_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2" File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04.v Line: 62
+Info (12128): Elaborating entity "gerador_pulso" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|gerador_pulso:U1" File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_fd.v Line: 41
+Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_m:contador_2s_timeout" File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_fd.v Line: 54
+Info (12128): Elaborating entity "contador_cm" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2" File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_fd.v Line: 69
+Info (12128): Elaborating entity "contador_cm_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD" File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm.v Line: 52
+Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1" File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm_fd.v Line: 44
+Info (12128): Elaborating entity "contador_bcd_3digitos" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2" File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm_fd.v Line: 55
+Info (12128): Elaborating entity "contador_cm_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC" File: C:/Users/Operador/Desktop/aqua/Circuito/contador_cm.v Line: 65
+Info (12128): Elaborating entity "registrador_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|x3_interface:sensores|interface_hcsr04:sensor1|interface_hcsr04_fd:U2|registrador_n:U3" File: C:/Users/Operador/Desktop/aqua/Circuito/interface_hcsr04_fd.v Line: 80
+Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_1s" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 114
+Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_caracter" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 147
+Info (12128): Elaborating entity "mux_4x1_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|mux_4x1_n:saida_asc" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 159
+Info (12128): Elaborating entity "tx_serial_8N1" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 173
+Info (12128): Elaborating entity "tx_serial_8N1_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_8N1_fd:U1_FD" File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_8N1.v Line: 46
+Info (12128): Elaborating entity "deslocador_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_8N1_fd:U1_FD|deslocador_n:U1" File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_8N1_fd.v Line: 37
+Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_8N1_fd:U1_FD|contador_m:U2" File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_8N1_fd.v Line: 51
+Info (12128): Elaborating entity "tx_serial_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|tx_serial_uc:U2_UC" File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_8N1.v Line: 62
+Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|contador_m:U3_TICK" File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_8N1.v Line: 78
+Info (12128): Elaborating entity "hexa7seg" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|tx_serial_8N1:envia_asc|hexa7seg:HEX0" File: C:/Users/Operador/Desktop/aqua/Circuito/tx_serial_8N1.v Line: 103
+Info (12128): Elaborating entity "buzzer" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|buzzer:b1" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 185
+Info (12128): Elaborating entity "valvula" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|valvula:V" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 208
+Warning (10240): Verilog HDL Always Construct warning at valvula.v(15): inferring latch(es) for variable "sig", which holds its previous value in one or more paths through the always construct File: C:/Users/Operador/Desktop/aqua/Circuito/valvula.v Line: 15
+Info (10041): Inferred latch for "sig" at valvula.v(18) File: C:/Users/Operador/Desktop/aqua/Circuito/valvula.v Line: 18
+Info (12128): Elaborating entity "controle_recepcao_serial" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_fd.v Line: 223
+Info (12128): Elaborating entity "rx_serial_8N1" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|rx_serial_8N1:recepcao" File: C:/Users/Operador/Desktop/aqua/Circuito/controle_recepcao_serial.v Line: 31
+Info (12128): Elaborating entity "rx_serial_8N1_fd" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|rx_serial_8N1:recepcao|rx_serial_8N1_fd:U1_FD" File: C:/Users/Operador/Desktop/aqua/Circuito/rx_serial_8N1.v Line: 57
+Info (12128): Elaborating entity "contador_m" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|rx_serial_8N1:recepcao|rx_serial_8N1_fd:U1_FD|contador_m:CONT" File: C:/Users/Operador/Desktop/aqua/Circuito/rx_serial_8N1_fd.v Line: 57
+Info (12128): Elaborating entity "registrador_n" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|rx_serial_8N1:recepcao|rx_serial_8N1_fd:U1_FD|registrador_n:REG" File: C:/Users/Operador/Desktop/aqua/Circuito/rx_serial_8N1_fd.v Line: 67
+Info (12128): Elaborating entity "rx_serial_uc" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|rx_serial_8N1:recepcao|rx_serial_uc:U2_UC" File: C:/Users/Operador/Desktop/aqua/Circuito/rx_serial_8N1.v Line: 75
+Info (12128): Elaborating entity "registrador_n_initial" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:critico" File: C:/Users/Operador/Desktop/aqua/Circuito/controle_recepcao_serial.v Line: 42
+Info (12128): Elaborating entity "dec2hex" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_critico" File: C:/Users/Operador/Desktop/aqua/Circuito/controle_recepcao_serial.v Line: 47
+Warning (10230): Verilog HDL assignment warning at dec2hex.v(11): truncated value with size 32 to match size of target (4) File: C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v Line: 11
+Warning (10230): Verilog HDL assignment warning at dec2hex.v(12): truncated value with size 32 to match size of target (4) File: C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v Line: 12
+Info (12128): Elaborating entity "registrador_n_initial" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:alto" File: C:/Users/Operador/Desktop/aqua/Circuito/controle_recepcao_serial.v Line: 58
+Info (12128): Elaborating entity "registrador_n_initial" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:baixo" File: C:/Users/Operador/Desktop/aqua/Circuito/controle_recepcao_serial.v Line: 75
+Info (12128): Elaborating entity "registrador_n_initial" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo" File: C:/Users/Operador/Desktop/aqua/Circuito/controle_recepcao_serial.v Line: 92
+Info (12128): Elaborating entity "mux_1x4" for hierarchy "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|mux_1x4:seletor" File: C:/Users/Operador/Desktop/aqua/Circuito/controle_recepcao_serial.v Line: 112
+Info (12128): Elaborating entity "circuito_projeto_uc" for hierarchy "circuito_projeto:main|circuito_projeto_uc:UC" File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto.v Line: 116
 Info (278001): Inferred 7 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|Div0" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/classificador_medida.v Line: 36
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_alto|Div0" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v Line: 11
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_alto|Mod0" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v Line: 12
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_baixo|Div0" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v Line: 11
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_baixo|Mod0" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v Line: 12
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_critico|Div0" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v Line: 11
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_critico|Mod0" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v Line: 12
-Info (12130): Elaborated megafunction instantiation "circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|lpm_divide:Div0" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/classificador_medida.v Line: 36
-Info (12133): Instantiated megafunction "circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|lpm_divide:Div0" with the following parameter: File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/classificador_medida.v Line: 36
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|Div0" File: C:/Users/Operador/Desktop/aqua/Circuito/classificador_medida.v Line: 36
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_alto|Div0" File: C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v Line: 11
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_alto|Mod0" File: C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v Line: 12
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_baixo|Div0" File: C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v Line: 11
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_baixo|Mod0" File: C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v Line: 12
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_critico|Div0" File: C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v Line: 11
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_critico|Mod0" File: C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v Line: 12
+Info (12130): Elaborated megafunction instantiation "circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|lpm_divide:Div0" File: C:/Users/Operador/Desktop/aqua/Circuito/classificador_medida.v Line: 36
+Info (12133): Instantiated megafunction "circuito_projeto:main|circuito_projeto_fd:FD|classificador_medida:classificador|lpm_divide:Div0" with the following parameter: File: C:/Users/Operador/Desktop/aqua/Circuito/classificador_medida.v Line: 36
     Info (12134): Parameter "LPM_WIDTHN" = "14"
     Info (12134): Parameter "LPM_WIDTHD" = "2"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_gbm.tdf
-    Info (12023): Found entity 1: lpm_divide_gbm File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/lpm_divide_gbm.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_gbm File: C:/Users/Operador/Desktop/aqua/Circuito/db/lpm_divide_gbm.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_mlh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_mlh File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/sign_div_unsign_mlh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_mlh File: C:/Users/Operador/Desktop/aqua/Circuito/db/sign_div_unsign_mlh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ive.tdf
-    Info (12023): Found entity 1: alt_u_div_ive File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/alt_u_div_ive.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_alto|lpm_divide:Div0" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v Line: 11
-Info (12133): Instantiated megafunction "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_alto|lpm_divide:Div0" with the following parameter: File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v Line: 11
+    Info (12023): Found entity 1: alt_u_div_ive File: C:/Users/Operador/Desktop/aqua/Circuito/db/alt_u_div_ive.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_alto|lpm_divide:Div0" File: C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v Line: 11
+Info (12133): Instantiated megafunction "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_alto|lpm_divide:Div0" with the following parameter: File: C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v Line: 11
     Info (12134): Parameter "LPM_WIDTHN" = "6"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_3am.tdf
-    Info (12023): Found entity 1: lpm_divide_3am File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/lpm_divide_3am.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_3am File: C:/Users/Operador/Desktop/aqua/Circuito/db/lpm_divide_3am.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_9kh File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/sign_div_unsign_9kh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_9kh File: C:/Users/Operador/Desktop/aqua/Circuito/db/sign_div_unsign_9kh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ose.tdf
-    Info (12023): Found entity 1: alt_u_div_ose File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/alt_u_div_ose.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_alto|lpm_divide:Mod0" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v Line: 12
-Info (12133): Instantiated megafunction "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_alto|lpm_divide:Mod0" with the following parameter: File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/dec2hex.v Line: 12
+    Info (12023): Found entity 1: alt_u_div_ose File: C:/Users/Operador/Desktop/aqua/Circuito/db/alt_u_div_ose.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_alto|lpm_divide:Mod0" File: C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v Line: 12
+Info (12133): Instantiated megafunction "circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|dec2hex:conv_alto|lpm_divide:Mod0" with the following parameter: File: C:/Users/Operador/Desktop/aqua/Circuito/dec2hex.v Line: 12
     Info (12134): Parameter "LPM_WIDTHN" = "6"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_62m.tdf
-    Info (12023): Found entity 1: lpm_divide_62m File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/db/lpm_divide_62m.tdf Line: 25
-Warning (13012): Latch circuito_projeto:main|circuito_projeto_fd:FD|valvula:V|sig has unsafe behavior File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/valvula.v Line: 15
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal circuito_projeto:main|circuito_projeto_uc:UC|Eatual.abre_valvula File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/circuito_projeto_uc.v Line: 32
+    Info (12023): Found entity 1: lpm_divide_62m File: C:/Users/Operador/Desktop/aqua/Circuito/db/lpm_divide_62m.tdf Line: 25
+Warning (13012): Latch circuito_projeto:main|circuito_projeto_fd:FD|valvula:V|sig has unsafe behavior File: C:/Users/Operador/Desktop/aqua/Circuito/valvula.v Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal circuito_projeto:main|circuito_projeto_uc:UC|Eatual.abre_valvula File: C:/Users/Operador/Desktop/aqua/Circuito/circuito_projeto_uc.v Line: 32
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "switch_teste_out" is stuck at GND File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/main.v Line: 26
+    Warning (13410): Pin "db_fecha_auto" is stuck at GND File: C:/Users/Operador/Desktop/aqua/Circuito/main.v Line: 30
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 25 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "switch_teste_in" File: C:/Users/Operador/Downloads/aqua-main/aqua-main/Circuito/main.v Line: 9
-Info (21057): Implemented 1167 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1171 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 46 output pins
+    Info (21059): Implemented 50 output pins
     Info (21061): Implemented 1113 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4843 megabytes
-    Info: Processing ended: Mon Nov 11 13:01:42 2024
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:29
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Wed Nov 13 11:26:38 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:30
 
 
