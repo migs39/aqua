@@ -1,239 +1,232 @@
-C:/Poli/labDig2/aqua/Circuito/tx_serial_8N1.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/tx_serial_8N1.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module tx_serial_8N1
-
-Top level modules:
-	tx_serial_8N1
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/contador_cm.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/contador_cm.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module contador_cm
-
-Top level modules:
-	contador_cm
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/tx_serial_uc.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/tx_serial_uc.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module tx_serial_uc
-
-Top level modules:
-	tx_serial_uc
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/classificador_medida.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/classificador_medida.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module classificador_medida
-
-Top level modules:
-	classificador_medida
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/x3_interface.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/x3_interface.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module x3_interface
-
-Top level modules:
-	x3_interface
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/registrador_n.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/registrador_n.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module registrador_n
-
-Top level modules:
-	registrador_n
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/mux_4x1_n.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/mux_4x1_n.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module mux_4x1_n
-
-Top level modules:
-	mux_4x1_n
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/mux_1x4_n.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/mux_1x4_n.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module mux_1x4
-
-Top level modules:
-	mux_1x4
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/circuito_projeto_uc.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/circuito_projeto_uc.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module circuito_projeto_uc
-
-Top level modules:
-	circuito_projeto_uc
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/interface_hcsr04.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/interface_hcsr04.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module interface_hcsr04
-
-Top level modules:
-	interface_hcsr04
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/main.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/main.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module main
-
-Top level modules:
-	main
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/interface_hcsr04_fd.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/interface_hcsr04_fd.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module interface_hcsr04_fd
-
-Top level modules:
-	interface_hcsr04_fd
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/deslocador_n.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/deslocador_n.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module deslocador_n
-
-Top level modules:
-	deslocador_n
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/aqua_tb.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/aqua_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module aqua_tb
-
-Top level modules:
-	aqua_tb
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/contador_m.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/contador_m.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module contador_m
-
-Top level modules:
-	contador_m
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/controle_recepcao_serial.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/controle_recepcao_serial.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module controle_recepcao_serial
-
-Top level modules:
-	controle_recepcao_serial
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/contador_bcd_3digitos.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/contador_bcd_3digitos.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module contador_bcd_3digitos
-
-Top level modules:
-	contador_bcd_3digitos
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/rx_serial_8N1_fd.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/rx_serial_8N1_fd.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module rx_serial_8N1_fd
-
-Top level modules:
-	rx_serial_8N1_fd
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/tx_serial_8N1_fd.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/tx_serial_8N1_fd.v
+/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_8N1_fd.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_8N1_fd.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module tx_serial_8N1_fd
 
 Top level modules:
 	tx_serial_8N1_fd
 
-} {} {}} C:/Poli/labDig2/aqua/Circuito/buzzer.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/buzzer.v
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/buzzer.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/buzzer.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module buzzer
 
 Top level modules:
 	buzzer
 
-} {} {}} C:/Poli/labDig2/aqua/Circuito/contador_cm_fd.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/contador_cm_fd.v
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm_fd.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm_fd.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module contador_cm_fd
 
 Top level modules:
 	contador_cm_fd
 
-} {} {}} C:/Poli/labDig2/aqua/Circuito/valvula.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/valvula.v
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/registrador_n.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/registrador_n.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module valvula
+-- Compiling module registrador_n
 
 Top level modules:
-	valvula
+	registrador_n
 
-} {} {}} C:/Poli/labDig2/aqua/Circuito/interface_hcsr04_uc.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/interface_hcsr04_uc.v
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/mux_4x1_n.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/mux_4x1_n.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module interface_hcsr04_uc
+-- Compiling module mux_4x1_n
 
 Top level modules:
-	interface_hcsr04_uc
+	mux_4x1_n
 
-} {} {}} C:/Poli/labDig2/aqua/Circuito/flip_flop.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/flip_flop.v
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/mux_1x4_n.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/mux_1x4_n.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module flip_flop
+-- Compiling module mux_1x4
 
 Top level modules:
-	flip_flop
+	mux_1x4
 
-} {} {}} C:/Poli/labDig2/aqua/Circuito/dec2hex.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/dec2hex.v
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto_uc.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto_uc.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module dec2hex
+-- Compiling module circuito_projeto_uc
 
 Top level modules:
-	dec2hex
+	circuito_projeto_uc
 
-} {} {}} C:/Poli/labDig2/aqua/Circuito/registrador_n_initial.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/registrador_n_initial.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module registrador_n_initial
-
-Top level modules:
-	registrador_n_initial
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/hexa7seg.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/hexa7seg.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module hexa7seg
-
-Top level modules:
-	hexa7seg
-
-} {} {}} C:/Poli/labDig2/aqua/Circuito/circuito_projeto.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/circuito_projeto.v
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module circuito_projeto
 
 Top level modules:
 	circuito_projeto
 
-} {} {}} C:/Poli/labDig2/aqua/Circuito/circuito_projeto_fd.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/circuito_projeto_fd.v
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/hexa7seg.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/hexa7seg.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module circuito_projeto_fd
+-- Compiling module hexa7seg
 
 Top level modules:
-	circuito_projeto_fd
+	hexa7seg
 
-} {} {}} C:/Poli/labDig2/aqua/Circuito/gerador_pulso.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/gerador_pulso.v
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/aqua_tb.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/aqua_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module gerador_pulso
+-- Compiling module aqua_tb
 
 Top level modules:
-	gerador_pulso
+	aqua_tb
 
-} {} {}} C:/Poli/labDig2/aqua/Circuito/edge_detector.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/edge_detector.v
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04_fd.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04_fd.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module edge_detector
+-- Compiling module interface_hcsr04_fd
 
 Top level modules:
-	edge_detector
+	interface_hcsr04_fd
 
-} {} {}} C:/Poli/labDig2/aqua/Circuito/rx_serial_8N1.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/rx_serial_8N1.v
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_bcd_3digitos.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_bcd_3digitos.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module rx_serial_8N1
+-- Compiling module contador_bcd_3digitos
 
 Top level modules:
-	rx_serial_8N1
+	contador_bcd_3digitos
 
-} {} {}} C:/Poli/labDig2/aqua/Circuito/rx_serial_uc.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/rx_serial_uc.v
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_uc.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_uc.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module rx_serial_uc
 
 Top level modules:
 	rx_serial_uc
 
-} {} {}} C:/Poli/labDig2/aqua/Circuito/contador_cm_uc.v {1 {vlog -work work -stats=none C:/Poli/labDig2/aqua/Circuito/contador_cm_uc.v
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm_uc.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm_uc.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module contador_cm_uc
 
 Top level modules:
 	contador_cm_uc
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_uc.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_uc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tx_serial_uc
+
+Top level modules:
+	tx_serial_uc
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/x3_interface.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/x3_interface.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module x3_interface
+
+Top level modules:
+	x3_interface
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/valvula.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/valvula.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module valvula
+
+Top level modules:
+	valvula
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04_uc.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04_uc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module interface_hcsr04_uc
+
+Top level modules:
+	interface_hcsr04_uc
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/flip_flop.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/flip_flop.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module flip_flop
+
+Top level modules:
+	flip_flop
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/dec2hex.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/dec2hex.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module dec2hex
+
+Top level modules:
+	dec2hex
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/registrador_n_initial.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/registrador_n_initial.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module registrador_n_initial
+
+Top level modules:
+	registrador_n_initial
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module interface_hcsr04
+
+Top level modules:
+	interface_hcsr04
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto_fd.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto_fd.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module circuito_projeto_fd
+
+Top level modules:
+	circuito_projeto_fd
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/main.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/main.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module main
+
+Top level modules:
+	main
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/deslocador_n.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/deslocador_n.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module deslocador_n
+
+Top level modules:
+	deslocador_n
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/controle_recepcao_serial.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/controle_recepcao_serial.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controle_recepcao_serial
+
+Top level modules:
+	controle_recepcao_serial
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/gerador_pulso.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/gerador_pulso.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module gerador_pulso
+
+Top level modules:
+	gerador_pulso
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/edge_detector.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/edge_detector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module edge_detector
+
+Top level modules:
+	edge_detector
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_m.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_m.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module contador_m
+
+Top level modules:
+	contador_m
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_8N1.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_8N1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module rx_serial_8N1
+
+Top level modules:
+	rx_serial_8N1
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_8N1_fd.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_8N1_fd.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module rx_serial_8N1_fd
+
+Top level modules:
+	rx_serial_8N1_fd
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_8N1.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_8N1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tx_serial_8N1
+
+Top level modules:
+	tx_serial_8N1
+
+} {} {}} /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm.v {1 {vlog -work work -stats=none /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module contador_cm
+
+Top level modules:
+	contador_cm
 
 } {} {}}

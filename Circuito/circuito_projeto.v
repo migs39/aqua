@@ -86,7 +86,7 @@ module circuito_projeto (
         .fim_medida_nivel(s_fim_medida),
         .descartar_medida(s_descartar_medida),
         .medida_classificacao(s_medida_classificacao),
-        .valvula_aberta(1'b0),
+        .valvula_aberta(abre_valvula),
         .fim_1s(s_fim_1s),
 		.fim_2s(s_fim_2s),
         .fim_caracter(s_fim_caracter),

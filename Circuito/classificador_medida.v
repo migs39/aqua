@@ -50,7 +50,7 @@ module classificador_medida #(
                 descartar_medida <= 0;
 
             // Classificação da média
-            if (media < nv_baixo)
+            if (media > nv_baixo)
                 medida_classificacao <= 3'b001;
             else if (media >= nv_baixo && media < nv_alto)
                 medida_classificacao <= 3'b100;
