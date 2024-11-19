@@ -32,7 +32,7 @@ module controle_recepcao_serial (
 
     registrador_n_initial #(
         .N(6),
-        .INIT_VALUE(6'b011011)
+        .INIT_VALUE(6'b000011) //3
     ) critico (
         .clock  ( clock ),
         .clear  ( reset ),
@@ -48,7 +48,7 @@ module controle_recepcao_serial (
 
     registrador_n_initial #(
         .N(6),
-        .INIT_VALUE(6'b011000)
+        .INIT_VALUE(6'b001100) //12
     ) alto (
         .clock  ( clock ),
         .clear  ( reset ),
@@ -65,7 +65,7 @@ module controle_recepcao_serial (
 
     registrador_n_initial #(
         .N(6),
-        .INIT_VALUE(6'b001100)
+        .INIT_VALUE(6'b011011) //27
     ) baixo (
         .clock  ( clock ),
         .clear  ( reset ),

@@ -35,6 +35,7 @@ module aqua_tb;
         .echo2(echo_in_2),
         .echo3(echo_in_3),
         .RX(RX_in),
+        .switch_teste_in(1'b1),
         .trigger1(trigger_out_1),
         .trigger2(trigger_out_2),
         .trigger3(trigger_out_3),
@@ -49,7 +50,8 @@ module aqua_tb;
         .db_iniciar(db_iniciar_out),
         .db_fim_medida(db_fim_medida_out),
         .db_estado(db_estado_out),
-        .db_sensor(db_estado_sensor_out)
+        .db_sensor(db_estado_sensor_out),
+        .switch_teste_out()
     );
 
 
@@ -80,9 +82,9 @@ module aqua_tb;
         casos_teste_dist[1][1] = 5899;
         casos_teste_dist[1][2] = 5899;
 
-        casos_teste_dist[2][0] = 5882; // 5882us (100cm)
-        casos_teste_dist[2][1] = 5882;
-        casos_teste_dist[2][2] = 5882;
+        casos_teste_dist[2][0] = 117; // 5882us (100cm)
+        casos_teste_dist[2][1] = 117;
+        casos_teste_dist[2][2] = 117;
 
         casos_teste_dist[3][0] = 1167;
         casos_teste_dist[3][1] = 1167;
