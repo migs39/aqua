@@ -27,7 +27,7 @@ module registrador_n_initial #(parameter N = 8, parameter [N-1:0] INIT_VALUE = 0
     always @(posedge clock or posedge clear) begin
         if (clear)
             IQ <= INIT_VALUE;
-        else if (enable)
+        else if (enable && D != 0)
             IQ <= D;
     end
 
