@@ -8,6 +8,7 @@ module circuito_projeto_uc (
     input wire       valvula_aberta,
     input wire       fim_1s,
 	input wire       fim_2s,
+    input wire       fim_estado4,
     input wire       fim_caracter,
     input wire       fim_mensagem,
     input wire       fim_classificacao,
@@ -22,6 +23,7 @@ module circuito_projeto_uc (
     output reg       fecha,
     output reg       conta_1s,
 	output reg       conta_2s,
+    output reg       conta_estado4,
     output reg       envia,
     output reg       muda,
     output reg       pronto,
@@ -73,7 +75,7 @@ module circuito_projeto_uc (
                 Eprox = medir_nivel;
 
             medir_nivel:
-                Eprox = fim_medida_nivel ? analisa_medida : medir_nivel;
+                Eprox = fim_medida_nivel ? analisa_medida : (fim_estado4 ? inicio_ciclo : medir_nivel);
             analisa_medida: begin
                 if (descartar_medida) begin
                     Eprox = inicio_ciclo;
@@ -136,6 +138,7 @@ module circuito_projeto_uc (
         fecha             = (Eatual == fecha_valvula);
         conta_1s          = (Eatual == espera_1s);
 		conta_2s          = (Eatual == fim_ciclo);
+        conta_estado4     = (Eatual == medir_nivel);
         envia             = (Eatual == envia_caracter);
         muda              = (Eatual == muda_caracter);
         pronto            = (Eatual == fim_ciclo);

@@ -10,28 +10,28 @@ z2
 cModel Technology
 d/home/lucaspapoti/Poli/LabDig2/ProjetoSemana02/Modelsim
 vaqua_tb
-Z0 !s110 1731507325
+Z0 !s110 1732789570
 !i10b 1
 !s100 :Kkln^B8L^BC<Zk5i]c@b2
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IXY;Lj02fQ7I9Oo[>h1gRh1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 d/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/Modelsim
-w1731506619
+Z4 w1732705446
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/aqua_tb.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/aqua_tb.v
-!i122 218
+!i122 252
 L0 3 148
-Z4 OV;L;2020.1;71
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1731507325.000000
+Z6 !s108 1732789570.000000
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/aqua_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/aqua_tb.v|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z7 o-work work
+Z8 tCvgOpt 0
 vbuzzer
 R0
 !i10b 1
@@ -40,90 +40,90 @@ R1
 IB;AgHYL5XEC^^@gF78fC`0
 R2
 R3
-Z8 w1731505597
+Z9 w1731505597
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/buzzer.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/buzzer.v
-!i122 219
-Z9 L0 1 25
-R4
+!i122 253
+L0 1 25
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/buzzer.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/buzzer.v|
 !i113 1
-R6
 R7
+R8
 vcircuito_projeto
 R0
 !i10b 1
-!s100 9iRjOUWk>cAhWhV28iJRU2
+!s100 fz?GioLVfn5hUQ<kgS81W1
 R1
-I;UP``85WDNP5CWgS=8RQ@0
+I<<[8j<3dcaO:Y0YR6RGe>1
 R2
 R3
-w1731507058
+w1732789333
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto.v
-!i122 220
-L0 1 116
-R4
+!i122 254
+L0 1 128
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto.v|
 !i113 1
-R6
 R7
+R8
 vcircuito_projeto_fd
 R0
 !i10b 1
-!s100 K>lWZ12f^C7OzO9n`:5Z?2
+!s100 0N]L]hNWXNKHE_n:RZ7^H3
 R1
-I?GMl?N`CSnN>gWCi2>PbE3
+I>cmmWO``oL[1jUS>TVUWO0
 R2
 R3
-w1731506761
+w1732789206
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto_fd.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto_fd.v
-!i122 221
-L0 1 223
-R4
+!i122 255
+L0 1 245
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto_fd.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto_fd.v|
 !i113 1
-R6
 R7
+R8
 vcircuito_projeto_uc
 R0
 !i10b 1
-!s100 P2J08;NZeH8`cgTgS6N>F1
+!s100 U3^N<zi`iX9gLI5MR]f9_0
 R1
-I;hEG3ibSN`T4i7D53j:dj2
+ITh1DzlElV5OQO<JaVRfU53
 R2
 R3
-R8
+w1732789542
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto_uc.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto_uc.v
-!i122 222
-L0 1 165
-R4
+!i122 256
+L0 1 168
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto_uc.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/circuito_projeto_uc.v|
 !i113 1
-R6
 R7
+R8
 vclassificador_medida
 R0
 !i10b 1
@@ -132,21 +132,21 @@ R1
 IY=FSQ_?kS5Pm;PFVJd@E81
 R2
 R3
-w1731507213
+R4
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/classificador_medida.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/classificador_medida.v
-!i122 223
+!i122 257
 L0 1 67
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/classificador_medida.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/classificador_medida.v|
 !i113 1
-R6
 R7
+R8
 vcontador_bcd_3digitos
 R0
 !i10b 1
@@ -155,21 +155,21 @@ R1
 IA;0>lC93d5G=RiERSQVcO0
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_bcd_3digitos.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_bcd_3digitos.v
-!i122 224
+!i122 258
 L0 14 45
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_bcd_3digitos.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_bcd_3digitos.v|
 !i113 1
-R6
 R7
+R8
 vcontador_cm
 R0
 !i10b 1
@@ -178,21 +178,21 @@ R1
 I<<168R<Kzj23I4P4aPAP`2
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm.v
-!i122 225
+!i122 259
 L0 15 53
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm.v|
 !i113 1
-R6
 R7
+R8
 vcontador_cm_fd
 R0
 !i10b 1
@@ -201,21 +201,21 @@ R1
 I5CZfIiPDCFSL_77IVm`zG1
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm_fd.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm_fd.v
-!i122 226
+!i122 260
 L0 15 43
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm_fd.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm_fd.v|
 !i113 1
-R6
 R7
+R8
 vcontador_cm_uc
 R0
 !i10b 1
@@ -224,21 +224,21 @@ R1
 IdWTIkXEH473YGK8f<cf8W2
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm_uc.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm_uc.v
-!i122 227
+!i122 261
 L0 16 52
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm_uc.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_cm_uc.v|
 !i113 1
-R6
 R7
+R8
 vcontador_m
 R0
 !i10b 1
@@ -247,21 +247,21 @@ R1
 Ii[YQ8EZD8eWWBzR><hh973
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_m.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_m.v
-!i122 228
+!i122 262
 L0 16 38
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_m.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/contador_m.v|
 !i113 1
-R6
 R7
+R8
 vcontrole_recepcao_serial
 R0
 !i10b 1
@@ -270,21 +270,21 @@ R1
 IBWac>ZNZOffXEaVzPI4XM2
 R2
 R3
-w1731506191
+R4
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/controle_recepcao_serial.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/controle_recepcao_serial.v
-!i122 229
+!i122 263
 L0 1 113
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/controle_recepcao_serial.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/controle_recepcao_serial.v|
 !i113 1
-R6
 R7
+R8
 vdec2hex
 R0
 !i10b 1
@@ -293,21 +293,21 @@ R1
 I6FM=6j3M>Dn?ng3IKYSbP2
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/dec2hex.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/dec2hex.v
-!i122 230
+!i122 264
 L0 1 16
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/dec2hex.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/dec2hex.v|
 !i113 1
-R6
 R7
+R8
 vdeslocador_n
 R0
 !i10b 1
@@ -316,21 +316,21 @@ R1
 IQC2F^QkP]=CL[c7FP`7:50
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/deslocador_n.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/deslocador_n.v
-!i122 231
+!i122 265
 L0 15 31
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/deslocador_n.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/deslocador_n.v|
 !i113 1
-R6
 R7
+R8
 vedge_detector
 R0
 !i10b 1
@@ -339,21 +339,21 @@ R1
 Ib@fXYagDJ[^OBkXV3@d0V2
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/edge_detector.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/edge_detector.v
-!i122 232
+!i122 266
 L0 19 23
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/edge_detector.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/edge_detector.v|
 !i113 1
-R6
 R7
+R8
 vflip_flop
 R0
 !i10b 1
@@ -362,21 +362,21 @@ R1
 IlR[>QcMIa67>N8e^fGP3H1
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/flip_flop.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/flip_flop.v
-!i122 233
+!i122 267
 L0 1 17
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/flip_flop.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/flip_flop.v|
 !i113 1
-R6
 R7
+R8
 vgerador_pulso
 R0
 !i10b 1
@@ -385,21 +385,21 @@ R1
 ITH<o]f@8zTAPP[9XHSC:^0
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/gerador_pulso.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/gerador_pulso.v
-!i122 234
+!i122 268
 Z10 L0 14 69
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/gerador_pulso.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/gerador_pulso.v|
 !i113 1
-R6
 R7
+R8
 vhexa7seg
 R0
 !i10b 1
@@ -408,21 +408,21 @@ R1
 IbX1PAz?:YWdAgQeYO>jG?3
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/hexa7seg.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/hexa7seg.v
-!i122 235
+!i122 269
 L0 22 38
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/hexa7seg.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/hexa7seg.v|
 !i113 1
-R6
 R7
+R8
 vinterface_hcsr04
 R0
 !i10b 1
@@ -431,21 +431,21 @@ R1
 IBZ=1_3MQD9^`;JWiFJE1]3
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04.v
-!i122 236
+!i122 270
 L0 13 55
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04.v|
 !i113 1
-R6
 R7
+R8
 vinterface_hcsr04_fd
 R0
 !i10b 1
@@ -454,344 +454,344 @@ R1
 Ik:3:;idlgM4gPTTaFI3Tj1
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04_fd.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04_fd.v
-!i122 237
+!i122 271
 R10
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04_fd.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04_fd.v|
 !i113 1
-R6
 R7
+R8
 vinterface_hcsr04_uc
-R0
+Z11 !s110 1732789571
 !i10b 1
 !s100 I>4G<2`:JH4oD>DNiFlEN0
 R1
 IYX^_mMm[cMgQJiYB]jHCn2
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04_uc.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04_uc.v
-!i122 238
+!i122 272
 L0 14 85
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04_uc.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/interface_hcsr04_uc.v|
 !i113 1
-R6
 R7
+R8
 vmain
-R0
+R11
 !i10b 1
-!s100 >aOSg]hT_m>`SLYHFcz@H0
+!s100 b8NaJV9D<Zm_A1c@YD2On0
 R1
-IlbSeNB_NcWU1LV9oNKAe[0
+IWeX:ASe?57`O>Mjz?OFi02
 R2
 R3
-R8
+R4
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/main.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/main.v
-!i122 239
-L0 1 89
-R4
+!i122 273
+L0 1 98
+R5
 r1
 !s85 0
 31
-R5
+Z12 !s108 1732789571.000000
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/main.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/main.v|
 !i113 1
-R6
 R7
+R8
 vmux_1x4
-R0
+R11
 !i10b 1
 !s100 =HRNdOn5>JkE<NXT;MNKZ1
 R1
 I6m1o2iYP>[RHm^7TJ4<EJ3
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/mux_1x4_n.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/mux_1x4_n.v
-!i122 240
-L0 1 31
-R4
+!i122 274
+Z13 L0 1 31
+R5
 r1
 !s85 0
 31
-R5
+R12
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/mux_1x4_n.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/mux_1x4_n.v|
 !i113 1
-R6
 R7
+R8
 vmux_4x1_n
-R0
+R11
 !i10b 1
 !s100 AD1K=Zc6OgEn9B[n@?[Jz1
 R1
 IDo<JCAI3XT?6O^Fea1H6d0
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/mux_4x1_n.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/mux_4x1_n.v
-!i122 241
+!i122 275
 L0 1 18
-R4
+R5
 r1
 !s85 0
 31
-R5
+R12
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/mux_4x1_n.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/mux_4x1_n.v|
 !i113 1
-R6
 R7
+R8
 vregistrador_n
-R0
+R11
 !i10b 1
 !s100 c33QzNOWDW9lh[K4:od@l2
 R1
 IkiJCo>`kW029hfH8U`]F92
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/registrador_n.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/registrador_n.v
-!i122 242
-Z11 L0 17 20
-R4
+!i122 276
+Z14 L0 17 20
+R5
 r1
 !s85 0
 31
-R5
+R12
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/registrador_n.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/registrador_n.v|
 !i113 1
-R6
 R7
+R8
 vregistrador_n_initial
-R0
+R11
 !i10b 1
-!s100 kaD]dGg8U;OZ>c0Y`PjV?0
+!s100 `_ARiUk^LQjVh1T=m[FHM3
 R1
-INo>T1NAXR?zBb>b_V=z4I1
+I0_eTCO:=dD:F5U=I7G@m21
 R2
 R3
-R8
+w1732705563
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/registrador_n_initial.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/registrador_n_initial.v
-!i122 243
-R11
-R4
+!i122 277
+R14
+R5
 r1
 !s85 0
 31
-R5
+R12
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/registrador_n_initial.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/registrador_n_initial.v|
 !i113 1
-R6
 R7
+R8
 vrx_serial_8N1
-R0
+R11
 !i10b 1
 !s100 SUb:4Qd27J_EYV@FXf@0A1
 R1
 IL6zAMN7iFhVi<J5T<@F2m2
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_8N1.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_8N1.v
-!i122 244
+!i122 278
 L0 17 102
-R4
+R5
 r1
 !s85 0
 31
-R5
+R12
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_8N1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_8N1.v|
 !i113 1
-R6
 R7
+R8
 nrx_serial_8@n1
 vrx_serial_8N1_fd
-R0
+R11
 !i10b 1
 !s100 II@g8jYjSeY^;HM[H][3<1
 R1
 IL0bSc:;VF]TaK5RWSnCY<3
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_8N1_fd.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_8N1_fd.v
-!i122 245
+!i122 279
 L0 14 56
-R4
+R5
 r1
 !s85 0
 31
-R5
+R12
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_8N1_fd.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_8N1_fd.v|
 !i113 1
-R6
 R7
+R8
 nrx_serial_8@n1_fd
 vrx_serial_uc
-Z12 !s110 1731507326
+R11
 !i10b 1
 !s100 H54n2<F_CcVTgb?F5QNkk1
 R1
 I89@B;U6TRWR1]S5GVI]Ij2
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_uc.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_uc.v
-!i122 246
+!i122 280
 L0 15 71
-R4
+R5
 r1
 !s85 0
 31
-R5
+R12
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_uc.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/rx_serial_uc.v|
 !i113 1
-R6
 R7
+R8
 vtx_serial_8N1
-R12
+R11
 !i10b 1
 !s100 ?jhLZURaE_<9O;IWLfVgJ3
 R1
 IGJ2IKzkFFI90TCfbnD^T72
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_8N1.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_8N1.v
-!i122 247
+!i122 281
 L0 5 101
-R4
+R5
 r1
 !s85 0
 31
-Z13 !s108 1731507326.000000
+R12
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_8N1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_8N1.v|
 !i113 1
-R6
 R7
+R8
 ntx_serial_8@n1
 vtx_serial_8N1_fd
-R12
+R11
 !i10b 1
 !s100 Oe;G?EU5HM;nKI^XjJe132
 R1
 IJZ_81?8LCeP58C];MJ35j2
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_8N1_fd.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_8N1_fd.v
-!i122 248
+!i122 282
 L0 5 52
-R4
+R5
 r1
 !s85 0
 31
-R13
+R12
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_8N1_fd.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_8N1_fd.v|
 !i113 1
-R6
 R7
+R8
 ntx_serial_8@n1_fd
 vtx_serial_uc
-R12
+R11
 !i10b 1
 !s100 E8o;>OLQ7g9]zZBKTLi@h3
 R1
 Iij19XXG7]ZI3R306Im;3_1
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_uc.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_uc.v
-!i122 249
+!i122 283
 L0 16 64
-R4
+R5
 r1
 !s85 0
 31
-R13
+R12
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_uc.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/tx_serial_uc.v|
 !i113 1
-R6
 R7
+R8
 vvalvula
-R12
+R11
 !i10b 1
-!s100 6C;gbIb]UM7DkSJz46dVl3
+!s100 ;z8cQzZ>Ei:Rn[OB6bd3c2
 R1
-I8oRmbU9;3Adh2UHZfOS]i0
+I0bHD;=8MlIEieHQ54>>931
 R2
 R3
-R8
+R4
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/valvula.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/valvula.v
-!i122 250
-R9
-R4
+!i122 284
+R13
+R5
 r1
 !s85 0
 31
-R13
+R12
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/valvula.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/valvula.v|
 !i113 1
-R6
 R7
+R8
 vx3_interface
-R12
+R11
 !i10b 1
 !s100 ]_fd=0dPjbWm9F5L=QIAI1
 R1
 I:nJiK;z:Qi]ES=3ge7a<m0
 R2
 R3
-R8
+R9
 8/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/x3_interface.v
 F/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/x3_interface.v
-!i122 251
+!i122 285
 L0 1 56
-R4
+R5
 r1
 !s85 0
 31
-R13
+R12
 !s107 /home/lucaspapoti/Poli/LabDig2/aqua/Circuito/x3_interface.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/lucaspapoti/Poli/LabDig2/aqua/Circuito/x3_interface.v|
 !i113 1
-R6
 R7
+R8
