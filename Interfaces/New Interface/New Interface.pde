@@ -14,8 +14,8 @@ Serial myPort; // define objeto da porta serial
     String   porta = "COM27";  //acertar valor
     int   baudrate = 115200;
     float stopbits = 1.0;
-    char    parity = 'N';
-    int   databits = 8;
+    char    parity = 'O';
+    int   databits = 7;
 
 //========================================================
 
@@ -307,45 +307,11 @@ public void criticalDown(){
 }
 
 public void send(String type, int value){
-  String message = "";
-  switch (type){
-    case "low":{
-      message += "00";
-      break;
-    }
-    case "high":{
-      message += "01";
-      break;
-    }
-    case "crit":{
-      message += "10";
-      break;
-    }
-    case "mode":{
-      message += "11";
-      switch (value){
-        case 0:{ //auto
-          message += "000000";
-          break;
-        }
-        case 1:{ //manual + close
-          message += "100000";
-          break;
-        }
-        case 2:{ //manual + open
-          message += "110000";
-          break;
-        }
-      }
-      output(message);
-      return;
-    }
-    default:
-      return;
-  }
+  /**
   value = emptyDistance - int(float(emptyDistance - fullDistance) * (float(value) / 100.0));
   message += String.format("%6s", Integer.toBinaryString(value)).replaceAll(" ", "0");
   output(message);
+  **/
 }
 
 public void change(){
@@ -563,5 +529,57 @@ void keyPressed(){
       t = 0;
       break;
     }
+  }
+}
+
+public void sendAuto(){
+  if (t%3 != 1) return;
+
+  if (manual == 1){
+    if (open == 1){
+      if (level >= high){
+        output("1100001");
+        return;
+      }
+      if (level > low){
+        output("1000001");
+        return;
+      }
+      if (level <= low){
+        output("1010001");
+        return;
+      }
+      return;
+    }
+    if (level >= high){
+      output("0100001");
+      return;
+    }
+    if (level > low){
+      output("0000001");
+      return;
+    }
+    if (level <= low){
+      output("0010001");
+      return;
+    }
+    return;  
+  }
+
+  if (level >= critical){
+    output("1100001");
+    return;
+  }
+  if (level >= high){
+    output("0100001");
+    return;
+  }
+  if (level > low){
+    output("0000001");
+    return;
+  }
+  if (level <= low){
+    output("0010001");
+    return;
   }
 }
