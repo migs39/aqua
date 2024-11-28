@@ -52,9 +52,9 @@ module classificador_medida #(
             // Classificação da média
             if (media > nv_baixo)
                 medida_classificacao <= 3'b001;
-            else if (media >= nv_baixo && media < nv_alto)
+            else if (media <= nv_baixo && media > nv_alto)
                 medida_classificacao <= 3'b100;
-            else if (media >= nv_alto && media <= nv_crit)
+            else if (media <= nv_alto && media >= nv_crit)
                 medida_classificacao <= 3'b010;
             else
                 medida_classificacao <= 3'b011;

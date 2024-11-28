@@ -11,7 +11,7 @@ import java.io.IOException;
 
 Serial myPort; // define objeto da porta serial
 
-    String   porta = "COM10";  //acertar valor
+    String   porta = "COM28";  //acertar valor
     int   baudrate = 115200;
     float stopbits = 1.0;
     char    parity = 'N';
@@ -40,7 +40,7 @@ int mockDistance = 22;
 String sensorReading = "";
 String distance = "000";
 int iDistance = 0;
-int emptyDistance = 100;
+int emptyDistance = 50;
 int fullDistance = 0;
 float percentage = .5;
 
@@ -325,7 +325,7 @@ public void send(String type, int value){
       message += "11";
       switch (value){
         case 0:{ //auto
-          message += "000000";
+          message += "000001";
           break;
         }
         case 1:{ //manual + close
@@ -518,6 +518,7 @@ int[] toArray(Queue<Integer> queue) {
 //============================ Serial ====================
 
 void output(String s) {
+  println(s);
   myPort.write(Integer.parseInt(s, 2));
 }
 

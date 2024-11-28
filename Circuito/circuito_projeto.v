@@ -20,7 +20,10 @@ module circuito_projeto (
     output wire db_fim_medida,
     output wire db_manual,
     output wire db_abre_auto,
-    output wire db_fecha_auto
+    output wire db_fecha_auto,
+    output wire [7:0]  db_nv_crit,
+    output wire [7:0]  db_nv_baixo,
+    output wire [7:0]  db_nv_alto
 );
     wire s_zera;
     wire s_fim_1s;
@@ -86,7 +89,10 @@ module circuito_projeto (
         .db_sensor(db_sensor),
         .db_manual(db_manual),
         .db_abre_auto(db_abre_auto),
-        .db_fecha_auto(db_fecha_auto)       
+        .db_fecha_auto(db_fecha_auto),
+        .db_nv_baixo(db_nv_baixo),
+        .db_nv_alto(db_nv_alto),
+        .db_nv_crit(db_nv_crit)
     );
 
     circuito_projeto_uc UC(

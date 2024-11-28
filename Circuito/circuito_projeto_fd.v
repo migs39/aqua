@@ -38,7 +38,10 @@ module circuito_projeto_fd (
     output wire [3:0]  db_sensor,
     output wire        db_manual,
     output wire        db_fecha_auto,
-    output wire        db_abre_auto
+    output wire        db_abre_auto,
+    output wire [7:0]  db_nv_crit,
+    output wire [7:0]  db_nv_baixo,
+    output wire [7:0]  db_nv_alto
 );
 
     parameter HEXA_30 = 8'b00110000;
@@ -239,6 +242,9 @@ module circuito_projeto_fd (
     );
 
     assign distancia = s_media;
+    assign db_nv_baixo = nv_baixo_wire[7:0];
+    assign db_nv_crit = nv_crit_wire[7:0];
+    assign db_nv_alto = nv_alto_wire[7:0];
 
 
 

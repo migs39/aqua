@@ -7,6 +7,7 @@ echo2 => echo2.IN1
 echo3 => echo3.IN1
 RX => RX.IN1
 switch_teste_in => switch_teste_out.DATAIN
+troca_hex => troca_hex.IN6
 trigger1 << circuito_projeto:main.trigger1
 trigger2 << circuito_projeto:main.trigger2
 trigger3 << circuito_projeto:main.trigger3
@@ -14,44 +15,51 @@ buzzer_alta << circuito_projeto:main.buzzer_alta
 buzzer_baixa << circuito_projeto:main.buzzer_baixa
 abre_valvula << circuito_projeto:main.abre_valvula
 saida_serial << circuito_projeto:main.saida_serial
-hex0[0] << hexa7seg:H0medida.display
-hex0[1] << hexa7seg:H0medida.display
-hex0[2] << hexa7seg:H0medida.display
-hex0[3] << hexa7seg:H0medida.display
-hex0[4] << hexa7seg:H0medida.display
-hex0[5] << hexa7seg:H0medida.display
-hex0[6] << hexa7seg:H0medida.display
-hex1[0] << hexa7seg:H1medida.display
-hex1[1] << hexa7seg:H1medida.display
-hex1[2] << hexa7seg:H1medida.display
-hex1[3] << hexa7seg:H1medida.display
-hex1[4] << hexa7seg:H1medida.display
-hex1[5] << hexa7seg:H1medida.display
-hex1[6] << hexa7seg:H1medida.display
-hex2[0] << hexa7seg:H2medida.display
-hex2[1] << hexa7seg:H2medida.display
-hex2[2] << hexa7seg:H2medida.display
-hex2[3] << hexa7seg:H2medida.display
-hex2[4] << hexa7seg:H2medida.display
-hex2[5] << hexa7seg:H2medida.display
-hex2[6] << hexa7seg:H2medida.display
+hex0[0] << hexa7seg:H0.display
+hex0[1] << hexa7seg:H0.display
+hex0[2] << hexa7seg:H0.display
+hex0[3] << hexa7seg:H0.display
+hex0[4] << hexa7seg:H0.display
+hex0[5] << hexa7seg:H0.display
+hex0[6] << hexa7seg:H0.display
+hex1[0] << hexa7seg:H1.display
+hex1[1] << hexa7seg:H1.display
+hex1[2] << hexa7seg:H1.display
+hex1[3] << hexa7seg:H1.display
+hex1[4] << hexa7seg:H1.display
+hex1[5] << hexa7seg:H1.display
+hex1[6] << hexa7seg:H1.display
+hex2[0] << hexa7seg:H2.display
+hex2[1] << hexa7seg:H2.display
+hex2[2] << hexa7seg:H2.display
+hex2[3] << hexa7seg:H2.display
+hex2[4] << hexa7seg:H2.display
+hex2[5] << hexa7seg:H2.display
+hex2[6] << hexa7seg:H2.display
+hex3[0] << hexa7seg:H3.display
+hex3[1] << hexa7seg:H3.display
+hex3[2] << hexa7seg:H3.display
+hex3[3] << hexa7seg:H3.display
+hex3[4] << hexa7seg:H3.display
+hex3[5] << hexa7seg:H3.display
+hex3[6] << hexa7seg:H3.display
+hex4[0] << hexa7seg:H4.display
+hex4[1] << hexa7seg:H4.display
+hex4[2] << hexa7seg:H4.display
+hex4[3] << hexa7seg:H4.display
+hex4[4] << hexa7seg:H4.display
+hex4[5] << hexa7seg:H4.display
+hex4[6] << hexa7seg:H4.display
+hex5[0] << hexa7seg:H5.display
+hex5[1] << hexa7seg:H5.display
+hex5[2] << hexa7seg:H5.display
+hex5[3] << hexa7seg:H5.display
+hex5[4] << hexa7seg:H5.display
+hex5[5] << hexa7seg:H5.display
+hex5[6] << hexa7seg:H5.display
 pronto << circuito_projeto:main.pronto
 db_iniciar << iniciar.DB_MAX_OUTPUT_PORT_TYPE
 db_fim_medida << circuito_projeto:main.db_fim_medida
-db_estado[0] << hexa7seg:H5.display
-db_estado[1] << hexa7seg:H5.display
-db_estado[2] << hexa7seg:H5.display
-db_estado[3] << hexa7seg:H5.display
-db_estado[4] << hexa7seg:H5.display
-db_estado[5] << hexa7seg:H5.display
-db_estado[6] << hexa7seg:H5.display
-db_sensor[0] << hexa7seg:H4.display
-db_sensor[1] << hexa7seg:H4.display
-db_sensor[2] << hexa7seg:H4.display
-db_sensor[3] << hexa7seg:H4.display
-db_sensor[4] << hexa7seg:H4.display
-db_sensor[5] << hexa7seg:H4.display
-db_sensor[6] << hexa7seg:H4.display
 switch_teste_out << switch_teste_in.DB_MAX_OUTPUT_PORT_TYPE
 db_abre_valvula << circuito_projeto:main.abre_valvula
 db_manual << circuito_projeto:main.db_manual
@@ -86,7 +94,7 @@ saida_serial <= circuito_projeto_fd:FD.saida_serial
 buzzer_alta <= circuito_projeto_fd:FD.buzzer_alta
 buzzer_baixa <= circuito_projeto_fd:FD.buzzer_baixa
 pronto <= circuito_projeto_uc:UC.pronto
-abre_valvula <= circuito_projeto_fd:FD.abrir_valv
+abre_valvula <= abre_valvula.DB_MAX_OUTPUT_PORT_TYPE
 db_estado[0] <= circuito_projeto_uc:UC.db_estado
 db_estado[1] <= circuito_projeto_uc:UC.db_estado
 db_estado[2] <= circuito_projeto_uc:UC.db_estado
@@ -99,16 +107,41 @@ db_fim_medida <= s_fim_medida.DB_MAX_OUTPUT_PORT_TYPE
 db_manual <= circuito_projeto_fd:FD.db_manual
 db_abre_auto <= circuito_projeto_fd:FD.db_abre_auto
 db_fecha_auto <= circuito_projeto_fd:FD.db_fecha_auto
+db_nv_crit[0] <= circuito_projeto_fd:FD.db_nv_crit
+db_nv_crit[1] <= circuito_projeto_fd:FD.db_nv_crit
+db_nv_crit[2] <= circuito_projeto_fd:FD.db_nv_crit
+db_nv_crit[3] <= circuito_projeto_fd:FD.db_nv_crit
+db_nv_crit[4] <= circuito_projeto_fd:FD.db_nv_crit
+db_nv_crit[5] <= circuito_projeto_fd:FD.db_nv_crit
+db_nv_crit[6] <= circuito_projeto_fd:FD.db_nv_crit
+db_nv_crit[7] <= circuito_projeto_fd:FD.db_nv_crit
+db_nv_baixo[0] <= circuito_projeto_fd:FD.db_nv_baixo
+db_nv_baixo[1] <= circuito_projeto_fd:FD.db_nv_baixo
+db_nv_baixo[2] <= circuito_projeto_fd:FD.db_nv_baixo
+db_nv_baixo[3] <= circuito_projeto_fd:FD.db_nv_baixo
+db_nv_baixo[4] <= circuito_projeto_fd:FD.db_nv_baixo
+db_nv_baixo[5] <= circuito_projeto_fd:FD.db_nv_baixo
+db_nv_baixo[6] <= circuito_projeto_fd:FD.db_nv_baixo
+db_nv_baixo[7] <= circuito_projeto_fd:FD.db_nv_baixo
+db_nv_alto[0] <= circuito_projeto_fd:FD.db_nv_alto
+db_nv_alto[1] <= circuito_projeto_fd:FD.db_nv_alto
+db_nv_alto[2] <= circuito_projeto_fd:FD.db_nv_alto
+db_nv_alto[3] <= circuito_projeto_fd:FD.db_nv_alto
+db_nv_alto[4] <= circuito_projeto_fd:FD.db_nv_alto
+db_nv_alto[5] <= circuito_projeto_fd:FD.db_nv_alto
+db_nv_alto[6] <= circuito_projeto_fd:FD.db_nv_alto
+db_nv_alto[7] <= circuito_projeto_fd:FD.db_nv_alto
 
 
 |main|circuito_projeto:main|circuito_projeto_fd:FD
-clock => clock.IN10
+clock => clock.IN11
 echo1 => echo1.IN1
 echo2 => echo2.IN1
 echo3 => echo3.IN1
-zera => zera.IN6
+zera => zera.IN7
 conta_1s => conta_1s.IN1
 conta_2s => conta_2s.IN1
+conta_estado4 => conta_estado4.IN1
 mensurar => mensurar.IN1
 envia => envia.IN1
 muda => muda.IN1
@@ -141,6 +174,7 @@ distancia[10] <= s_media[10].DB_MAX_OUTPUT_PORT_TYPE
 distancia[11] <= s_media[11].DB_MAX_OUTPUT_PORT_TYPE
 fim_1s <= contador_m:contador_1s.fim
 fim_2s <= contador_m:contador_2s.fim
+fim_estado4 <= contador_m:contador_2s_estado4.fim
 saida_serial <= tx_serial_8N1:envia_asc.saida_serial
 medida_classificacao[0] <= classificador_medida:classificador.medida_classificacao
 medida_classificacao[1] <= classificador_medida:classificador.medida_classificacao
@@ -156,6 +190,30 @@ db_sensor[3] <= x3_interface:sensores.db_sensor
 db_manual <= valvula:V.db_manual
 db_fecha_auto <= valvula:V.db_fecha_auto
 db_abre_auto <= valvula:V.db_abre_auto
+db_nv_crit[0] <= nv_crit_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_crit[1] <= nv_crit_wire[1].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_crit[2] <= nv_crit_wire[2].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_crit[3] <= nv_crit_wire[3].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_crit[4] <= nv_crit_wire[4].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_crit[5] <= nv_crit_wire[5].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_crit[6] <= nv_crit_wire[6].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_crit[7] <= nv_crit_wire[7].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_baixo[0] <= nv_baixo_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_baixo[1] <= nv_baixo_wire[1].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_baixo[2] <= nv_baixo_wire[2].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_baixo[3] <= nv_baixo_wire[3].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_baixo[4] <= nv_baixo_wire[4].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_baixo[5] <= nv_baixo_wire[5].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_baixo[6] <= nv_baixo_wire[6].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_baixo[7] <= nv_baixo_wire[7].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_alto[0] <= nv_alto_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_alto[1] <= nv_alto_wire[1].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_alto[2] <= nv_alto_wire[2].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_alto[3] <= nv_alto_wire[3].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_alto[4] <= nv_alto_wire[4].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_alto[5] <= nv_alto_wire[5].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_alto[6] <= nv_alto_wire[6].DB_MAX_OUTPUT_PORT_TYPE
+db_nv_alto[7] <= nv_alto_wire[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|circuito_projeto:main|circuito_projeto_fd:FD|edge_detector:pulsoMensurar
@@ -2632,6 +2690,146 @@ fim <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 meio <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|main|circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_2s_estado4
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+clock => Q[4]~reg0.CLK
+clock => Q[5]~reg0.CLK
+clock => Q[6]~reg0.CLK
+clock => Q[7]~reg0.CLK
+clock => Q[8]~reg0.CLK
+clock => Q[9]~reg0.CLK
+clock => Q[10]~reg0.CLK
+clock => Q[11]~reg0.CLK
+clock => Q[12]~reg0.CLK
+clock => Q[13]~reg0.CLK
+clock => Q[14]~reg0.CLK
+clock => Q[15]~reg0.CLK
+clock => Q[16]~reg0.CLK
+clock => Q[17]~reg0.CLK
+clock => Q[18]~reg0.CLK
+clock => Q[19]~reg0.CLK
+clock => Q[20]~reg0.CLK
+clock => Q[21]~reg0.CLK
+clock => Q[22]~reg0.CLK
+clock => Q[23]~reg0.CLK
+clock => Q[24]~reg0.CLK
+clock => Q[25]~reg0.CLK
+clock => Q[26]~reg0.CLK
+zera_as => Q[0]~reg0.ACLR
+zera_as => Q[1]~reg0.ACLR
+zera_as => Q[2]~reg0.ACLR
+zera_as => Q[3]~reg0.ACLR
+zera_as => Q[4]~reg0.ACLR
+zera_as => Q[5]~reg0.ACLR
+zera_as => Q[6]~reg0.ACLR
+zera_as => Q[7]~reg0.ACLR
+zera_as => Q[8]~reg0.ACLR
+zera_as => Q[9]~reg0.ACLR
+zera_as => Q[10]~reg0.ACLR
+zera_as => Q[11]~reg0.ACLR
+zera_as => Q[12]~reg0.ACLR
+zera_as => Q[13]~reg0.ACLR
+zera_as => Q[14]~reg0.ACLR
+zera_as => Q[15]~reg0.ACLR
+zera_as => Q[16]~reg0.ACLR
+zera_as => Q[17]~reg0.ACLR
+zera_as => Q[18]~reg0.ACLR
+zera_as => Q[19]~reg0.ACLR
+zera_as => Q[20]~reg0.ACLR
+zera_as => Q[21]~reg0.ACLR
+zera_as => Q[22]~reg0.ACLR
+zera_as => Q[23]~reg0.ACLR
+zera_as => Q[24]~reg0.ACLR
+zera_as => Q[25]~reg0.ACLR
+zera_as => Q[26]~reg0.ACLR
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+conta => Q.OUTPUTSELECT
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[16] <= Q[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[17] <= Q[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[18] <= Q[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[19] <= Q[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[20] <= Q[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[21] <= Q[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[22] <= Q[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[23] <= Q[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[24] <= Q[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[25] <= Q[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[26] <= Q[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+fim <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+meio <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |main|circuito_projeto:main|circuito_projeto_fd:FD|contador_m:contador_caracter
 clock => Q[0]~reg0.CLK
 clock => Q[1]~reg0.CLK
@@ -3332,8 +3530,8 @@ clock => IQ[5].CLK
 clear => IQ[0].PRESET
 clear => IQ[1].PRESET
 clear => IQ[2].ACLR
-clear => IQ[3].PRESET
-clear => IQ[4].PRESET
+clear => IQ[3].ACLR
+clear => IQ[4].ACLR
 clear => IQ[5].ACLR
 enable => IQ[5].ENA
 enable => IQ[4].ENA
@@ -3391,9 +3589,9 @@ clock => IQ[4].CLK
 clock => IQ[5].CLK
 clear => IQ[0].ACLR
 clear => IQ[1].ACLR
-clear => IQ[2].ACLR
+clear => IQ[2].PRESET
 clear => IQ[3].PRESET
-clear => IQ[4].PRESET
+clear => IQ[4].ACLR
 clear => IQ[5].ACLR
 enable => IQ[5].ENA
 enable => IQ[4].ENA
@@ -3449,11 +3647,11 @@ clock => IQ[2].CLK
 clock => IQ[3].CLK
 clock => IQ[4].CLK
 clock => IQ[5].CLK
-clear => IQ[0].ACLR
-clear => IQ[1].ACLR
-clear => IQ[2].PRESET
+clear => IQ[0].PRESET
+clear => IQ[1].PRESET
+clear => IQ[2].ACLR
 clear => IQ[3].PRESET
-clear => IQ[4].ACLR
+clear => IQ[4].PRESET
 clear => IQ[5].ACLR
 enable => IQ[5].ENA
 enable => IQ[4].ENA
@@ -3534,14 +3732,15 @@ iniciar => Eprox.zera_valvulas.DATAB
 iniciar => Eprox.preparacao.DATAB
 iniciar => Eprox.inicial.DATAB
 iniciar => Selector0.IN2
+fim_medida_nivel => Eprox.OUTPUTSELECT
+fim_medida_nivel => Eprox.OUTPUTSELECT
 fim_medida_nivel => Selector2.IN3
-fim_medida_nivel => Selector1.IN2
 descartar_medida => Eprox.OUTPUTSELECT
 descartar_medida => Eprox.OUTPUTSELECT
 descartar_medida => Eprox.OUTPUTSELECT
 descartar_medida => Eprox.OUTPUTSELECT
 descartar_medida => Eprox.OUTPUTSELECT
-descartar_medida => Selector0.IN4
+descartar_medida => Selector0.IN5
 medida_classificacao[0] => Decoder0.IN2
 medida_classificacao[1] => Decoder0.IN1
 medida_classificacao[2] => Decoder0.IN0
@@ -3552,8 +3751,10 @@ valvula_aberta => Selector5.IN2
 valvula_aberta => Selector5.IN3
 fim_1s => Selector5.IN8
 fim_1s => Selector4.IN2
-fim_2s => Selector0.IN5
+fim_2s => Selector0.IN6
 fim_2s => Selector6.IN2
+fim_estado4 => Eprox.DATAA
+fim_estado4 => Eprox.DATAA
 fim_caracter => Eprox.OUTPUTSELECT
 fim_caracter => Eprox.OUTPUTSELECT
 fim_caracter => Selector5.IN4
@@ -3575,6 +3776,7 @@ abre <= abre.DB_MAX_OUTPUT_PORT_TYPE
 fecha <= fecha.DB_MAX_OUTPUT_PORT_TYPE
 conta_1s <= conta_1s.DB_MAX_OUTPUT_PORT_TYPE
 conta_2s <= conta_2s.DB_MAX_OUTPUT_PORT_TYPE
+conta_estado4 <= conta_estado4.DB_MAX_OUTPUT_PORT_TYPE
 envia <= envia.DB_MAX_OUTPUT_PORT_TYPE
 muda <= muda.DB_MAX_OUTPUT_PORT_TYPE
 pronto <= pronto.DB_MAX_OUTPUT_PORT_TYPE
@@ -3584,7 +3786,145 @@ db_estado[2] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
 db_estado[3] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|hexa7seg:H0medida
+|main|mux_2x1_n:muxH0
+D1[0] => MUX_OUT.DATAB
+D1[1] => MUX_OUT.DATAB
+D1[2] => MUX_OUT.DATAB
+D1[3] => MUX_OUT.DATAB
+D0[0] => MUX_OUT.DATAB
+D0[1] => MUX_OUT.DATAB
+D0[2] => MUX_OUT.DATAB
+D0[3] => MUX_OUT.DATAB
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+MUX_OUT[0] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[1] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[2] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[3] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mux_2x1_n:muxH1
+D1[0] => MUX_OUT.DATAB
+D1[1] => MUX_OUT.DATAB
+D1[2] => MUX_OUT.DATAB
+D1[3] => MUX_OUT.DATAB
+D0[0] => MUX_OUT.DATAB
+D0[1] => MUX_OUT.DATAB
+D0[2] => MUX_OUT.DATAB
+D0[3] => MUX_OUT.DATAB
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+MUX_OUT[0] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[1] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[2] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[3] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mux_2x1_n:muxH2
+D1[0] => MUX_OUT.DATAB
+D1[1] => MUX_OUT.DATAB
+D1[2] => MUX_OUT.DATAB
+D1[3] => MUX_OUT.DATAB
+D0[0] => MUX_OUT.DATAB
+D0[1] => MUX_OUT.DATAB
+D0[2] => MUX_OUT.DATAB
+D0[3] => MUX_OUT.DATAB
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+MUX_OUT[0] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[1] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[2] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[3] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mux_2x1_n:muxH3
+D1[0] => MUX_OUT.DATAB
+D1[1] => MUX_OUT.DATAB
+D1[2] => MUX_OUT.DATAB
+D1[3] => MUX_OUT.DATAB
+D0[0] => MUX_OUT.DATAB
+D0[1] => MUX_OUT.DATAB
+D0[2] => MUX_OUT.DATAB
+D0[3] => MUX_OUT.DATAB
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+MUX_OUT[0] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[1] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[2] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[3] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mux_2x1_n:muxH4
+D1[0] => MUX_OUT.DATAB
+D1[1] => MUX_OUT.DATAB
+D1[2] => MUX_OUT.DATAB
+D1[3] => MUX_OUT.DATAB
+D0[0] => MUX_OUT.DATAB
+D0[1] => MUX_OUT.DATAB
+D0[2] => MUX_OUT.DATAB
+D0[3] => MUX_OUT.DATAB
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+MUX_OUT[0] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[1] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[2] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[3] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mux_2x1_n:muxH5
+D1[0] => MUX_OUT.DATAB
+D1[1] => MUX_OUT.DATAB
+D1[2] => MUX_OUT.DATAB
+D1[3] => MUX_OUT.DATAB
+D0[0] => MUX_OUT.DATAB
+D0[1] => MUX_OUT.DATAB
+D0[2] => MUX_OUT.DATAB
+D0[3] => MUX_OUT.DATAB
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+SEL => MUX_OUT.OUTPUTSELECT
+MUX_OUT[0] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[1] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[2] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[3] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|hexa7seg:H0
 hexa[0] => Decoder0.IN3
 hexa[1] => Decoder0.IN2
 hexa[2] => Decoder0.IN1
@@ -3598,7 +3938,7 @@ display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|hexa7seg:H1medida
+|main|hexa7seg:H1
 hexa[0] => Decoder0.IN3
 hexa[1] => Decoder0.IN2
 hexa[2] => Decoder0.IN1
@@ -3612,7 +3952,21 @@ display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|hexa7seg:H2medida
+|main|hexa7seg:H2
+hexa[0] => Decoder0.IN3
+hexa[1] => Decoder0.IN2
+hexa[2] => Decoder0.IN1
+hexa[3] => Decoder0.IN0
+display[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|hexa7seg:H3
 hexa[0] => Decoder0.IN3
 hexa[1] => Decoder0.IN2
 hexa[2] => Decoder0.IN1

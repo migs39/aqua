@@ -116,6 +116,90 @@
 					"strict" : false
 				},
 				{
+					"name" : "hex3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5[6]",
+					"strict" : false
+				},
+				{
 					"name" : "pronto",
 					"strict" : false
 				},
@@ -125,62 +209,6 @@
 				},
 				{
 					"name" : "db_fim_medida",
-					"strict" : false
-				},
-				{
-					"name" : "db_estado[0]",
-					"strict" : false
-				},
-				{
-					"name" : "db_estado[1]",
-					"strict" : false
-				},
-				{
-					"name" : "db_estado[2]",
-					"strict" : false
-				},
-				{
-					"name" : "db_estado[3]",
-					"strict" : false
-				},
-				{
-					"name" : "db_estado[4]",
-					"strict" : false
-				},
-				{
-					"name" : "db_estado[5]",
-					"strict" : false
-				},
-				{
-					"name" : "db_estado[6]",
-					"strict" : false
-				},
-				{
-					"name" : "db_sensor[0]",
-					"strict" : false
-				},
-				{
-					"name" : "db_sensor[1]",
-					"strict" : false
-				},
-				{
-					"name" : "db_sensor[2]",
-					"strict" : false
-				},
-				{
-					"name" : "db_sensor[3]",
-					"strict" : false
-				},
-				{
-					"name" : "db_sensor[4]",
-					"strict" : false
-				},
-				{
-					"name" : "db_sensor[5]",
-					"strict" : false
-				},
-				{
-					"name" : "db_sensor[6]",
 					"strict" : false
 				},
 				{
@@ -200,6 +228,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "db_fecha_auto",
+					"strict" : false
+				},
+				{
+					"name" : "troca_hex",
+					"strict" : false
+				},
+				{
 					"name" : "iniciar",
 					"strict" : false
 				},
@@ -212,11 +248,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "echo1",
 					"strict" : false
 				},
 				{
-					"name" : "echo1",
+					"name" : "reset",
 					"strict" : false
 				},
 				{
