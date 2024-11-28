@@ -6,6 +6,7 @@ module circuito_projeto_fd (
     input wire         zera,
     input wire         conta_1s,
 	input wire         conta_2s,
+    input wire         conta_estado4,
     input wire         mensurar,
     input wire         envia,
     input wire         muda,
@@ -27,6 +28,7 @@ module circuito_projeto_fd (
     output wire [11:0] distancia,
     output wire        fim_1s,
 	output wire        fim_2s,
+    output wire        fim_estado4,
     output wire        saida_serial,
     output wire [2:0]  medida_classificacao,
     output wire        descartar_medida,
@@ -124,6 +126,20 @@ module circuito_projeto_fd (
         .conta   (conta_2s  ),
         .Q       (          ),  // s_resto (desconectado)
         .fim     (fim_2s    ),  // fim (desconectado)
+        .meio    (          )
+    );
+
+    contador_m #(
+        //.M (100000),
+        .M (100000000),
+        .N (27)
+    ) contador_2s_estado4 (
+        .clock   (clock     ),
+        .zera_as (1'b0      ),
+        .zera_s  (zera      ),
+        .conta   (conta_estado4),
+        .Q       (          ),  // s_resto (desconectado)
+        .fim     (fim_estado4),  // fim (desconectado)
         .meio    (          )
     );
 

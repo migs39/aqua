@@ -1,0 +1,37 @@
+# reading modelsim.ini
+# Loading project AquaSim
+# Compile of aqua_tb.v was successful.
+# Compile of buzzer.v was successful.
+# Compile of circuito_projeto.v was successful.
+# Compile of circuito_projeto_fd.v was successful.
+# Compile of circuito_projeto_uc.v was successful.
+# Compile of classificador_medida.v was successful.
+# Compile of contador_bcd_3digitos.v was successful.
+# Compile of contador_cm.v was successful.
+# Compile of contador_cm_fd.v was successful.
+# Compile of contador_cm_uc.v was successful.
+# Compile of contador_m.v was successful.
+# Compile of controle_recepcao_serial.v was successful.
+# Compile of dec2hex.v was successful.
+# Compile of deslocador_n.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of flip_flop.v was successful.
+# Compile of gerador_pulso.v was successful.
+# Compile of hexa7seg.v was successful.
+# Compile of interface_hcsr04.v was successful.
+# Compile of interface_hcsr04_fd.v was successful.
+# Compile of interface_hcsr04_uc.v was successful.
+# Compile of main.v was successful.
+# Compile of mux_1x4_n.v was successful.
+# Compile of mux_4x1_n.v was successful.
+# Compile of registrador_n.v was successful.
+# Compile of registrador_n_initial.v was successful.
+# Compile of rx_serial_8N1.v was successful.
+# Compile of rx_serial_8N1_fd.v was successful.
+# Compile of rx_serial_uc.v was successful.
+# Compile of tx_serial_8N1.v was successful.
+# Compile of tx_serial_8N1_fd.v was successful.
+# Compile of tx_serial_uc.v was successful.
+# Compile of valvula.v was successful.
+# Compile of x3_interface.v was successful.
+# 34 compiles, 0 failed with no errors.
