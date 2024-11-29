@@ -1,5 +1,5 @@
 Timing Analyzer report for main
-Thu Nov 28 12:25:17 2024
+Fri Nov 29 11:35:23 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -102,14 +102,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.45        ;
+; Average used               ; 1.46        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  15.1%      ;
-;     Processor 3            ;  15.0%      ;
-;     Processor 4            ;  14.9%      ;
+;     Processor 2            ;  15.3%      ;
+;     Processor 3            ;  15.2%      ;
+;     Processor 4            ;  15.1%      ;
 +----------------------------+-------------+
 
 
@@ -123,14 +123,14 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1100mV 85C Model Fmax Summary                                                                                                                          ;
-+-----------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
-; Fmax      ; Restricted Fmax ; Clock Name                                                                                                             ; Note ;
-+-----------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
-; 41.72 MHz ; 41.72 MHz       ; clock                                                                                                                  ;      ;
-; 276.7 MHz ; 276.7 MHz       ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ;      ;
-+-----------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1100mV 85C Model Fmax Summary                                                                                                                           ;
++------------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                                                                                                             ; Note ;
++------------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
+; 41.89 MHz  ; 41.89 MHz       ; clock                                                                                                                  ;      ;
+; 226.45 MHz ; 226.45 MHz      ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ;      ;
++------------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -145,8 +145,8 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                                                  ; Slack   ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
-; clock                                                                                                                  ; -22.967 ; -1978.244     ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -4.971  ; -4.971        ;
+; clock                                                                                                                  ; -22.872 ; -1900.054     ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.289  ; -5.289        ;
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -155,8 +155,8 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                                  ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
-; clock                                                                                                                  ; 0.326 ; 0.000         ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.525 ; 0.000         ;
+; clock                                                                                                                  ; 0.313 ; 0.000         ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 1.000 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -165,7 +165,7 @@ HTML report is unavailable in plain text report export.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clock ; -1.090 ; -237.730              ;
+; clock ; -0.975 ; -234.033              ;
 +-------+--------+-----------------------+
 
 
@@ -174,7 +174,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+-----------------------+
 ; Clock ; Slack ; End Point TNS         ;
 +-------+-------+-----------------------+
-; clock ; 0.684 ; 0.000                 ;
+; clock ; 0.670 ; 0.000                 ;
 +-------+-------+-----------------------+
 
 
@@ -183,8 +183,8 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                  ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock                                                                                                                  ; -0.538 ; -537.237      ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.454  ; 0.000         ;
+; clock                                                                                                                  ; -0.538 ; -517.034      ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.417  ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -199,8 +199,8 @@ No synchronizer chains to report.
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                                                             ; Note ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
-; 39.4 MHz   ; 39.4 MHz        ; clock                                                                                                                  ;      ;
-; 271.15 MHz ; 271.15 MHz      ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ;      ;
+; 40.08 MHz  ; 40.08 MHz       ; clock                                                                                                                  ;      ;
+; 219.97 MHz ; 219.97 MHz      ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ;      ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -210,8 +210,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                                                  ; Slack   ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
-; clock                                                                                                                  ; -24.382 ; -1983.059     ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.123  ; -5.123        ;
+; clock                                                                                                                  ; -23.949 ; -1899.527     ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.439  ; -5.439        ;
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -220,8 +220,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                                  ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
-; clock                                                                                                                  ; 0.301 ; 0.000         ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.556 ; 0.000         ;
+; clock                                                                                                                  ; 0.297 ; 0.000         ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 1.083 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -230,7 +230,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+----------------------+
 ; Clock ; Slack  ; End Point TNS        ;
 +-------+--------+----------------------+
-; clock ; -1.007 ; -210.562             ;
+; clock ; -0.899 ; -210.758             ;
 +-------+--------+----------------------+
 
 
@@ -239,7 +239,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+----------------------+
 ; Clock ; Slack ; End Point TNS        ;
 +-------+-------+----------------------+
-; clock ; 0.652 ; 0.000                ;
+; clock ; 0.640 ; 0.000                ;
 +-------+-------+----------------------+
 
 
@@ -248,8 +248,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                  ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock                                                                                                                  ; -0.538 ; -548.788      ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.436  ; 0.000         ;
+; clock                                                                                                                  ; -0.538 ; -525.566      ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.403  ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -264,8 +264,8 @@ No synchronizer chains to report.
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                                                  ; Slack   ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
-; clock                                                                                                                  ; -10.040 ; -642.671      ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -2.166  ; -2.166        ;
+; clock                                                                                                                  ; -10.340 ; -612.855      ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -2.294  ; -2.294        ;
 +------------------------------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -274,8 +274,8 @@ No synchronizer chains to report.
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                                  ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
-; clock                                                                                                                  ; 0.177 ; 0.000         ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.242 ; 0.000         ;
+; clock                                                                                                                  ; 0.160 ; 0.000         ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.409 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -284,7 +284,7 @@ No synchronizer chains to report.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clock ; -0.153 ; -2.370                ;
+; clock ; -0.082 ; -2.364                ;
 +-------+--------+-----------------------+
 
 
@@ -293,7 +293,7 @@ No synchronizer chains to report.
 +-------+-------+-----------------------+
 ; Clock ; Slack ; End Point TNS         ;
 +-------+-------+-----------------------+
-; clock ; 0.310 ; 0.000                 ;
+; clock ; 0.298 ; 0.000                 ;
 +-------+-------+-----------------------+
 
 
@@ -302,8 +302,8 @@ No synchronizer chains to report.
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                  ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock                                                                                                                  ; -0.097 ; -63.732       ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.466  ; 0.000         ;
+; clock                                                                                                                  ; -0.101 ; -62.739       ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.491  ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -318,8 +318,8 @@ No synchronizer chains to report.
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                  ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock                                                                                                                  ; -9.565 ; -543.387      ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -2.071 ; -2.071        ;
+; clock                                                                                                                  ; -9.816 ; -519.308      ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -2.197 ; -2.197        ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -328,18 +328,18 @@ No synchronizer chains to report.
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                                  ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
-; clock                                                                                                                  ; 0.161 ; 0.000         ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.231 ; 0.000         ;
+; clock                                                                                                                  ; 0.146 ; 0.000         ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.395 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
 +---------------------------------------+
 ; Fast 1100mV 0C Model Recovery Summary ;
-+-------+--------+----------------------+
-; Clock ; Slack  ; End Point TNS        ;
-+-------+--------+----------------------+
-; clock ; -0.028 ; -0.294               ;
-+-------+--------+----------------------+
++-------+-------+-----------------------+
+; Clock ; Slack ; End Point TNS         ;
++-------+-------+-----------------------+
+; clock ; 0.030 ; 0.000                 ;
++-------+-------+-----------------------+
 
 
 +--------------------------------------+
@@ -347,7 +347,7 @@ No synchronizer chains to report.
 +-------+-------+----------------------+
 ; Clock ; Slack ; End Point TNS        ;
 +-------+-------+----------------------+
-; clock ; 0.281 ; 0.000                ;
+; clock ; 0.269 ; 0.000                ;
 +-------+-------+----------------------+
 
 
@@ -356,8 +356,8 @@ No synchronizer chains to report.
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                                  ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock                                                                                                                  ; -0.098 ; -64.755       ;
-; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.473  ; 0.000         ;
+; clock                                                                                                                  ; -0.099 ; -63.269       ;
+; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0.491  ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -372,12 +372,12 @@ No synchronizer chains to report.
 +-------------------------------------------------------------------------------------------------------------------------+-----------+-------+----------+---------+---------------------+
 ; Clock                                                                                                                   ; Setup     ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +-------------------------------------------------------------------------------------------------------------------------+-----------+-------+----------+---------+---------------------+
-; Worst-case Slack                                                                                                        ; -24.382   ; 0.161 ; -1.090   ; 0.281   ; -0.538              ;
-;  circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.123    ; 0.231 ; N/A      ; N/A     ; 0.436               ;
-;  clock                                                                                                                  ; -24.382   ; 0.161 ; -1.090   ; 0.281   ; -0.538              ;
-; Design-wide TNS                                                                                                         ; -1988.182 ; 0.0   ; -237.73  ; 0.0     ; -548.788            ;
-;  circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.123    ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-;  clock                                                                                                                  ; -1983.059 ; 0.000 ; -237.730 ; 0.000   ; -548.788            ;
+; Worst-case Slack                                                                                                        ; -23.949   ; 0.146 ; -0.975   ; 0.269   ; -0.538              ;
+;  circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.439    ; 0.395 ; N/A      ; N/A     ; 0.403               ;
+;  clock                                                                                                                  ; -23.949   ; 0.146 ; -0.975   ; 0.269   ; -0.538              ;
+; Design-wide TNS                                                                                                         ; -1905.343 ; 0.0   ; -234.033 ; 0.0     ; -525.566            ;
+;  circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; -5.439    ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  clock                                                                                                                  ; -1900.054 ; 0.000 ; -234.033 ; 0.000   ; -525.566            ;
 +-------------------------------------------------------------------------------------------------------------------------+-----------+-------+----------+---------+---------------------+
 
 
@@ -731,7 +731,7 @@ No synchronizer chains to report.
 ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0         ; 0        ; 1        ; 1        ;
 ; clock                                                                                                                  ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0         ; 0        ; 2        ; 0        ;
 ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; clock                                                                                                                  ; 0         ; 3        ; 0        ; 0        ;
-; clock                                                                                                                  ; clock                                                                                                                  ; 218025049 ; 0        ; 0        ; 0        ;
+; clock                                                                                                                  ; clock                                                                                                                  ; 231633855 ; 0        ; 0        ; 0        ;
 +------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -744,7 +744,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0         ; 0        ; 1        ; 1        ;
 ; clock                                                                                                                  ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; 0         ; 0        ; 2        ; 0        ;
 ; circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] ; clock                                                                                                                  ; 0         ; 3        ; 0        ; 0        ;
-; clock                                                                                                                  ; clock                                                                                                                  ; 218025049 ; 0        ; 0        ; 0        ;
+; clock                                                                                                                  ; clock                                                                                                                  ; 231633855 ; 0        ; 0        ; 0        ;
 +------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -754,7 +754,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clock      ; clock    ; 338      ; 0        ; 0        ; 0        ;
+; clock      ; clock    ; 316      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -764,7 +764,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clock      ; clock    ; 338      ; 0        ; 0        ; 0        ;
+; clock      ; clock    ; 316      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -789,9 +789,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 8     ; 8    ;
-; Unconstrained Input Port Paths  ; 86    ; 86   ;
+; Unconstrained Input Port Paths  ; 87    ; 87   ;
 ; Unconstrained Output Ports      ; 57    ; 57   ;
-; Unconstrained Output Port Paths ; 563   ; 563  ;
+; Unconstrained Output Port Paths ; 542   ; 542  ;
 +---------------------------------+-------+------+
 
 
@@ -973,7 +973,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 28 12:25:08 2024
+    Info: Processing started: Fri Nov 29 11:35:15 2024
 Info: Command: quartus_sta Aqua -c main
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -992,120 +992,120 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -22.967
+Info (332146): Worst-case setup slack is -22.872
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -22.967           -1978.244 clock 
-    Info (332119):    -4.971              -4.971 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case hold slack is 0.326
+    Info (332119):   -22.872           -1900.054 clock 
+    Info (332119):    -5.289              -5.289 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case hold slack is 0.313
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.326               0.000 clock 
-    Info (332119):     0.525               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case recovery slack is -1.090
+    Info (332119):     0.313               0.000 clock 
+    Info (332119):     1.000               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case recovery slack is -0.975
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.090            -237.730 clock 
-Info (332146): Worst-case removal slack is 0.684
+    Info (332119):    -0.975            -234.033 clock 
+Info (332146): Worst-case removal slack is 0.670
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.684               0.000 clock 
+    Info (332119):     0.670               0.000 clock 
 Info (332146): Worst-case minimum pulse width slack is -0.538
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.538            -537.237 clock 
-    Info (332119):     0.454               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+    Info (332119):    -0.538            -517.034 clock 
+    Info (332119):     0.417               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -24.382
+Info (332146): Worst-case setup slack is -23.949
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -24.382           -1983.059 clock 
-    Info (332119):    -5.123              -5.123 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case hold slack is 0.301
+    Info (332119):   -23.949           -1899.527 clock 
+    Info (332119):    -5.439              -5.439 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case hold slack is 0.297
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.301               0.000 clock 
-    Info (332119):     0.556               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case recovery slack is -1.007
+    Info (332119):     0.297               0.000 clock 
+    Info (332119):     1.083               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case recovery slack is -0.899
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.007            -210.562 clock 
-Info (332146): Worst-case removal slack is 0.652
+    Info (332119):    -0.899            -210.758 clock 
+Info (332146): Worst-case removal slack is 0.640
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.652               0.000 clock 
+    Info (332119):     0.640               0.000 clock 
 Info (332146): Worst-case minimum pulse width slack is -0.538
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.538            -548.788 clock 
-    Info (332119):     0.436               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+    Info (332119):    -0.538            -525.566 clock 
+    Info (332119):     0.403               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -10.040
+Info (332146): Worst-case setup slack is -10.340
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -10.040            -642.671 clock 
-    Info (332119):    -2.166              -2.166 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case hold slack is 0.177
+    Info (332119):   -10.340            -612.855 clock 
+    Info (332119):    -2.294              -2.294 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case hold slack is 0.160
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.177               0.000 clock 
-    Info (332119):     0.242               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case recovery slack is -0.153
+    Info (332119):     0.160               0.000 clock 
+    Info (332119):     0.409               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case recovery slack is -0.082
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.153              -2.370 clock 
-Info (332146): Worst-case removal slack is 0.310
+    Info (332119):    -0.082              -2.364 clock 
+Info (332146): Worst-case removal slack is 0.298
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.310               0.000 clock 
-Info (332146): Worst-case minimum pulse width slack is -0.097
+    Info (332119):     0.298               0.000 clock 
+Info (332146): Worst-case minimum pulse width slack is -0.101
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.097             -63.732 clock 
-    Info (332119):     0.466               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+    Info (332119):    -0.101             -62.739 clock 
+    Info (332119):     0.491               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -9.565
+Info (332146): Worst-case setup slack is -9.816
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -9.565            -543.387 clock 
-    Info (332119):    -2.071              -2.071 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case hold slack is 0.161
+    Info (332119):    -9.816            -519.308 clock 
+    Info (332119):    -2.197              -2.197 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case hold slack is 0.146
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.161               0.000 clock 
-    Info (332119):     0.231               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
-Info (332146): Worst-case recovery slack is -0.028
+    Info (332119):     0.146               0.000 clock 
+    Info (332119):     0.395               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+Info (332146): Worst-case recovery slack is 0.030
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.028              -0.294 clock 
-Info (332146): Worst-case removal slack is 0.281
+    Info (332119):     0.030               0.000 clock 
+Info (332146): Worst-case removal slack is 0.269
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.281               0.000 clock 
-Info (332146): Worst-case minimum pulse width slack is -0.098
+    Info (332119):     0.269               0.000 clock 
+Info (332146): Worst-case minimum pulse width slack is -0.099
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.098             -64.755 clock 
-    Info (332119):     0.473               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
+    Info (332119):    -0.099             -63.269 clock 
+    Info (332119):     0.491               0.000 circuito_projeto:main|circuito_projeto_fd:FD|controle_recepcao_serial:controle_serial|registrador_n_initial:modo|IQ[0] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5089 megabytes
-    Info: Processing ended: Thu Nov 28 12:25:17 2024
-    Info: Elapsed time: 00:00:09
+    Info: Peak virtual memory: 5088 megabytes
+    Info: Processing ended: Fri Nov 29 11:35:23 2024
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:11
 
 

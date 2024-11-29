@@ -11,7 +11,7 @@ import java.io.IOException;
 
 Serial myPort; // define objeto da porta serial
 
-    String   porta = "COM27";  //acertar valor
+    String   porta = "COM29";  //acertar valor
     int   baudrate = 115200;
     float stopbits = 1.0;
     char    parity = 'N';
@@ -27,9 +27,9 @@ PImage img;
 int maxTimeRange = 14400;
 int timeRange;
 int t = 0;
-int low = 15;
-int high = 80;
-int critical = 95;
+int low = 10;
+int high = 40;
+int critical = 50;
 int showLow = low;
 int showHigh = high;
 int showCritical = critical;
@@ -40,7 +40,7 @@ int mockDistance = 22;
 String sensorReading = "";
 String distance = "000";
 int iDistance = 0;
-int emptyDistance = 50;
+int emptyDistance = 30;
 int fullDistance = 0;
 float percentage = .5;
 
@@ -425,8 +425,10 @@ void plotGraph(int x0, int y0, int x, int y, int fontSize) {
   // Determina os limites dos eixos
   int minTime = findMin(times);
   int maxTime = findMax(times);
-  int minLevel = findMin(levels);
-  int maxLevel = findMax(levels);
+  //int minLevel = findMin(levels);
+  //int maxLevel = findMax(levels);
+  int minLevel = 0;
+  int maxLevel = 100;
   
   // Define a margem e a área do gráfico
   float margin = 10; // Margem interna
@@ -532,6 +534,7 @@ void serialEvent (Serial myPort) {
         // converte string para inteiro
         iDistance = int(distance);
         println(iDistance);
+        if (iDistance == 0) return;
         percentage = float(emptyDistance - iDistance) / float(emptyDistance - fullDistance);
         level = round(100 * (percentage));
         println(level);
